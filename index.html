@@ -1,362 +1,742 @@
 <!DOCTYPE html>
-<html lang="nl" class="dark">
+<html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MinderAfval053 - Enschede Afval-Slayer 2026 | Bespaar op Diftar</title>
-  <meta name="description" content="Bereken je afvalkosten voor Enschede in 2026. Onafhankelijke tool door Kitsorix om te besparen op de grijze bak (Diftar).">
-  <link rel="canonical" href="https://afval053.website/">
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Afval-Slayer 053",
-  "operatingSystem": "All",
-  "applicationCategory": "UtilityApplication",
-  "url": "https://afval053.website",
-  "description": "Een anonieme privacy-first tool voor inwoners van Enschede om afvalkosten in 2026 te berekenen en te besparen op Diftar.",
-  "author": {
-    "@type": "Person",
-    "name": "Kitsorix",
-    "url": "https://github.com/kitsorix-official",
-    "mainEntityOfPage": "https://github.com/kitsorix-official",
-    "sameAs": [
-      "https://github.com/kitsorix-official"
-    ]
-  },
-  "offers": {
-    "@type": "Offer",
-    "price": "0.00",
-    "priceCurrency": "EUR"
-  },
-  "keywords": "Enschede, Afval, Diftar, 2026, Twente Milieu, Besparen, Privacy",
-  "inLanguage": "nl"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Hoe kan ik besparen op afvalkosten in Enschede in 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Door het aantal aanbiedingen van de grijze restafvalcontainer (Diftar) te verminderen. Onze tool berekent exact hoeveel een vermindering van bijvoorbeeld 4 legingen per jaar je oplevert."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is mijn data veilig bij het gebruik van Afval-Slayer 053?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ja, de tool is privacy-first gebouwd door Kitsorix. Alle berekeningen vinden plaats in je eigen browser; er wordt geen persoonlijke data opgeslagen of gedeeld met de gemeente."
-      }
-    }
-  ]
-}
-</script>
-
-  <style>
-    @import url('https://cdn.jsdelivr.net/npm/@fontsource/inter@5.1.0/index.css');
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MinderAfval053 - Enschede Afval-Slayer 2026 | Diftar Calculator</title>
+    <meta name="description" content="Bereken uw gemeentelijke afvalstoffenheffing in Enschede voor 2026. Bespaar op Diftar met onze onafhankelijke rekentool, praktische keukentips en luierlogistiek.">
+    <link rel="canonical" href="https://afval053.website/" />
     
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0a0a0a;
-      color: #f5f5f5;
-      scroll-behavior: smooth;
+    <!-- Structured Data (JSON-LD) for SEO 2026/2027 AI-era optimization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MinderAfval053 - Enschede Afval-Slayer",
+      "url": "https://afval053.website/",
+      "genre": "Sustainability Tool",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR"
+      },
+      "abstract": "Een onafhankelijke interactieve reken- en optimalisatietool voor de gemeentelijke afvalstoffenheffing (Diftar) in Enschede voor het jaar 2026."
     }
+    </script>
 
-    input[type=range] {
-      -webkit-appearance: none;
-      width: 100%;
-      background: transparent;
-      cursor: pointer;
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Waarom is het basistarief van de afvalstoffenheffing in Enschede € 264,84?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Het basistarief van € 264,84 is een vaste bijdrage die elk huishouden betaalt voor de algemene infrastructuur van afvalbeheer. Dit bedrag dekt de kosten die de gemeente maakt ongeacht hoe vaak u uw container aan de straat zet, zoals de milieuparken en gratis stromen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welke afvalstromen zijn in 2026 nog gratis in Enschede?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GFT (groene bak), PMD (oranje bak), Papier en Karton (blauwe bak), glas en textiel via verzamelcontainers, en grof tuinafval tot 1000 kg per jaar zijn volledig gratis in 2026."
+          }
+        }
+      ]
     }
+    </script>
 
-    input[type=range]::-webkit-slider-runnable-track {
-      width: 100%;
-      height: 8px;
-      border-radius: 4px;
-      background: #404040;
-    }
-
-    input[type=range]::-webkit-slider-thumb {
-      -webkit-appearance: none;
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-      background: #dc2626;
-      border: 3px solid #ffffff;
-      margin-top: -10px;
-      box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
-      transition: transform 0.15s ease;
-    }
-
-    .glass-panel {
-      background: rgba(23, 23, 23, 0.7);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .twente-red { color: #dc2626; }
-    .bg-twente-red { background-color: #dc2626; }
-
-    details summary::-webkit-details-marker { display:none; }
-    details summary { list-style: none; }
-  </style>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            green: '#2ecc71',
+                            darkgreen: '#27ae60',
+                            orange: '#e67e22',
+                            darkorange: '#d35400',
+                            gray: '#7f8c8d',
+                            dark: '#2c3e50',
+                            light: '#f8f9fa'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="min-h-screen flex flex-col items-center justify-start px-4 py-10 md:py-16">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
 
-  <header class="w-full max-w-2xl text-center mb-8">
-    <div class="inline-block px-3 py-1 mb-3 text-xs font-bold tracking-widest text-red-500 uppercase border border-red-900 bg-red-950 rounded-full">
-      afval053.website
-    </div>
-    <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight mb-2">
-      Afval<span class="twente-red">-Slayer</span> 2026
-    </h1>
-    <p class="text-neutral-400 text-sm">Bereken je afvalkosten en optimaliseer je budget.</p>
-    <div class="h-0.5 w-16 bg-twente-red mx-auto mt-4 rounded-full"></div>
-  </header>
+    <!-- Skip link for keyboard accessibility -->
+    <a href="#calculator" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-brand-orange focus:text-white focus:z-50 focus:rounded-xl">
+        Direct naar de Diftar Calculator
+    </a>
 
-  <main class="w-full max-w-2xl space-y-6">
-    
-    <!-- Calculator Card -->
-    <section id="calculator" class="glass-panel rounded-2xl p-6 md:p-8 shadow-2xl">
-      <h2 class="text-xl font-semibold mb-6 flex items-center gap-2">
-        <svg class="w-6 h-6 twente-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
-        Configurator
-      </h2>
-
-      <div class="mb-8">
-        <label for="liftsRange" class="block text-sm font-medium text-neutral-300 mb-3">
-          Aantal keren grijze bak aan de straat per jaar
-        </label>
-        <div class="flex justify-between items-center mb-2">
-          <span class="text-xs text-neutral-500">0</span>
-          <span id="liftsDisplay" class="text-2xl font-bold twente-red tabular-nums">12</span>
-          <span class="text-xs text-neutral-500">26</span>
-        </div>
-        <input type="range" id="liftsRange" min="0" max="26" value="12" step="1">
-      </div>
-
-      <div class="flex items-center justify-between p-4 rounded-xl bg-neutral-900 border border-neutral-800 mb-8">
-        <div>
-          <span class="block text-sm font-medium text-white">Grote bak (240L) gebruiken?</span>
-          <span class="text-xs text-neutral-400">Vervangt de standaard 140L bak</span>
-        </div>
-        <div class="relative inline-block w-14 h-8 align-middle select-none">
-          <input type="checkbox" id="isLargeToggle" class="relative block w-6 h-6 rounded-full bg-white border border-neutral-400 appearance-none cursor-pointer transition-all duration-300 ease-in-out top-1 left-1 checked:translate-x-6 checked:bg-red-600">
-          <label for="isLargeToggle" class="block overflow-hidden h-8 rounded-full bg-neutral-700 cursor-pointer transition-colors duration-300 ease-in-out"></label>
-        </div>
-      </div>
-
-      <div class="text-center p-6 rounded-2xl bg-neutral-800/50 border border-neutral-700">
-        <p class="text-sm text-neutral-400 mb-1">Geschatte jaarlijkse kosten</p>
-        <div id="totalCost" class="text-4xl md:text-5xl font-extrabold tracking-tight tabular-nums">€ 264,84</div>
-      </div>
-    </section>
-
-    <!-- Comparison Section -->
-    <section class="glass-panel rounded-2xl p-6 md:p-8 shadow-xl border-l-4 border-l-red-600">
-      <h2 class="text-lg font-semibold mb-4 flex items-center gap-2">
-        <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
-        Vergelijking: Slimmer weggeven
-      </h2>
-      <div class="flex flex-col md:flex-row gap-4 items-stretch">
-        <div class="flex-1 p-4 rounded-xl bg-neutral-900 border border-neutral-800">
-          <div class="text-xs text-neutral-500 uppercase tracking-wider mb-1">Huidig (100%)</div>
-          <div id="baseComparisonCost" class="text-xl font-bold tabular-nums">€ 322,68</div>
-          <div id="baseLiftsDisplay" class="text-xs text-neutral-400 mt-1">12 aanmeldingen</div>
-        </div>
-        <div class="flex items-center justify-center">
-          <svg class="w-6 h-6 text-neutral-500 md:rotate-180 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          <svg class="w-6 h-6 text-neutral-500 md:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-        </div>
-        <div class="flex-1 p-4 rounded-xl bg-red-950/30 border border-red-900/50">
-          <div class="text-xs text-red-400 uppercase tracking-wider mb-1">Optimalisatie (-4 keer)</div>
-          <div id="optimizedComparisonCost" class="text-xl font-bold tabular-nums text-red-300">€ 303,40</div>
-          <div id="optimizedLiftsDisplay" class="text-xs text-neutral-400 mt-1">8 aanmeldingen</div>
-        </div>
-      </div>
-      <div class="mt-4 p-3 rounded-lg bg-neutral-800 flex justify-between items-center">
-        <span class="text-sm font-medium">Mogelijke besparing</span>
-        <span id="savingsDisplay" class="text-lg font-bold text-green-400 tabular-nums">€ 19,28</span>
-      </div>
-    </section>
-
-    <!-- EEAT Blog Section -->
-    <article class="glass-panel rounded-2xl p-6 md:p-8 shadow-xl mt-12 border-t-2 border-slate-700">
-     <div class="mb-6 p-4 bg-red-950/20 rounded-xl border border-red-900/30">
-  <p class="text-sm italic text-neutral-300">
-    "Bij Kitsorix geloof ik in keiharde data, niet in mooie sprookjes. Ik heb mijn AI-systemen de opdracht gegeven om de officiële cijfers van het Enschedeese afvalsysteem te fileren. De resultaten zijn ontnuchterend."
-  </p>
-  <p class="text-xs mt-2 text-neutral-500">— Kitsorix, Independent Developer</p>
-</div>
-
-      <h2 class="text-2xl font-bold mb-6">De Verborgen Waarheid over je Vuilnisbak: 5 Dingen die je nog niet wist over Afval Scheiden</h2>
-      
-      <div class="space-y-4">
-        
-        <details class="group bg-neutral-900/50 rounded-xl border border-neutral-800 overflow-hidden transition-all">
-          <summary class="p-4 cursor-pointer flex justify-between items-center hover:bg-neutral-800">
-            <span class="font-medium text-neutral-200">1. Het Mysterie van de 'Verdwenen Kilo's': Wie betaalt de rekening?</span>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </summary>
-          <div class="px-4 pb-4 text-sm leading-relaxed text-neutral-400">
-            Wanneer een gemeente 'Diftar' invoert—betalen per aanbieding—gebeurt er op papier een wonder. In Enschede kelderde het restafval na de invoering in 2017 met maar liefst 40%. Een succesverhaal? Niet helemaal. Die daling werd namelijk niet gecompenseerd door een even grote stijging in andere stromen. Er was plotseling 10 miljoen kilo afval spoorloos verdwenen. De psychologische verklaring is simpel: wanneer je eerlijkheid bestraft met een rekening, lok je 'ontwijkgedrag' uit. In Enschede doken 4.000 'nulaanbieders' op. Terwijl de officiële afvalcijfers dalen, stegen de kosten voor het opruimen van gedumpt afval in Enschede naar een recordhoogte van circa €540.000 in 2024.
-          </div>
-        </details>
-        
-        <details class="group bg-neutral-900/50 rounded-xl border border-neutral-800 overflow-hidden transition-all">
-          <summary class="p-4 cursor-pointer flex justify-between items-center hover:bg-neutral-800">
-            <span class="font-medium text-neutral-200">2. Het PMD-Debacle: De illusie van de oranje bak</span>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </summary>
-          <div class="px-4 pb-4 text-sm leading-relaxed text-neutral-400">
-            We denken dat we grondstoffen redden, maar de realiteit in de sorteerinstallatie is ontnuchterend. Wist u dat minder dan 1% van het Twentse verpakkingsafval direct na inzameling klaar is voor recycling? De rest is te zwaar vervuild. In Enschede is ongeveer 30 kilo van het ingezamelde PMD per inwoner eigenlijk gewoon restafval. Dit creëert een 'papieren werkelijkheid'. Tel je de vervuilde PMD-stroom op bij het restafval, dan stijgt de werkelijke score naar 143 kilo per inwoner—ver boven het landelijke doel van 100 kilo.
-          </div>
-        </details>
-        
-        <details class="group bg-neutral-900/50 rounded-xl border border-neutral-800 overflow-hidden transition-all">
-          <summary class="p-4 cursor-pointer flex justify-between items-center hover:bg-neutral-800">
-            <span class="font-medium text-neutral-200">3. Waarom Campagnes van 2% Verandering een Feestje Waard zijn</span>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </summary>
-          <div class="px-4 pb-4 text-sm leading-relaxed text-neutral-400">
-            De overheid bestookt ons al decennia met spotjes en folders. Het effect? Gemiddeld slechts 2% gedragsverandering. Afval scheiden is 'altruïstisch gedrag': je levert een persoonlijke inspanning voor een abstract collectief doel, zonder direct eigen gewin. Wat wél werkt, is niet kennis, maar 'likeability' en sociale normen. De herkenbare karakters en emotie werken vaak beter dan een droge beleidsnota.
-          </div>
-        </details>
-        
-        <details class="group bg-neutral-900/50 rounded-xl border border-neutral-800 overflow-hidden transition-all">
-          <summary class="p-4 cursor-pointer flex justify-between items-center hover:bg-neutral-800">
-            <span class="font-medium text-neutral-200">4. De Keuken als Slagveld: Tactisch advies voor de burger</span>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </summary>
-          <div class="px-4 pb-4 text-sm leading-relaxed text-neutral-400">
-            Separatie mislukt niet bij de milieustraat, maar aan het aanrecht. Een strategische tip: de grootste vijanden van een fris huis zijn etensresten. Vlees- en visresten in de grijze bak zijn de hoofdoorzaak van stank en maden. Wikkel deze 'stinkers' direct in een oude krant en gooi ze in de GFT-bak. Het resultaat? Een restafvalbak die nagenoeg reukloos blijft met alleen nog 'droog' afval zoals stofzuigerzakken.
-          </div>
-        </details>
-        
-        <details class="group bg-neutral-900/50 rounded-xl border border-neutral-800 overflow-hidden transition-all">
-          <summary class="p-4 cursor-pointer flex justify-between items-center hover:bg-neutral-800">
-            <span class="font-medium text-neutral-200">5. De Logistiek van de Luier: De Knowaste-paradox</span>
-            <svg class="w-5 h-5 text-neutral-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-          </summary>
-          <div class="px-4 pb-4 text-sm leading-relaxed text-neutral-400">
-            Voor jonge gezinnen botst duurzaamheid frontaal op de biologische realiteit. Systemen zoals de Knowaste-zakken negeren de dagelijkse praktijk van tijdgebrek en geuroverlast. De paradox is dat goedbedoelde recycle-initiatieven vaak falen omdat ze de fysieke barrière (het rijden naar de stort met een stinkende zak) te groot maken.
-          </div>
-        </details>
-        
-      </div>
-
-      <div class="mt-8 pt-6 border-t border-neutral-800 text-center">
-        <a href="#calculator" class="inline-block px-6 py-2 bg-red-600 hover:bg-red-500 text-white font-bold rounded-lg transition-colors">
-          Bereken mijn besparing
-        </a>
-      </div>
-    </article>
-
-    <!-- Crypto Section -->
-    <section class="glass-panel rounded-2xl p-6 md:p-8 shadow-xl mt-8 border-t-2 border-red-600/50">
-      <h2 class="text-lg font-bold mb-4 text-center">
-        Bespaard op je afval? <span class="twente-red">Steun de maker anoniem.</span>
-      </h2>
-      <div class="flex flex-col md:flex-row gap-6 items-center justify-center bg-neutral-900/50 p-5 rounded-xl border border-neutral-800">
-        <div class="flex flex-col items-center gap-2">
-          <div class="w-32 h-32 bg-white rounded-lg flex items-center justify-center p-2 shadow-inner">
-            <img src="images/solqr.png" alt="SOL QR">
-          </div>
-          <span class="text-xs text-neutral-500">Scan met wallet</span>
-        </div>
-
-        <div class="flex-1 w-full max-w-sm">
-          <label class="block text-xs text-neutral-400 mb-2 uppercase tracking-wider">Solana (SOL) Adres</label>
-          <div class="flex gap-2">
-            <div class="flex-1 bg-neutral-950 border border-neutral-700 rounded-lg px-3 py-2 text-xs md:text-sm font-mono break-all text-neutral-300 select-all cursor-pointer hover:border-neutral-500 transition-colors" id="solAddress">
-              B61AcpjmMVYr59SLL6x5NrVNXXjkVKknRvc49g8PDGgr
+    <!-- Header / Navbar -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm" role="banner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="bg-gradient-to-tr from-brand-green to-brand-orange p-2 rounded-xl text-white" aria-hidden="true">
+                    <!-- Custom Eco Icon -->
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-brand-dark to-brand-green bg-clip-text text-transparent">MinderAfval053</span>
+                    <span class="text-xs block text-slate-500 font-semibold -mt-1">Enschede Afval-Slayer 2026</span>
+                </div>
             </div>
-            <button id="copyBtn" class="px-4 py-2 bg-red-600 hover:bg-red-500 active:scale-95 text-white font-medium rounded-lg transition-all text-sm whitespace-nowrap">
-              Kopieer
-            </button>
-          </div>
-          <p class="text-[10px] text-neutral-500 mt-2">
-            *Onderzoeksmethode: AI-analyse van de officiële Afvalstoffenverordening 2026 Gemeente Enschede.
-          </p>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600" aria-label="Hoofdnavigatie">
+                <a href="#calculator" class="hover:text-brand-green transition-colors">Calculator</a>
+                <a href="#insights" class="hover:text-brand-orange transition-colors">Verborgen Waarheid</a>
+                <a href="#tips" class="hover:text-brand-green transition-colors">Bespaartips</a>
+            </nav>
+            <div class="flex items-center space-x-2">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                    Diftar 2026 Update
+                </span>
+            </div>
         </div>
-      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white overflow-hidden py-12 border-b border-slate-100" aria-label="Introductie">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <h1 class="text-4xl sm:text-5xl font-black text-slate-900 tracking-tight leading-tight">
+                        Fileer je afvalrekening in <span class="bg-gradient-to-r from-brand-green to-brand-orange bg-clip-text text-transparent">Enschede</span>
+                    </h1>
+                    <p class="text-lg text-slate-600 leading-relaxed max-w-2xl">
+                        Gemeente Enschede wil naar 50 kilo restafval in 2030. Sinds de invoering van <strong>Diftar</strong> betaal je per klik of lediging. Gebruik onze onafhankelijke 2026-calculator en ontdek hoe je door slimme bronscheiding honderden euro's in de zak houdt!
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#calculator" class="px-6 py-3 bg-brand-green hover:bg-brand-darkgreen text-white font-bold rounded-xl shadow-md transition-all transform hover:-translate-y-0.5">
+                            Bereken Je Besparing
+                        </a>
+                        <a href="#insights" class="px-6 py-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold rounded-xl transition-all">
+                            Ontdek de Data
+                        </a>
+                    </div>
+                    <div class="flex items-center space-x-6 text-xs text-slate-500 pt-4 border-t border-slate-100">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-brand-green" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Up-to-date Tarieven (2026)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-4 h-4 text-brand-green" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Inclusief Laagbouw & Hoogbouw</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative" aria-label="Tarievenoverzicht 2026">
+                    <div class="bg-gradient-to-tr from-brand-green/20 to-brand-orange/20 rounded-3xl p-8 transform rotate-1 hover:rotate-0 transition-transform duration-300 shadow-xl border border-white">
+                        <div class="bg-white p-6 rounded-2xl shadow-sm space-y-4">
+                            <div class="flex justify-between items-center pb-3 border-b border-slate-100">
+                                <span class="font-bold text-slate-800">De Fiscale Realiteit</span>
+                                <span class="text-xs bg-orange-100 text-orange-800 px-2 py-0.5 rounded font-bold">Enschede 2026</span>
+                            </div>
+                            <div class="space-y-3 text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Vast Basistarief:</span>
+                                    <span class="font-semibold text-slate-800">€ 264,84 /jr</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Grijze Otto 140L (Rest):</span>
+                                    <span class="font-semibold text-slate-800">€ 4,82 per lediging</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Grijze Otto 240L (Groot):</span>
+                                    <span class="font-semibold text-slate-800">€ 8,27 per lediging</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-500">Ondergronds (klik 40L):</span>
+                                    <span class="font-semibold text-slate-800">€ 1,38 per inworp</span>
+                                </div>
+                                <div class="flex justify-between text-brand-darkgreen font-semibold pt-2 border-t border-dashed border-slate-200">
+                                    <span>GFT, PMD & Blauwe Bak:</span>
+                                    <span>GRATIS (€ 0,00)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-  </main>
+    <!-- Main Container: Calculator & Side Info -->
+    <main id="calculator" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left: Interactive Calculator -->
+            <section class="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-8 shadow-md border border-slate-100 space-y-8" aria-labelledby="calculator-heading">
+                <div>
+                    <h2 id="calculator-heading" class="text-2xl font-extrabold text-slate-900 flex items-center space-x-2">
+                        <span class="text-brand-green" aria-hidden="true">1.</span>
+                        <span>Diftar Configurator</span>
+                    </h2>
+                    <p class="text-sm text-slate-500 mt-1">Bereken je werkelijke afvalkosten op basis van de officiële 2026 verordening.</p>
+                </div>
 
-<footer class="mt-12 mb-8 text-center text-xs text-neutral-600">
-  <p>© 2026 — Een onafhankelijk project van <a href="https://github.com/kitsorix-official" class="hover:text-red-500 underline transition-colors font-medium">Kitsorix</a></p>
-  <p class="mt-2 text-neutral-700 uppercase tracking-[0.2em] font-semibold">
-    Founder of the <a href="https://stlaccess.com" class="hover:text-neutral-400 underline transition-colors" target="_blank">STLAccess</a> Ecosystem
-  </p>
-  <p class="mt-4 text-[10px] text-neutral-800 italic">
-    Data-integriteit & Privacy-first Software.
-  </p>
-</footer>
+                <!-- Step 1: Living Situation -->
+                <div class="space-y-3" role="group" aria-labelledby="housing-label">
+                    <span id="housing-label" class="block text-sm font-bold text-slate-700">Woonsituatie & Inzamelmiddel</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Option A: Laagbouw -->
+                        <div id="optionLaagbouw" 
+                             onclick="setHousing('laagbouw')" 
+                             onkeydown="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); setHousing('laagbouw'); }"
+                             class="cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/50 hover:bg-emerald-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green" 
+                             role="radio" 
+                             aria-checked="true" 
+                             tabindex="0"
+                             aria-label="Laagbouwwoning met eigen grijze minicontainer">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-brand-green text-white rounded-xl" aria-hidden="true">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-800 text-sm">Laagbouwwoning</span>
+                                    <span class="text-xs text-slate-500">Eigen grijze minicontainer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Option B: Hoogbouw -->
+                        <div id="optionHoogbouw" 
+                             onclick="setHousing('hoogbouw')" 
+                             onkeydown="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); setHousing('hoogbouw'); }"
+                             class="cursor-pointer p-4 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green" 
+                             role="radio" 
+                             aria-checked="false" 
+                             tabindex="0"
+                             aria-label="Hoogbouw of Appartement met ondergrondse container">
+                            <div class="flex items-center space-x-3">
+                                <div class="p-2 bg-slate-200 text-slate-700 rounded-xl" id="hoogbouwIcon" aria-hidden="true">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                                </div>
+                                <div>
+                                    <span class="block font-bold text-slate-800 text-sm">Hoogbouw / Appartement</span>
+                                    <span class="text-xs text-slate-500">Ondergrondse container (klik)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const BASE_FEE = 264.84;
-      const SMALL_RATE = 4.82;
-      const LARGE_RATE = 8.27;
-      
-      const elLiftsRange = document.getElementById('liftsRange');
-      const elLiftsDisplay = document.getElementById('liftsDisplay');
-      const elIsLargeToggle = document.getElementById('isLargeToggle');
-      const elTotalCost = document.getElementById('totalCost');
-      const elBaseComparisonCost = document.getElementById('baseComparisonCost');
-      const elBaseLiftsDisplay = document.getElementById('baseLiftsDisplay');
-      const elOptimizedComparisonCost = document.getElementById('optimizedComparisonCost');
-      const elOptimizedLiftsDisplay = document.getElementById('optimizedLiftsDisplay');
-      const elSavingsDisplay = document.getElementById('savingsDisplay');
-      const elCopyBtn = document.getElementById('copyBtn');
-      const elSolAddress = document.getElementById('solAddress');
+                <!-- Step 2: Container Size (Only for Laagbouw) -->
+                <div id="containerSizeSection" class="space-y-3 transition-all duration-300" role="group" aria-labelledby="container-size-label">
+                    <span id="container-size-label" class="block text-sm font-bold text-slate-700">Formaat grijze container (Restafval)</span>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div id="sizeStandard" 
+                             onclick="setContainerSize('standard')" 
+                             onkeydown="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); setContainerSize('standard'); }"
+                             class="cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/20 hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green" 
+                             role="radio" 
+                             aria-checked="true" 
+                             tabindex="0"
+                             aria-label="Standaard bak volume 140 liter, tarief 4 euro 82 per keer">
+                            <div>
+                                <span class="block font-bold text-slate-800 text-sm">Standaard Bak (140L)</span>
+                                <span class="text-xs text-slate-500">Standaard volume</span>
+                            </div>
+                            <span class="text-brand-green font-bold text-sm">€ 4,82 /keer</span>
+                        </div>
+                        <div id="sizeLarge" 
+                             onclick="setContainerSize('large')" 
+                             onkeydown="if(event.key === ' ' || event.key === 'Enter') { event.preventDefault(); setContainerSize('large'); }"
+                             class="cursor-pointer p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green" 
+                             role="radio" 
+                             aria-checked="false" 
+                             tabindex="0"
+                             aria-label="Grote bak volume 240 liter, tarief 8 euro 27 per keer">
+                            <div>
+                                <span class="block font-bold text-slate-800 text-sm">Grote Bak (240L)</span>
+                                <span class="text-xs text-slate-500">Vervangt de 140L bak</span>
+                            </div>
+                            <span class="text-slate-600 font-bold text-sm">€ 8,27 /keer</span>
+                        </div>
+                    </div>
+                </div>
 
-      const formatEUR = new Intl.NumberFormat('nl-NL', { style: 'currency', currency: 'EUR' });
+                <!-- Step 3: Frequency / Usage Slider -->
+                <div class="space-y-4">
+                    <div class="flex justify-between items-center">
+                        <label id="sliderLabel" for="usageSlider" class="text-sm font-bold text-slate-700">Aantal keren grijze bak aan de straat per jaar</label>
+                        <span id="sliderValue" class="px-3 py-1 bg-brand-dark text-white rounded-lg font-bold text-sm" aria-live="polite">18 keer</span>
+                    </div>
+                    <input type="range" 
+                           id="usageSlider" 
+                           min="1" 
+                           max="52" 
+                           value="18" 
+                           oninput="updateCalculator()" 
+                           class="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-green"
+                           aria-valuemin="1"
+                           aria-valuemax="52"
+                           aria-valuenow="18"
+                           aria-valuetext="18 ledigingen of kliks per jaar">
+                    <div class="flex justify-between text-xs text-slate-400 font-medium" aria-hidden="true">
+                        <span>Minimaal (1x)</span>
+                        <span>Gemiddeld (18x)</span>
+                        <span>Wekelijks (52x)</span>
+                    </div>
+                </div>
 
-      function calculate() {
-        const lifts = parseInt(elLiftsRange.value);
-        const isLarge = elIsLargeToggle.checked;
-        elLiftsDisplay.textContent = lifts;
-        const rate = isLarge ? LARGE_RATE : SMALL_RATE;
-        const total = BASE_FEE + (lifts * rate);
-        elTotalCost.textContent = formatEUR.format(total);
-        const reducedLifts = Math.max(0, lifts - 4);
-        const optimizedTotal = BASE_FEE + (reducedLifts * rate);
-        const savings = total - optimizedTotal;
-        elBaseComparisonCost.textContent = formatEUR.format(total);
-        elBaseLiftsDisplay.textContent = `${lifts} aanmeldingen/jaar`;
-        elOptimizedComparisonCost.textContent = formatEUR.format(optimizedTotal);
-        elOptimizedLiftsDisplay.textContent = `${reducedLifts} aanmeldingen/jaar`;
-        elSavingsDisplay.textContent = formatEUR.format(savings);
-      }
+                <!-- Live Results Block -->
+                <div class="bg-slate-900 text-white rounded-3xl p-6 relative overflow-hidden" role="region" aria-live="polite" aria-labelledby="live-cost-heading">
+                    <h3 id="live-cost-heading" class="sr-only">Actuele berekende kosten</h3>
+                    <div class="absolute right-0 top-0 opacity-10 transform translate-x-8 -translate-y-8" aria-hidden="true">
+                        <svg class="w-48 h-48" fill="currentColor" viewBox="0 0 20 20"><path d="M8.433 7.418c.554-.589 1.448-.589 2.002 0l4.469 4.753A1 1 0 0114.2 13.78H5.8a1 1 0 01-.707-1.609l4.469-4.753z"></path></svg>
+                    </div>
+                    <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+                        <div>
+                            <span class="text-xs uppercase tracking-wider text-slate-400 font-bold">Geschatte jaarlijkse kosten 2026</span>
+                            <div class="text-4xl sm:text-5xl font-black text-brand-green mt-1" id="totalCostDisplay">€ 351,60</div>
+                            <span class="text-xs text-slate-400 block mt-2">Inclusief basistarief (€ 264,84) + variabel deel</span>
+                        </div>
+                        <div class="border-t sm:border-t-0 sm:border-l border-slate-800 pt-4 sm:pt-0 sm:pl-6 space-y-2 text-xs text-slate-300">
+                            <div class="flex justify-between">
+                                <span>Vaste voet:</span>
+                                <span class="font-bold text-white">€ 264,84</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Variabele kliks:</span>
+                                <span class="font-bold text-white" id="variableCostDisplay">€ 86,76</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      elLiftsRange.addEventListener('input', calculate);
-      elIsLargeToggle.addEventListener('change', calculate);
+                <!-- Step 4: Slayer Optimization Simulator -->
+                <div class="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-6 border border-emerald-100" role="region" aria-labelledby="optimization-heading">
+                    <h3 id="optimization-heading" class="font-extrabold text-slate-900 flex items-center space-x-2">
+                        <svg class="w-5 h-5 text-brand-orange animate-bounce" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                        <span>Slayer Optimalisatie: Verminder ledigingen!</span>
+                    </h3>
+                    <p class="text-xs text-slate-600 mt-1">Door slim te scheiden (GFT, PMD, Papier) kun je jouw aantal aanbiedingen makkelijk met <strong>4 tot 8 keer per jaar</strong> verminderen.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-4">
+                        <div class="bg-white p-3 rounded-xl border border-emerald-100">
+                            <span class="text-[10px] text-slate-400 uppercase font-bold block">Gedrag nu</span>
+                            <span class="text-sm font-semibold text-slate-500" id="optCurrentText">18 ledigingen/jaar</span>
+                            <span class="text-base font-bold text-slate-700 block" id="optCurrentCost">€ 351,60</span>
+                        </div>
+                        <div class="bg-emerald-500 text-white p-3 rounded-xl shadow-sm" aria-live="polite">
+                            <span class="text-[10px] text-emerald-200 uppercase font-bold block">Optimale Scheiding (-4 keer)</span>
+                            <span class="text-sm font-semibold text-emerald-100" id="optTargetText">14 ledigingen/jaar</span>
+                            <span class="text-base font-bold block" id="optTargetCost">€ 332,32</span>
+                        </div>
+                    </div>
 
-      elCopyBtn.addEventListener('click', () => {
-        const addressText = elSolAddress.textContent.trim();
-        navigator.clipboard.writeText(addressText).then(() => {
-          const originalText = elCopyBtn.textContent;
-          elCopyBtn.textContent = 'Gekopieerd!';
-          elCopyBtn.classList.add('bg-green-600');
-          setTimeout(() => {
-            elCopyBtn.textContent = originalText;
-            elCopyBtn.classList.remove('bg-green-600');
-          }, 2000);
-        });
-      });
-      calculate();
-    });
-  </script>
+                    <div class="mt-4 flex items-center justify-between text-xs pt-3 border-t border-emerald-100" aria-live="polite">
+                        <span class="text-slate-500 font-medium">Jouw potentiële jaarlijkse besparing:</span>
+                        <span class="font-extrabold text-brand-darkgreen text-sm" id="optSavings">€ 19,28 per jaar</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Right: Quote / Quick Insights / Local Context -->
+            <aside class="lg:col-span-5 space-y-6" aria-label="Aanvullende informatie en context">
+                <!-- Quote Kitsorix -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 relative" aria-labelledby="author-kitsorix">
+                    <span class="text-6xl text-brand-orange/10 font-serif absolute -top-2 left-4" aria-hidden="true">“</span>
+                    <div class="relative z-10 space-y-4">
+                        <p class="text-slate-600 text-sm italic pt-4">
+                            "Bij Kitsorix geloof ik in keiharde data, niet in mooie sprookjes. Ik heb mijn AI-systemen de opdracht gegeven om de officiële cijfers van het Enschedeese afvalsysteem te fileren. De resultaten zijn ontnuchterend."
+                        </p>
+                        <div class="flex items-center space-x-3 pt-2 border-t border-slate-100">
+                            <div class="w-10 h-10 rounded-full bg-slate-200 flex items-center justify-center font-extrabold text-slate-700 text-sm" aria-hidden="true">
+                                KX
+                            </div>
+                            <div>
+                                <span id="author-kitsorix" class="block font-bold text-slate-800 text-xs">Kitsorix</span>
+                                <span class="text-[10px] text-slate-400 block">Onafhankelijk Ontwikkelaar & Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Twente Milieu Live Tracker Widget Mock -->
+                <div class="bg-gradient-to-tr from-brand-dark to-slate-800 text-white rounded-3xl p-6 shadow-md" role="region" aria-labelledby="tracker-heading">
+                    <h3 id="tracker-heading" class="font-bold text-sm uppercase tracking-wider text-slate-400">Enschede 2026 Target Tracker</h3>
+                    <div class="mt-4 space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-300 pb-1">
+                                <span>Huidige Gemiddelde Restafval</span>
+                                <span class="font-bold text-brand-orange">114 kg / inwoner</span>
+                            </div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-brand-orange h-full" style="width: 76%" role="progressbar" aria-valuenow="114" aria-valuemin="0" aria-valuemax="150" aria-label="Huidig restafvalniveau"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between text-xs text-slate-300 pb-1">
+                                <span>Doelstelling Afvalloos 2030</span>
+                                <span class="font-bold text-brand-green">50 kg / inwoner</span>
+                            </div>
+                            <div class="w-full bg-slate-700 h-2 rounded-full overflow-hidden">
+                                <div class="bg-brand-green h-full" style="width: 33%" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="150" aria-label="Afvalloos streefdoel 2030"></div>
+                            </div>
+                        </div>
+                        <p class="text-[10px] text-slate-400 italic">
+                            Bron: Grondstoffenvisie Enschede 2025-2030. We zitten momenteel ver boven het landelijke en lokale streefdoel.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Interactive Mini-Quiz -->
+                <section class="bg-white rounded-3xl p-6 shadow-sm border border-slate-100 space-y-4" aria-labelledby="quiz-heading">
+                    <h3 id="quiz-heading" class="font-bold text-slate-900 text-sm">Doe de Enschede Quiz: Welk afval waar?</h3>
+                    <div class="space-y-3" id="quizContainer">
+                        <p class="text-xs text-slate-600">In welke bak hoort de <strong>chipszak</strong> thuis in Enschede?</p>
+                        <div class="grid grid-cols-1 gap-2 text-xs" role="group" aria-label="Quiz opties">
+                            <button onclick="checkQuiz('a')" class="w-full py-2 px-3 border border-slate-200 rounded-xl hover:bg-slate-50 text-left transition-all focus:outline-none focus:ring-2 focus:ring-brand-green">
+                                A. Oranje Bak (PMD / Verpakkingen)
+                            </button>
+                            <button onclick="checkQuiz('b')" class="w-full py-2 px-3 border border-slate-200 rounded-xl hover:bg-slate-50 text-left transition-all focus:outline-none focus:ring-2 focus:ring-brand-green">
+                                B. Blauwe Bak (Papier)
+                            </button>
+                            <button onclick="checkQuiz('c')" class="w-full py-2 px-3 border border-slate-200 rounded-xl hover:bg-slate-50 text-left transition-all focus:outline-none focus:ring-2 focus:ring-brand-green">
+                                C. Grijze Bak (Restafval)
+                            </button>
+                        </div>
+                        <div id="quizResult" class="hidden text-xs font-bold p-3 rounded-xl" role="status" aria-live="assertive"></div>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Deep Dive Insights (Verborgen Waarheid) -->
+    <section id="insights" class="bg-slate-100 py-16 border-t border-b border-slate-200" aria-labelledby="insights-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <span class="text-brand-orange uppercase text-xs tracking-widest font-black block">De Verborgen Waarheid</span>
+                <h2 id="insights-heading" class="text-3xl sm:text-4xl font-extrabold text-slate-900">
+                    5 Dingen die je nog niet wist over het Enschedese afval
+                </h2>
+                <p class="text-slate-600 text-sm">
+                    Geanalyseerd en onthuld uit de officiële Afvalstoffenverordening en de Grondstoffenvisie 2025-2030 van de gemeente.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Insight 1 -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 space-y-4" aria-labelledby="insight-1-heading">
+                    <div class="w-12 h-12 rounded-2xl bg-amber-50 text-brand-orange flex items-center justify-center font-black text-xl shadow-inner" aria-hidden="true">
+                        1
+                    </div>
+                    <h3 id="insight-1-heading" class="font-extrabold text-lg text-slate-900">Het Mysterie van de 'Verdwenen Kilo's'</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Toen Enschede in 2017 Diftar invoerde, kelderde het geregistreerde restafval direct met <strong>40%</strong>. Een succesverhaal? Niet helemaal. Die daling werd niet gecompenseerd door een even grote stijging in gescheiden stromen. Er was plotseling <strong>10 miljoen kilo afval spoorloos</strong>. De psychologie is simpel: wanneer je eerlijkheid bestraft met een rekening, lok je ontwijkgedrag uit. In Enschede doken 4.000 'nulaanbieders' op, terwijl de kosten voor het opruimen van illegaal gedumpt afval stegen naar een recordhoogte van circa <strong>€ 540.000 in 2024</strong>.
+                    </p>
+                </article>
+
+                <!-- Insight 2 -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 space-y-4" aria-labelledby="insight-2-heading">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-brand-green flex items-center justify-center font-black text-xl shadow-inner" aria-hidden="true">
+                        2
+                    </div>
+                    <h3 id="insight-2-heading" class="font-extrabold text-lg text-slate-900">Het PMD-Debacle: De Oranje Bak Illusie</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        We denken dat we grondstoffen redden, maar de realiteit in de Twente Milieu sorteerinstallatie is ontnuchterend. <strong>Minder dan 1%</strong> van het Twentse verpakkingsafval is direct na inzameling zuiver genoeg voor recycling. De rest is te zwaar vervuild. In Enschede is ongeveer <strong>30 kilo van het ingezamelde PMD per inwoner</strong> eigenlijk gewoon restafval. Dit creëert een 'papieren werkelijkheid'. Tel je dit op bij de officiële restafvalscore, dan stijgt de werkelijke score naar <strong>143 kilo per inwoner</strong>—ver boven het landelijke doel van 100 kilo.
+                    </p>
+                </article>
+
+                <!-- Insight 3 -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 space-y-4" aria-labelledby="insight-3-heading">
+                    <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-black text-xl shadow-inner" aria-hidden="true">
+                        3
+                    </div>
+                    <h3 id="insight-3-heading" class="font-extrabold text-lg text-slate-900">Waarom spotjes van 2% verandering werken</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        De overheid bestookt ons al decennia met spotjes en folders. Het effect? Gemiddeld slechts <strong>2% directe gedragsverandering</strong>. Afval scheiden is 'altruïstisch gedrag': je levert een persoonlijke inspanning voor een abstract collectief doel, zonder direct eigen gewin. Wat wél werkt, is niet droge kennis, maar 'likeability' en sociale normen. De herkenbare Twente Milieu karakters en emotie werken in de wijk (zoals Tubantia-Toekomst of Twekkelerveld) vele malen beter dan een droge beleidsnota.
+                    </p>
+                </article>
+
+                <!-- Insight 4 -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 space-y-4" aria-labelledby="insight-4-heading">
+                    <div class="w-12 h-12 rounded-2xl bg-rose-50 text-rose-600 flex items-center justify-center font-black text-xl shadow-inner" aria-hidden="true">
+                        4
+                    </div>
+                    <h3 id="insight-4-heading" class="font-extrabold text-lg text-slate-900">De Keuken als Slagveld</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Separatie mislukt niet bij de milieustraat, maar aan het aanrecht. Een strategische tip: de grootste vijanden van een fris huis en een lege grijze bak zijn natte etensresten. Vlees- en visresten in de grijze bak zijn de hoofdoorzaak van stank en maden. Wikkel deze 'stinkers' direct in een oude krant en gooi ze in de groene GFT-bak. Het resultaat? Een restafvalbak die nagenoeg reukloos blijft met alleen nog 'droog' afval zoals stofzuigerzakken. Hierdoor hoef je hem veel minder vaak aan de straat te zetten!
+                    </p>
+                </article>
+
+                <!-- Insight 5 -->
+                <article class="bg-white rounded-3xl p-6 shadow-sm border border-slate-200/50 space-y-4" aria-labelledby="insight-5-heading">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center font-black text-xl shadow-inner" aria-hidden="true">
+                        5
+                    </div>
+                    <h3 id="insight-5-heading" class="font-extrabold text-lg text-slate-900">De Logistiek van de Luier</h3>
+                    <p class="text-xs text-slate-600 leading-relaxed">
+                        Voor jonge gezinnen botst duurzaamheid frontaal op de biologische realiteit. Systemen zoals de Knowaste-zakken negeren de dagelijkse praktijk van tijdgebrek en geuroverlast. De paradox is dat goedbedoelde recycle-initiatieven vaak falen omdat ze de fysieke barrière (het rijden naar de stort met een stinkende zak) te groot maken. <strong>Wist je dat Enschede gratis luierzakken beschikbaar stelt?</strong> Als je deze zware stinkers apart inlevert in de luiercontainer bij het afvalbrengpunt, bespaar je direct tientallen euro's per jaar op je Diftar-klikken!
+                    </p>
+                </article>
+
+                <!-- Insight 6 (Expert Context) -->
+                <article class="bg-gradient-to-br from-brand-green/10 to-brand-orange/10 rounded-3xl p-6 border border-brand-green/20 space-y-4 flex flex-col justify-between" aria-labelledby="insight-6-heading">
+                    <div class="space-y-2">
+                        <span class="text-brand-orange text-xs font-black uppercase tracking-wider">Expert Context</span>
+                        <h3 id="insight-6-heading" class="font-extrabold text-lg text-slate-900">De Onvermijdelijke Bodem</h3>
+                        <p class="text-xs text-slate-600 leading-relaxed">
+                            Zelfs als je geen enkele kilo restafval produceert, betaal je in Enschede nog steeds het basistarief van <strong>€ 264,84 per jaar</strong>. Dit is wettelijk vastgelegd om de infrastructuur (milieustraten, zwerfafval opruimen, gratis inzameling van papier, glas en GFT) kostendekkend te houden.
+                        </p>
+                    </div>
+                    <div class="pt-4">
+                        <a href="#calculator" class="text-xs font-bold text-brand-green hover:text-brand-darkgreen flex items-center space-x-1">
+                            <span>Pas je gedrag aan</span>
+                            <span aria-hidden="true">&rarr;</span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tips and Tricks Section -->
+    <section id="tips" class="bg-white py-16" aria-labelledby="tips-heading">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <span class="text-brand-green uppercase text-xs tracking-widest font-black block">Besparingsstrategieën</span>
+                <h2 id="tips-heading" class="text-3xl font-extrabold text-slate-900">Tactisch advies voor de Enschedese burger</h2>
+                <p class="text-slate-600 text-sm">Pas deze beproefde methoden toe om de stank in huis te voorkomen en de grijze container leger te houden.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <!-- Card 1: GFT Optimalisatie -->
+                <article class="bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col justify-between" aria-labelledby="tip-1-heading">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="p-3 bg-emerald-100 text-emerald-800 rounded-2xl" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m2.828-9.9a5 5 0 117.072 0l-.707.707M6.343 6.343l.707.707m9.9 9.9l.707-.707"></path></svg>
+                            </span>
+                            <h3 id="tip-1-heading" class="font-extrabold text-xl text-slate-900">De Kranten-Keukentactiek</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            De grootste boosdoeners voor maden en stank zijn vochtige vlees- en visresten. Wanneer je deze direct in een oude krant of biologisch afbreekbaar zakje wikkelt en in de <strong>groene GFT-bak</strong> gooit, blijft je grijze bak reukloos. Dit scheelt je zeker 3 tot 5 ledigingen per jaar omdat je de bak pas aan de straat hoeft te zetten als hij écht vol is met droog afval.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200/50 flex justify-between text-xs text-brand-darkgreen font-bold">
+                        <span>Potentiële besparing:</span>
+                        <span>± € 24,10 /jr</span>
+                    </div>
+                </article>
+
+                <!-- Card 2: Luierlogistiek -->
+                <article class="bg-slate-50 rounded-3xl p-8 border border-slate-100 flex flex-col justify-between" aria-labelledby="tip-2-heading">
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="p-3 bg-orange-100 text-brand-orange rounded-2xl" aria-hidden="true">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+                            </span>
+                            <h3 id="tip-2-heading" class="font-extrabold text-xl text-slate-900">Gebruik de gratis Luierzakken</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Luiers zijn loodzwaar en nemen enorm veel volume in beslag in de grijze Otto. Enschede stelt gratis luierzakken beschikbaar die je kunt inleveren bij speciale containers op de afvalbrengspunten (West, Noord en Oost). Door luiers consequent apart te houden, hoeft de grijze container gegarandeerd <strong>6 tot 10 keer minder vaak</strong> geleegd te worden!
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-slate-200/50 flex justify-between text-xs text-brand-orange font-bold">
+                        <span>Potentiële besparing:</span>
+                        <span>± € 48,20 /jr</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800" role="contentinfo">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center pb-8 border-b border-slate-800">
+                <div class="space-y-2">
+                    <span class="font-black text-lg tracking-wider text-brand-green">MinderAfval053</span>
+                    <p class="text-xs text-slate-400 max-w-sm">
+                        Onderzoeksmethode: AI-analyse van de officiële Afvalstoffenverordening 2026 Gemeente Enschede. 
+                    </p>
+                </div>
+                <div class="flex flex-col sm:items-end space-y-2">
+                    <label id="crypto-label" class="text-xs text-slate-400">Bespaard op je afval? Steun de onafhankelijke maker:</label>
+                    <div class="flex items-center space-x-2 bg-slate-800 px-3 py-1.5 rounded-xl border border-slate-700">
+                        <span id="crypto-address" class="text-xs font-mono text-slate-300" aria-describedby="crypto-label">Solana: B61AcpjmMVYr59SLL6...</span>
+                        <button onclick="copyToClipboard()" class="text-xs bg-brand-green hover:bg-brand-darkgreen px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green" aria-label="Kopieer Solana adres naar klembord">
+                            Kopieer
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col sm:flex-row justify-between items-center pt-8 text-[11px] text-slate-500 gap-4">
+                <span>&copy; 2026 — Een onafhankelijk maatschappelijk initiatief door Kitsorix. Alle rechten voorbehouden.</span>
+                <div class="flex space-x-4">
+                    <a href="https://www.twentemilieu.nl/" target="_blank" rel="noopener" class="hover:text-white">Twente Milieu</a>
+                    <a href="https://gbtwente.nl/" target="_blank" rel="noopener" class="hover:text-white">GBTwente</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // State variables
+        let housingType = 'laagbouw'; // 'laagbouw' or 'hoogbouw'
+        let containerSize = 'standard'; // 'standard' or 'large'
+        
+        // Tariffs 2026
+        const fixedRate = 264.84;
+        const rateOtto140 = 4.82;
+        const rateOtto240 = 8.27;
+        const rateUnderground = 1.38;
+
+        function setHousing(type) {
+            housingType = type;
+            
+            const optionLaag = document.getElementById('optionLaagbouw');
+            const optionHoog = document.getElementById('optionHoogbouw');
+            const containerSection = document.getElementById('containerSizeSection');
+            const sliderLabel = document.getElementById('sliderLabel');
+            const slider = document.getElementById('usageSlider');
+
+            if (type === 'laagbouw') {
+                optionLaag.setAttribute('aria-checked', 'true');
+                optionHoog.setAttribute('aria-checked', 'false');
+                optionLaag.className = 'cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/50 hover:bg-emerald-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green';
+                optionHoog.className = 'cursor-pointer p-4 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green';
+                containerSection.style.display = 'block';
+                sliderLabel.innerText = 'Aantal keren grijze bak aan de straat per jaar';
+                slider.setAttribute('aria-label', 'Aantal keren grijze bak aan de straat per jaar');
+            } else {
+                optionLaag.setAttribute('aria-checked', 'false');
+                optionHoog.setAttribute('aria-checked', 'true');
+                optionLaag.className = 'cursor-pointer p-4 rounded-2xl border-2 border-slate-200 bg-white hover:bg-slate-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green';
+                optionHoog.className = 'cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/50 hover:bg-emerald-50 transition-all focus:outline-none focus:ring-2 focus:ring-brand-green';
+                containerSection.style.display = 'none';
+                sliderLabel.innerText = 'Aantal keren restafval inworp per jaar';
+                slider.setAttribute('aria-label', 'Aantal keren restafval inworp per jaar');
+            }
+            updateCalculator();
+        }
+
+        function setContainerSize(size) {
+            containerSize = size;
+            const sizeStd = document.getElementById('sizeStandard');
+            const sizeLrg = document.getElementById('sizeLarge');
+
+            if (size === 'standard') {
+                sizeStd.setAttribute('aria-checked', 'true');
+                sizeLrg.setAttribute('aria-checked', 'false');
+                sizeStd.className = 'cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/20 hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green';
+                sizeLrg.className = 'cursor-pointer p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green';
+            } else {
+                sizeStd.setAttribute('aria-checked', 'false');
+                sizeLrg.setAttribute('aria-checked', 'true');
+                sizeStd.className = 'cursor-pointer p-4 rounded-2xl border border-slate-200 bg-white hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green';
+                sizeLrg.className = 'cursor-pointer p-4 rounded-2xl border-2 border-brand-green bg-emerald-50/20 hover:bg-slate-50 transition-all flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-brand-green';
+            }
+            updateCalculator();
+        }
+
+        function updateCalculator() {
+            const slider = document.getElementById('usageSlider');
+            const clicks = parseInt(slider.value);
+            
+            slider.setAttribute('aria-valuenow', clicks);
+            document.getElementById('sliderValue').innerText = `${clicks} ${clicks === 1 ? 'keer' : 'keer'}`;
+
+            // Calculate live rate per container use
+            let itemRate = 0;
+            if (housingType === 'laagbouw') {
+                itemRate = (containerSize === 'large') ? rateOtto240 : rateOtto140;
+            } else {
+                itemRate = rateUnderground;
+            }
+
+            // Calculations
+            const variableCost = clicks * itemRate;
+            const totalCost = fixedRate + variableCost;
+
+            // Live Updates
+            document.getElementById('variableCostDisplay').innerText = `€ ${variableCost.toFixed(2)}`;
+            document.getElementById('totalCostDisplay').innerText = `€ ${totalCost.toFixed(2)}`;
+
+            // Slayer Simulator Calculations
+            const optCurrentText = document.getElementById('optCurrentText');
+            const optCurrentCost = document.getElementById('optCurrentCost');
+            const optTargetText = document.getElementById('optTargetText');
+            const optTargetCost = document.getElementById('optTargetCost');
+            const optSavings = document.getElementById('optSavings');
+
+            const optimizedClicks = Math.max(1, clicks - 4);
+            const optimizedVariableCost = optimizedClicks * itemRate;
+            const optimizedTotalCost = fixedRate + optimizedVariableCost;
+            const savingAmount = totalCost - optimizedTotalCost;
+
+            optCurrentText.innerText = `${clicks} ${clicks === 1 ? 'keer' : 'keer'}/jaar`;
+            optCurrentCost.innerText = `€ ${totalCost.toFixed(2)}`;
+            
+            optTargetText.innerText = `${optimizedClicks} ${optimizedClicks === 1 ? 'keer' : 'keer'}/jaar`;
+            optTargetCost.innerText = `€ ${optimizedTotalCost.toFixed(2)}`;
+            
+            optSavings.innerText = `€ ${savingAmount.toFixed(2)} per jaar`;
+        }
+
+        // Quiz Logic
+        function checkQuiz(answer) {
+            const resultBox = document.getElementById('quizResult');
+            resultBox.classList.remove('hidden');
+            if (answer === 'c') {
+                resultBox.className = 'text-xs font-bold p-3 rounded-xl bg-emerald-100 text-emerald-800';
+                resultBox.innerHTML = 'Correct! Chipszakken bestaan uit samengesteld materiaal (met aluminium laagje) en horen in Enschede gewoon bij het restafval (grijze bak).';
+            } else {
+                resultBox.className = 'text-xs font-bold p-3 rounded-xl bg-red-100 text-red-800';
+                resultBox.innerHTML = 'Helaas! Dit is een veelgemaakte fout. Chipszakken horen in Enschede bij het restafval omdat het gemetalliseerde folie niet mechanisch recyclebaar is via het pmd-sorteerproces.';
+            }
+        }
+
+        // Clipboard Copy Helper
+        function copyToClipboard() {
+            const address = "B61AcpjmMVYr59SLL6x5NrVNXXjkVKknRvc49g8PDGgr";
+            const el = document.createElement('textarea');
+            el.value = address;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            // Give tiny visual feedback
+            const btn = event.target;
+            const origText = btn.innerText;
+            btn.innerText = "Gekopieerd!";
+            btn.className = "text-xs bg-emerald-600 px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
+            setTimeout(() => {
+                btn.innerText = origText;
+                btn.className = "text-xs bg-brand-green hover:bg-brand-darkgreen px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
+            }, 2000);
+        }
+
+        // Initialize Live Calculator Values
+        window.onload = function() {
+            setHousing('laagbouw');
+        }
+    </script>
 </body>
 </html>
