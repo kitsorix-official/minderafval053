@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, follow">
+    <meta name="description" content="Pagina niet gevonden. Help Enschede met afval scheiden en bespaar op je Diftar kosten met onze Afval-Slayer rekenmodule.">
+    <title>Pagina niet gevonden | MinderAfval053</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "404 - Pagina niet gevonden",
+      "description": "De gezochte pagina bestaat niet.",
+      "mainEntity": {
+        "@type": "WebPage",
+        "name": "Afval-Slayer Rekenmodule",
+        "url": "https://afval053.website/#calculator"
+      }
+    }
+    </script>
+</head>
+<body class="bg-green-50 text-gray-900 font-sans p-6 md:p-12">
+    <main class="max-w-2xl mx-auto text-center" aria-labelledby="main-heading">
+        <h1 id="main-heading" class="text-6xl font-extrabold text-red-600 mb-4">404</h1>
+        <p class="text-3xl font-bold mb-6">Oeps! Deze pagina is net zo verdwenen als restafval uit de grijze bak.</p>
+        <p class="mb-8 text-lg">Voordat je teruggaat naar de basis, laten we je afval-kennis testen!</p>
+
+        <section aria-labelledby="quiz-heading" class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 mb-8">
+            <h2 id="quiz-heading" class="text-xl font-bold mb-4">Quiz: Waar hoort een oude pizzadoos met vetvlekken?</h2>
+            <div role="group" aria-labelledby="quiz-heading" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <button onclick="checkAnswer(false)" aria-live="polite" class="p-4 border-2 border-gray-200 rounded-lg hover:border-red-500 hover:bg-red-50 transition">Grijze bak (Restafval)</button>
+                <button onclick="checkAnswer(true)" aria-live="polite" class="p-4 border-2 border-gray-200 rounded-lg hover:border-green-500 hover:bg-green-50 transition">Blauwe bak (Oud Papier)</button>
+            </div>
+            <div id="feedback" aria-live="assertive" class="hidden mt-6 p-4 rounded-lg font-semibold"></div>
+        </section>
+
+        <a href="/#calculator" class="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full hover:bg-green-700 transition focus:ring-4 focus:ring-green-300">Bereken direct je besparing</a>
+    </main>
+
+    <script>
+        function checkAnswer(isCorrect) {
+            const feedback = document.getElementById('feedback');
+            feedback.classList.remove('hidden');
+            if (isCorrect) {
+                feedback.className = "mt-6 p-4 rounded-lg font-semibold bg-green-100 text-green-800";
+                feedback.innerText = "Slim! Schone pizzadozen mogen bij het oud papier. Bij veel vetvlekken: grijze bak.";
+            } else {
+                feedback.className = "mt-6 p-4 rounded-lg font-semibold bg-red-100 text-red-800";
+                feedback.innerText = "Bijna! Een schone doos hoort bij het papier. Let's keep Enschede schoon!";
+            }
+        }
+    </script>
+</body>
+</html>
