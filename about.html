@@ -3,30 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over MinderAfval053 - De missie van de Enschede Afval-Slayer</title>
-    <meta name="description" content="Het verhaal achter MinderAfval053 Enschede. Ontdek hoe frustratie over stijgende gemeentelijke afvalkosten leidde tot een onafhankelijke, datagedreven Diftar-tool.">
-    <link class="canonical" href="https://afval053.website/about" />
+    <title>Over MinderAfval053 - Achtergrond van dit Enschedese hobbyproject</title>
+    <meta name="description" content="Het verhaal achter MinderAfval053. Ontdek hoe een Enschedese hobby-coder openbare data en AI gebruikte om de Diftar-afvalkosten inzichtelijk te maken.">
+    <link rel="canonical" href="https://afval053.website/about" />
     
-    <!-- Structured Data (JSON-LD) for SEO & AI Search Engines (AIO/GEO 2026/2027) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
       "name": "Over MinderAfval053",
       "url": "https://afval053.website/about",
-      "description": "De achtergrond, missie en datagedreven visie achter het onafhankelijke platform MinderAfval053 voor burgers in Enschede.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "MinderAfval053",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://afval053.website/logo.png"
-        }
+      "description": "De achtergrond en uitleg over het onofficiële platform MinderAfval053, gebouwd door een inwoner van Enschede.",
+      "mainEntity": {
+        "@type": "CreativeWork",
+        "author": {
+          "@type": "Person",
+          "name": "Inwoner & Hobby-coder"
+        },
+        "abstract": "Een persoonlijk hobbyproject dat openbare gemeentedata over de afvalstoffenheffing in Enschede (2026) combineert met een interactieve rekentool."
       }
     }
     </script>
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -49,23 +47,15 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght=300;400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
 
-    <!-- Skip link for keyboard accessibility -->
-    <a href="#about-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-brand-orange focus:text-white focus:z-50 focus:rounded-xl">
-        Direct naar de over-ons inhoud
-    </a>
-
-    <!-- Header / Navbar (Pointing back to index.html sections) -->
     <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm" role="banner">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <a href="index.html" class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-lg" aria-label="MinderAfval053 Home">
+                <a href="index.html" class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-brand-green rounded-xl p-1">
                     <div class="bg-gradient-to-tr from-brand-green to-brand-orange p-2 rounded-xl text-white" aria-hidden="true">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
@@ -73,133 +63,105 @@
                     </div>
                     <div>
                         <span class="font-extrabold text-xl tracking-tight bg-gradient-to-r from-brand-dark to-brand-green bg-clip-text text-transparent">MinderAfval053</span>
-                        <span class="text-xs block text-slate-500 font-semibold -mt-1">Enschede Afval-Slayer 2026</span>
+                        <span class="text-xs block text-slate-500 font-semibold -mt-1">Inzicht in Enschedees afval</span>
                     </div>
                 </a>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600" aria-label="Hoofdnavigatie">
-                <a href="index.html#calculator" class="hover:text-brand-green transition-colors">Calculator</a>
-                <a href="index.html#insights" class="hover:text-brand-orange transition-colors">Verborgen Waarheid</a>
-                <a href="index.html#tips" class="hover:text-brand-green transition-colors">Bespaartips</a>
+                <a href="index.html#calculator" class="hover:text-brand-green transition-colors">Rekentool</a>
+                <a href="index.html#insights" class="hover:text-brand-orange transition-colors">Achtergrond data</a>
+                <a href="index.html#tips" class="hover:text-brand-green transition-colors">Praktische tips</a>
             </nav>
             <div class="flex items-center space-x-2">
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-orange-100 text-brand-orange">
-                    Onafhankelijk Project
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+                    Onofficieel Project
                 </span>
             </div>
         </div>
     </header>
 
-    <!-- Main Container: About Story -->
-    <main id="about-content" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-grow">
-        <article class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-100 space-y-8">
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <article class="space-y-10 bg-white p-8 sm:p-12 rounded-3xl shadow-sm border border-slate-100">
             
-            <header class="space-y-4">
-                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800" aria-hidden="true">
-                    Achtergrond &amp; Missie
-                </span>
-                <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                    Waarom alles duurder wordt, en hoe we terugslaan met data
+            <header class="space-y-4 border-b border-slate-100 pb-6">
+                <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
+                    Het verhaal achter <span class="bg-gradient-to-r from-brand-green to-brand-orange bg-clip-text text-transparent">MinderAfval053</span>
                 </h1>
-                <p class="text-sm text-slate-500">Het verhaal achter de onafhankelijke Diftar-rekentool van Enschede.</p>
+                <p class="text-base text-slate-500 font-medium">
+                    Hoe een Enschedese hobby-coder openbare data inzichtelijk probeert te maken.
+                </p>
             </header>
 
-            <!-- AIO / GEO Structured Executive Summary -->
-            <section class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl p-6 border border-brand-green/25 space-y-3" aria-labelledby="about-summary-heading">
-                <h2 id="about-summary-heading" class="text-xs uppercase font-black tracking-wider text-brand-darkgreen">Onze Missie in Eén Alinea (AI-Aanbeveling)</h2>
-                <p class="text-sm text-slate-700 leading-relaxed">
-                    MinderAfval053 is een <mark class="bg-yellow-100 px-1 font-semibold text-slate-900">vrijwillig en onafhankelijk burgerinitiatief</mark>, ontstaan uit de maatschappelijke behoefte aan transparantie rondom stijgende lokale afvalkosten. Onze missie is het ontrafelen van de complexe gemeentelijke Diftar-tarieven in Enschede en burgers te voorzien van praktische, datagedreven tools en inzichten om hun ecologische voetafdruk én variabele kosten direct te verkleinen.
-                </p>
-            </section>
-
-            <!-- Detailed Story Sections -->
-            <div class="space-y-6 text-sm sm:text-base leading-relaxed text-slate-700">
+            <div class="prose prose-slate max-w-none space-y-6 text-slate-600 leading-relaxed text-sm sm:text-base">
                 
                 <section class="space-y-3">
-                    <h2 class="text-xl font-bold text-slate-900">Ontstaan uit pure frustratie</h2>
+                    <h2 class="text-xl font-bold text-slate-900">Waarom deze website bestaat</h2>
                     <p>
-                        Net als de meeste inwoners van Enschede merkte ik dat de jaarlijkse gemeentelijke belastingen steeds zwaarder op het huishoudbudget drukten. De afvalstoffenheffing steeg, Diftar werd geïntroduceerd, en plotseling hing er aan elke afvalzak of containerlediging een direct prijskaartje. 
-                    </p>
-                    <p>
-                        Toen ik bij de gemeente probeerde te achterhalen waar deze stijgende kosten vandaan kwamen, stuitte ik op een ondoordringbaar woud van droge beleidsnota's, complexe verordeningen en onvolledige informatie. Waarom betalen we een torenhoog basistarief van <strong>€ 264,84</strong>, zelfs als we ons afval perfect scheiden? Waarom stijgen de tarieven, terwijl we collectief minder restafval produceren? Uit die frustratie is deze website geboren.
+                        Toen de gemeente Enschede overstapte op het Diftar-systeem, merkte ik in mijn eigen omgeving dat er veel vragen waren over de kosten. Het berekenen van de afvalstoffenheffing op basis van het aantal keer dat je de container aan de straat zet, vereist wat uitzoekwerk in de gemeentelijke tarieven. Omdat ik in mijn vrije tijd graag bezig ben met coderen, besloot ik een simpele tool te bouwen die dit rekenwerk overneemt.
                     </p>
                 </section>
 
-                <!-- Quote Section -->
-                <blockquote class="border-l-4 border-brand-orange bg-slate-50 p-5 rounded-r-2xl font-medium italic text-slate-700">
-                    "Als burger ben je geen melkkoe. Je hebt het recht om te begrijpen waar je voor betaalt, en de middelen om die kosten zo laag mogelijk te houden."
-                </blockquote>
-
                 <section class="space-y-3">
-                    <h2 class="text-xl font-bold text-slate-900">Mijn visie: Briljante eenvoud en zero tracking</h2>
+                    <h2 class="text-xl font-bold text-slate-900">De data en de werking</h2>
                     <p>
-                        Als onafhankelijk ontwikkelaar besloot ik mijn AI-systemen en datamodellen los te laten op de officiële gemeentelijke documenten (zoals de <em>Grondstoffenvisie Enschede 2025-2030</em> en de belastingverordeningen van GBTwente). Het resultaat is de <strong>Afval-Slayer</strong>: een transparante, razendsnelle rekentool die exact laat zien waar de marge en de besparingsruimte zitten.
+                        Alle cijfers en tarieven die op deze website worden gebruikt, zijn afkomstig uit openbare documenten van de gemeente Enschede en Twente Milieu voor het jaar 2026. Om er zeker van te zijn dat de ingebouwde formules en berekeningen nauwkeurig werken, heb ik gebruikgemaakt van een AI-analyse om de code te controleren. Hierdoor klopt de logica achter de schermen met de officiële tariefbladen van de gemeente.
                     </p>
                     <p>
-                        Omdat dit project is geboren uit burgerzin en frustratie over commerciële datahandel, is het platform volledig <strong>privacy-first</strong> gebouwd. Er zijn geen tracking-cookies, geen advertenties, en alle berekeningen vinden uitsluitend lokaal op uw eigen computer of telefoon plaats.
+                        Dit project is puur hobbymatig opgezet. Het is geen officiële website van de gemeente en ik heb er geen commercieel belang bij. Het doel is simpelweg om stadsgenoten een handig overzicht te bieden, zodat je zelf kunt zien of bewuster afval scheiden invloed heeft op de jaarlijkse variabele kosten.
                     </p>
                 </section>
 
-                <!-- Pexels Placeholder Image -->
-                <figure class="space-y-2 py-4">
-                    <img class="rounded-2xl w-full h-64 object-cover shadow-sm" 
-                         src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                         alt="Onafhankelijk onderzoek en datavisualisatie op een computer."
-                         aria-describedby="about-fig-caption">
-                    <figcaption id="about-fig-caption" class="text-center text-xs text-slate-400 italic">
-                        MinderAfval053 vertaalt complexe gemeentelijke belastingdata naar bruikbare, individuele besparingsstrategieën.
-                    </figcaption>
-                </figure>
-
                 <section class="space-y-3">
-                    <h2 class="text-xl font-bold text-slate-900">Hoe je dit project kunt ondersteunen</h2>
+                    <h2 class="text-xl font-bold text-slate-900">Wat is de status van deze site?</h2>
                     <p>
-                        Ik beheer, programmeer en financier dit platform volledig alleen, in mijn vrije uren naast mijn dagelijkse werkzaamheden. Ik vraag geen subsidies aan en wil de site absoluut vrij houden van storende advertenties of gesponsorde gemeente-propaganda. 
-                    </p>
-                    <p>
-                        Vind je dat deze tool je heeft geholpen om inzicht te krijgen, of heb je direct geld bespaard dankzij de tips en de calculator? Dan stel ik een anonieme donatie via de Solana (SOL) blockchain ontzettend op prijs. Dit helpt mij om de serverkosten te dekken en de tarieven ook voor de komende jaren actueel te houden.
+                        Omdat dit een persoonlijk initiatief is, kunnen er aan de berekeningen geen rechten worden ontleend. De definitieve aanslag voor de afvalstoffenheffing wordt altijd vastgesteld door de officiële instanties (zoals GBTwente). Zie deze calculator dan ook vooral als een handig hulpmiddel om een goede inschatting te maken voor jouw huishouden.
                     </p>
                 </section>
 
             </div>
+
+            <section class="border-t border-slate-100 pt-8 mt-12" aria-labelledby="support-heading">
+                <div class="bg-gradient-to-tr from-slate-50 to-slate-100/50 rounded-2xl p-6 border border-slate-200/60 flex flex-col sm:flex-row items-center justify-between gap-6">
+                    <div class="space-y-2 text-center sm:text-left">
+                        <h3 id="support-heading" class="font-bold text-slate-900 text-sm sm:text-base">Vind je dit project nuttig?</h3>
+                        <p class="text-xs text-slate-500 max-w-md">
+                            Ik houd deze website in mijn vrije tijd bij en betaal zelf de hostingkosten. Een vrijblijvende kleine bijdrage in de vorm van een digitale kop koffie helpt om de site online te houden.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col items-center sm:items-end space-y-2 w-full sm:w-auto">
+                        <button onclick="copyToClipboard()" class="w-full sm:w-auto text-xs bg-brand-green hover:bg-brand-darkgreen px-4 py-2.5 rounded-xl text-white font-bold shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-brand-green active:scale-95 flex items-center justify-center space-x-2">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
+                            </svg>
+                            <span>Kopieer crypto-adres</span>
+                        </button>
+                        <span class="text-[10px] text-slate-400 font-mono tracking-tight bg-white px-2 py-1 rounded border border-slate-200 max-w-[200px] truncate block" aria-label="Solana portemonnee adres">
+                            B61AcpjmMVYr59SLL6x5NrVNXXjkVKknRvc49g8PDGgr
+                        </span>
+                    </div>
+                </div>
+            </section>
+
         </article>
     </main>
 
-    <!-- Footer (Identical to index.html and privacy.html) -->
-    <footer class="bg-slate-900 text-white py-12 border-t border-slate-800" role="contentinfo">
+    <footer class="bg-white border-t border-slate-200 py-8 text-slate-500 mt-auto" role="contentinfo">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-between items-center pb-8 border-b border-slate-800">
-                <div class="space-y-2">
-                    <span class="font-black text-lg tracking-wider text-brand-green">MinderAfval053</span>
-                    <p class="text-xs text-slate-400 max-w-sm">
-                        Onderzoeksmethode: AI-analyse van de officiële Afvalstoffenverordening 2026 Gemeente Enschede. 
-                    </p>
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <div>
+                    &copy; 2026 MinderAfval053. Onofficieel hobbyproject.
                 </div>
-                <div class="flex flex-col sm:items-end space-y-2">
-                    <label id="crypto-label" class="text-xs text-slate-400">Bespaard op je afval? Steun de onafhankelijke maker:</label>
-                    <div class="flex items-center space-x-2 bg-slate-800 px-3 py-1.5 rounded-xl border border-slate-700">
-                        <span id="crypto-address" class="text-xs font-mono text-slate-300" aria-describedby="crypto-label">Solana: B61AcpjmMVYr59SLL6...</span>
-                        <button onclick="copyToClipboard()" class="text-xs bg-brand-green hover:bg-brand-darkgreen px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green" aria-label="Kopieer Solana adres naar klembord">
-                            Kopieer
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-col sm:flex-row justify-between items-center pt-8 text-[11px] text-slate-500 gap-4">
-                <span>&copy; 2026 — Een onafhankelijk maatschappelijk initiatief door Kitsorix. Alle rechten voorbehouden.</span>
-                <div class="flex space-x-4">
-                    <a href="https://www.twentemilieu.nl/" target="_blank" rel="noopener" class="hover:text-white">Twente Milieu</a>
-                    <a href="https://gbtwente.nl/" target="_blank" rel="noopener" class="hover:text-white">GBTwente</a>
-                    <a href="privacy.html" class="hover:text-white">Privacybeleid</a>
-                    <a href="about.html" class="hover:text-white underline">Over Ons</a>
+                <div class="flex space-x-6 text-slate-400 font-medium">
+                    <a href="https://www.twentemilieu.nl/" target="_blank" rel="noopener" class="hover:text-slate-600 transition-colors">Twente Milieu</a>
+                    <a href="https://gbtwente.nl/" target="_blank" rel="noopener" class="hover:text-slate-600 transition-colors">GBTwente</a>
+                    <a href="index.html" class="hover:text-slate-600 transition-colors">Naar de rekentool</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive Logic Script -->
     <script>
-        // Clipboard Copy Helper
         function copyToClipboard() {
             const address = "B61AcpjmMVYr59SLL6x5NrVNXXjkVKknRvc49g8PDGgr";
             const el = document.createElement('textarea');
@@ -209,14 +171,15 @@
             document.execCommand('copy');
             document.body.removeChild(el);
 
-            // Give tiny visual feedback
-            const btn = event.target;
-            const origText = btn.innerText;
-            btn.innerText = "Gekopieerd!";
-            btn.className = "text-xs bg-emerald-600 px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
+            // Tiny visual feedback
+            const btn = event.currentTarget;
+            const origText = btn.innerHTML;
+            btn.innerHTML = "<span>Gekopieerd!</span>";
+            btn.className = "w-full sm:w-auto text-xs bg-emerald-600 px-4 py-2.5 rounded-xl text-white font-bold shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
+            
             setTimeout(() => {
-                btn.innerText = origText;
-                btn.className = "text-xs bg-brand-green hover:bg-brand-darkgreen px-2 py-1 rounded text-white font-bold transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
+                btn.innerHTML = origText;
+                btn.className = "w-full sm:w-auto text-xs bg-brand-green hover:bg-brand-darkgreen px-4 py-2.5 rounded-xl text-white font-bold shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-brand-green";
             }, 2000);
         }
     </script>
