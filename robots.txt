@@ -1,5 +1,3 @@
 User-agent: *
 Disallow: 
-Disallow: /cgi-bin/
-Disallow: /images/
 Sitemap: https://afval053.website/sitemap.xml
