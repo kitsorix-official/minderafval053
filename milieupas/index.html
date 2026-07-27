@@ -1,309 +1,369 @@
 <!DOCTYPE html>
 
-<html class="light" lang="nl"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Milieupas - MinderAfval053</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
+<html class="light" lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milieupas - MinderAfval053</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .fill-icon {
             font-variation-settings: 'FILL' 1;
         }
     </style>
-<link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="bg-background text-on-surface font-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar -->
-<header>
-<nav class="bg-surface-container-lowest dark:bg-inverse-surface w-full z-50 docked top-0 sticky border-b border-border-color dark:border-outline-variant flat no shadows">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<div class="flex items-center gap-md">
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim" href="../">MinderAfval053</a>
-</div>
-<div class="hidden md:flex items-center gap-lg">
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 scale-95 active:scale-90 transition-transform" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform" href="../bespaartips/">Bespaartips</a>
-</div>
 
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-</header>
-<!-- Mobile Nav Panel -->
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-<!-- Main Content -->
-<main class="w-full flex flex-col items-center pb-4xl">
-<!-- Breadcrumbs -->
-<div class="w-full max-w-container-max px-lg md:px-xl py-lg">
-<nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md">
-<ol class="inline-flex items-center space-x-1 md:space-x-3">
-<li class="inline-flex items-center">
-<a class="inline-flex items-center hover:text-primary transition-colors" href="../">
-<span class="material-symbols-outlined mr-1" style="font-size: 16px;">home</span>
+<body
+    class="bg-background text-on-surface font-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <header>
+        <nav
+            class="bg-surface-container-lowest dark:bg-inverse-surface w-full z-50 docked top-0 sticky border-b border-border-color dark:border-outline-variant flat no shadows">
+            <div
+                class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+                <div class="flex items-center gap-md">
+                    <a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim"
+                        href="/">MinderAfval053</a>
+                </div>
+                <div class="hidden md:flex items-center gap-lg">
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform"
+                        href="/">Rekentool</a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform"
+                        href="/tarieven-2026/">Tarieven 2026</a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform"
+                        href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+                    <a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 scale-95 active:scale-90 transition-transform"
+                        href="/veelgestelde-vragen/">FAQ</a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim scale-95 active:scale-90 transition-transform"
+                        href="/bespaartips/">Bespaartips</a>
+                </div>
+
+                <button id="mobile-menu-btn"
+                    class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- Mobile Nav Panel -->
+    <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+        <div class="flex flex-col px-lg py-md space-y-sm">
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/">Rekentool</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/tarieven-2026/">Tarieven 2026</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/veelgestelde-vragen/">FAQ</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/bespaartips/">Bespaartips</a>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main class="w-full flex flex-col items-center pb-4xl">
+        <!-- Breadcrumbs -->
+        <div class="w-full max-w-container-max px-lg md:px-xl py-lg">
+            <nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a class="inline-flex items-center hover:text-primary transition-colors" href="/">
+                            <span class="material-symbols-outlined mr-1" style="font-size: 16px;">home</span>
                             Home
                         </a>
-</li>
-<li>
-<div class="flex items-center">
-<span class="material-symbols-outlined mx-1" style="font-size: 16px;">chevron_right</span>
-<a class="hover:text-primary transition-colors" href="../about/">Praktische Info</a>
-</div>
-</li>
-<li aria-current="page">
-<div class="flex items-center">
-<span class="material-symbols-outlined mx-1" style="font-size: 16px;">chevron_right</span>
-<span class="text-primary font-bold">De Milieupas</span>
-</div>
-</li>
-</ol>
-</nav>
-</div>
-<!-- Hero Section -->
-<section class="w-full max-w-container-max px-lg md:px-xl py-2xl md:py-3xl flex flex-col md:flex-row gap-xl items-center bg-surface-container-low rounded-xl mb-3xl">
-<div class="w-full md:w-1/2 flex flex-col gap-md">
-<h1 class="font-headline-hero-mobile md:font-headline-hero text-headline-hero-mobile md:text-headline-hero text-on-surface">
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined mx-1" style="font-size: 16px;">chevron_right</span>
+                            <a class="hover:text-primary transition-colors" href="/about/">Praktische Info</a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <span class="material-symbols-outlined mx-1" style="font-size: 16px;">chevron_right</span>
+                            <span class="text-primary font-bold">De Milieupas</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Hero Section -->
+        <section
+            class="w-full max-w-container-max px-lg md:px-xl py-2xl md:py-3xl flex flex-col md:flex-row gap-xl items-center bg-surface-container-low rounded-xl mb-3xl">
+            <div class="w-full md:w-1/2 flex flex-col gap-md">
+                <h1
+                    class="font-headline-hero-mobile md:font-headline-hero text-headline-hero-mobile md:text-headline-hero text-on-surface">
                     De Milieupas
                 </h1>
-<p class="font-body-base text-body-base text-text-secondary max-w-lg">
-                    Uw sleutel tot efficiënt afvalbeheer in Enschede. Met de milieupas heeft u toegang tot ondergrondse containers en het milieupark, en beheert u eenvoudig uw gratis stortquotum.
+                <p class="font-body-base text-body-base text-text-secondary max-w-lg">
+                    Uw sleutel tot efficiënt afvalbeheer in Enschede. Met de milieupas heeft u toegang tot ondergrondse
+                    containers en het milieupark, en beheert u eenvoudig uw gratis stortquotum.
                 </p>
-<div class="flex gap-4 mt-sm">
-<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-brand-green-dark transition-colors shadow-sm hover:shadow-md" href="#aanvragen">
+                <div class="flex gap-4 mt-sm">
+                    <a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-brand-green-dark transition-colors shadow-sm hover:shadow-md"
+                        href="#aanvragen">
                         Nieuwe pas aanvragen
                     </a>
-</div>
-</div>
-<div class="w-full md:w-1/2 relative">
-<div class="bg-cover bg-center w-full aspect-video rounded-xl shadow-md border border-border-color" data-alt="A modern, high-contrast flat lay photograph of a minimalist green and white smart card (milieupas) resting on a clean, light grey surface. The lighting is bright and even, casting soft shadows to emphasize the card's subtle texture. In the background, slightly out of focus, are subtle civic elements like a stylized leaf motif and abstract data charts, reinforcing the professional, transparent waste management dashboard aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3h86KSN8uM3FkoOrXcBddmDGx73Y1L0JCD777xKR9rr8KXq65-_QBm3AwixsiDzryJoC8jngexS4plJvyFsULIQQCMj8ehNuHrkZz-TPK3HZH15lEq5h6jd71sWnulIFvQc1Hh6Rlja-3d_0HgxfO9Kc_HyF33SJVl0IK1t3G-c6nsvJhtKguID9l7qP91J_J3VrPXetiPE4De79CbJis63JJwEi-LkRCjAa0Mbcgy3QKze_8A5w3nz_fT87c2B0TThS6MxRnc50')"></div>
-</div>
-</section>
-<!-- Stortquotum Dashboard -->
-<section class="w-full max-w-container-max px-lg md:px-xl flex flex-col gap-xl mb-4xl">
-<div class="flex flex-col gap-sm">
-<h2 class="font-headline-md text-headline-md text-on-surface">Uw Gratis Stortquotum</h2>
-<p class="font-body-base text-body-base text-text-secondary max-w-3xl">
-                    Elk huishouden in Enschede ontvangt jaarlijks een gratis stortquotum voor grof afval. Dit tegoed is gekoppeld aan uw milieupas.
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 relative">
+                <div class="bg-cover bg-center w-full aspect-video rounded-xl shadow-md border border-border-color"
+                    data-alt="A modern, high-contrast flat lay photograph of a minimalist green and white smart card (milieupas) resting on a clean, light grey surface. The lighting is bright and even, casting soft shadows to emphasize the card's subtle texture. In the background, slightly out of focus, are subtle civic elements like a stylized leaf motif and abstract data charts, reinforcing the professional, transparent waste management dashboard aesthetic."
+                    style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3h86KSN8uM3FkoOrXcBddmDGx73Y1L0JCD777xKR9rr8KXq65-_QBm3AwixsiDzryJoC8jngexS4plJvyFsULIQQCMj8ehNuHrkZz-TPK3HZH15lEq5h6jd71sWnulIFvQc1Hh6Rlja-3d_0HgxfO9Kc_HyF33SJVl0IK1t3G-c6nsvJhtKguID9l7qP91J_J3VrPXetiPE4De79CbJis63JJwEi-LkRCjAa0Mbcgy3QKze_8A5w3nz_fT87c2B0TThS6MxRnc50')">
+                </div>
+            </div>
+        </section>
+        <!-- Stortquotum Dashboard -->
+        <section class="w-full max-w-container-max px-lg md:px-xl flex flex-col gap-xl mb-4xl">
+            <div class="flex flex-col gap-sm">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Uw Gratis Stortquotum</h2>
+                <p class="font-body-base text-body-base text-text-secondary max-w-3xl">
+                    Elk huishouden in Enschede ontvangt jaarlijks een gratis stortquotum voor grof afval. Dit tegoed is
+                    gekoppeld aan uw milieupas.
                 </p>
-</div>
-<!-- Bento Grid Layout for Dashboard Info -->
-<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
-<!-- Capacity Card -->
-<div class="md:col-span-2 bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border border-border-color flex flex-col gap-lg relative overflow-hidden">
-<div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
-<div class="flex justify-between items-start">
-<div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Jaarlijks Tegoed (2025)</h3>
-<p class="font-body-base text-body-base text-text-secondary">Voor grof huishoudelijk afval &amp; tuinafval</p>
-</div>
-<span class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge text-badge uppercase tracking-wider">
+            </div>
+            <!-- Bento Grid Layout for Dashboard Info -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+                <!-- Capacity Card -->
+                <div
+                    class="md:col-span-2 bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border border-border-color flex flex-col gap-lg relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-primary"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface">Jaarlijks Tegoed (2025)</h3>
+                            <p class="font-body-base text-body-base text-text-secondary">Voor grof huishoudelijk afval
+                                &amp; tuinafval</p>
+                        </div>
+                        <span
+                            class="inline-flex items-center px-3 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-badge text-badge uppercase tracking-wider">
                             Actief
                         </span>
-</div>
-<!-- Progress Visualization -->
-<div class="flex flex-col gap-2 mt-md">
-<div class="flex justify-between font-label-md text-label-md">
-<span class="text-text-secondary">Verbruikt: <span class="font-bold text-on-surface">50 kg</span></span>
-<span class="text-text-secondary">Totaal: <span class="font-bold text-on-surface">300 kg</span></span>
-</div>
-<div class="w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
-<div class="h-full bg-primary rounded-full" style="width: 16.66%;"></div>
-</div>
-<p class="font-label-md text-label-md text-brand-green-dark mt-1 flex items-center">
-<span class="material-symbols-outlined mr-1" style="font-size: 16px;">check_circle</span>
+                    </div>
+                    <!-- Progress Visualization -->
+                    <div class="flex flex-col gap-2 mt-md">
+                        <div class="flex justify-between font-label-md text-label-md">
+                            <span class="text-text-secondary">Verbruikt: <span class="font-bold text-on-surface">50
+                                    kg</span></span>
+                            <span class="text-text-secondary">Totaal: <span class="font-bold text-on-surface">300
+                                    kg</span></span>
+                        </div>
+                        <div class="w-full h-4 bg-surface-container-high rounded-full overflow-hidden">
+                            <div class="h-full bg-primary rounded-full" style="width: 16.66%;"></div>
+                        </div>
+                        <p class="font-label-md text-label-md text-brand-green-dark mt-1 flex items-center">
+                            <span class="material-symbols-outlined mr-1" style="font-size: 16px;">check_circle</span>
                             Nog 250 kg beschikbaar dit jaar
                         </p>
-</div>
-<!-- Table -->
-<div class="mt-4 border-t border-border-color pt-4">
-<table class="w-full text-left font-body-base text-body-base">
-<thead>
-<tr class="text-text-secondary border-b border-border-color">
-<th class="pb-2 font-medium">Afvalstroom</th>
-<th class="pb-2 font-medium text-right">Quotum Aandeel</th>
-<th class="pb-2 font-medium text-right">Tarief na Quotum</th>
-</tr>
-</thead>
-<tbody>
-<tr class="border-b border-surface-variant bg-surface-container-lowest">
-<td class="py-3 font-medium text-on-surface">Grof Vuil</td>
-<td class="py-3 text-right">Valt binnen 300kg</td>
-<td class="py-3 text-right text-text-secondary">€ 0,15 / kg</td>
-</tr>
-<tr class="border-b border-surface-variant bg-surface-container-low">
-<td class="py-3 font-medium text-on-surface">Grof Tuinafval</td>
-<td class="py-3 text-right">Valt binnen 300kg</td>
-<td class="py-3 text-right text-text-secondary">€ 0,05 / kg</td>
-</tr>
-<tr class="bg-surface-container-lowest">
-<td class="py-3 font-medium text-on-surface flex items-center">
+                    </div>
+                    <!-- Table -->
+                    <div class="mt-4 border-t border-border-color pt-4">
+                        <table class="w-full text-left font-body-base text-body-base">
+                            <thead>
+                                <tr class="text-text-secondary border-b border-border-color">
+                                    <th class="pb-2 font-medium">Afvalstroom</th>
+                                    <th class="pb-2 font-medium text-right">Quotum Aandeel</th>
+                                    <th class="pb-2 font-medium text-right">Tarief na Quotum</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-surface-variant bg-surface-container-lowest">
+                                    <td class="py-3 font-medium text-on-surface">Grof Vuil</td>
+                                    <td class="py-3 text-right">Valt binnen 300kg</td>
+                                    <td class="py-3 text-right text-text-secondary">€ 0,15 / kg</td>
+                                </tr>
+                                <tr class="border-b border-surface-variant bg-surface-container-low">
+                                    <td class="py-3 font-medium text-on-surface">Grof Tuinafval</td>
+                                    <td class="py-3 text-right">Valt binnen 300kg</td>
+                                    <td class="py-3 text-right text-text-secondary">€ 0,05 / kg</td>
+                                </tr>
+                                <tr class="bg-surface-container-lowest">
+                                    <td class="py-3 font-medium text-on-surface flex items-center">
                                         Asbest
-                                        <span class="material-symbols-outlined ml-1 text-secondary-container" style="font-size: 16px;" title="Speciale regels van toepassing">info</span>
-</td>
-<td class="py-3 text-right">Max 35 m2 (Apart)</td>
-<td class="py-3 text-right text-text-secondary">-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<!-- Info Cards Column -->
-<div class="flex flex-col gap-md">
-<div class="bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-secondary-container flex flex-col gap-sm">
-<div class="flex items-center gap-2 text-secondary-container">
-<span class="material-symbols-outlined fill-icon">warning</span>
-<h4 class="font-label-md text-label-md font-bold uppercase tracking-wider">Belangrijk</h4>
-</div>
-<p class="font-body-base text-body-base text-on-surface">
-                            Vergeet uw pas niet! Zonder milieupas heeft u geen toegang tot het milieupark en kunt u uw gratis quotum niet benutten.
+                                        <span class="material-symbols-outlined ml-1 text-secondary-container"
+                                            style="font-size: 16px;" title="Speciale regels van toepassing">info</span>
+                                    </td>
+                                    <td class="py-3 text-right">Max 35 m2 (Apart)</td>
+                                    <td class="py-3 text-right text-text-secondary">-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Info Cards Column -->
+                <div class="flex flex-col gap-md">
+                    <div
+                        class="bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border-l-4 border-l-secondary-container flex flex-col gap-sm">
+                        <div class="flex items-center gap-2 text-secondary-container">
+                            <span class="material-symbols-outlined fill-icon">warning</span>
+                            <h4 class="font-label-md text-label-md font-bold uppercase tracking-wider">Belangrijk</h4>
+                        </div>
+                        <p class="font-body-base text-body-base text-on-surface">
+                            Vergeet uw pas niet! Zonder milieupas heeft u geen toegang tot het milieupark en kunt u uw
+                            gratis quotum niet benutten.
                         </p>
-</div>
-<div class="bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border border-border-color flex flex-col justify-between flex-grow">
-<div>
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-md">
-<span class="material-symbols-outlined">receipt_long</span>
-</div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Quotum op?</h4>
-<p class="font-body-base text-body-base text-text-secondary">
-                                Als uw 300kg verbruikt is, betaalt u het reguliere Diftar tarief per kilo voor grof afval via pin op locatie.
+                    </div>
+                    <div
+                        class="bg-bg-primary p-lg rounded-xl shadow-sm hover:shadow-md transition-shadow border border-border-color flex flex-col justify-between flex-grow">
+                        <div>
+                            <div
+                                class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-md">
+                                <span class="material-symbols-outlined">receipt_long</span>
+                            </div>
+                            <h4 class="font-headline-sm text-headline-sm text-on-surface mb-2">Quotum op?</h4>
+                            <p class="font-body-base text-body-base text-text-secondary">
+                                Als uw 300kg verbruikt is, betaalt u het reguliere Diftar tarief per kilo voor grof
+                                afval via pin op locatie.
                             </p>
-</div>
-<a class="mt-4 font-label-md text-label-md text-primary font-bold hover:underline flex items-center" href="../tarieven-2026/">
+                        </div>
+                        <a class="mt-4 font-label-md text-label-md text-primary font-bold hover:underline flex items-center"
+                            href="/tarieven-2026/">
                             Bekijk Diftar tarieven
                             <span class="material-symbols-outlined ml-1" style="font-size: 18px;">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Application Steps & Guide -->
-<section class="w-full max-w-container-max px-lg md:px-xl py-3xl bg-surface-container-low rounded-xl mb-4xl" id="aanvragen">
-<div class="flex flex-col items-center text-center mb-xl">
-<h2 class="font-headline-md text-headline-md text-on-surface">Hoe werkt de Milieupas?</h2>
-<p class="font-body-base text-body-base text-text-secondary max-w-2xl mt-sm">
-                    Van aanvraag tot gebruik, de milieupas is gekoppeld aan uw woonadres. Volg deze stappen voor een soepele ervaring.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Application Steps & Guide -->
+        <section class="w-full max-w-container-max px-lg md:px-xl py-3xl bg-surface-container-low rounded-xl mb-4xl"
+            id="aanvragen">
+            <div class="flex flex-col items-center text-center mb-xl">
+                <h2 class="font-headline-md text-headline-md text-on-surface">Hoe werkt de Milieupas?</h2>
+                <p class="font-body-base text-body-base text-text-secondary max-w-2xl mt-sm">
+                    Van aanvraag tot gebruik, de milieupas is gekoppeld aan uw woonadres. Volg deze stappen voor een
+                    soepele ervaring.
                 </p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-lg">
-<!-- Step 1 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-bg-primary border-2 border-primary text-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:scale-110 transition-transform mb-md relative z-10">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-lg">
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-bg-primary border-2 border-primary text-primary flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:scale-110 transition-transform mb-md relative z-10">
                         1
                     </div>
-<h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Bezit Controleren</h3>
-<p class="font-body-base text-body-base text-text-secondary text-sm">
+                    <h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Bezit Controleren</h3>
+                    <p class="font-body-base text-body-base text-text-secondary text-sm">
                         De pas hoort bij de woning. Bij verhuizing dient de vorige bewoner deze achter te laten.
                     </p>
-</div>
-<!-- Step 2 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
+                </div>
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
                         2
                     </div>
-<h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Kwijt of Defect?</h3>
-<p class="font-body-base text-body-base text-text-secondary text-sm">
+                    <h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Kwijt of Defect?</h3>
+                    <p class="font-body-base text-body-base text-text-secondary text-sm">
                         Een nieuwe pas kost € 15,00. Vraag deze online aan via het gemeenteloket.
                     </p>
-</div>
-<!-- Step 3 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
+                </div>
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
                         3
                     </div>
-<h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Neem Mee</h3>
-<p class="font-body-base text-body-base text-text-secondary text-sm">
+                    <h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Neem Mee</h3>
+                    <p class="font-body-base text-body-base text-text-secondary text-sm">
                         Neem altijd uw fysieke pas én een geldig legitimatiebewijs mee naar het milieupark.
                     </p>
-</div>
-<!-- Step 4 -->
-<div class="flex flex-col items-center text-center group">
-<div class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
+                </div>
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center text-center group">
+                    <div
+                        class="w-16 h-16 rounded-full bg-bg-primary border-2 border-border-color text-text-muted flex items-center justify-center font-headline-sm text-headline-sm shadow-sm group-hover:border-primary group-hover:text-primary transition-colors mb-md relative z-10">
                         4
                     </div>
-<h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Scan en Ga</h3>
-<p class="font-body-base text-body-base text-text-secondary text-sm">
+                    <h3 class="font-label-md text-label-md font-bold text-on-surface mb-2">Scan en Ga</h3>
+                    <p class="font-body-base text-body-base text-text-secondary text-sm">
                         Scan de pas bij de slagboom. Uw gratis saldo wordt automatisch verwerkt bij het wegen.
                     </p>
-</div>
-</div>
-<div class="mt-xl flex justify-center">
-<a class="inline-flex items-center justify-center bg-transparent border-2 border-primary text-primary font-label-md text-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-container-high transition-colors" href="../about/">
+                </div>
+            </div>
+            <div class="mt-xl flex justify-center">
+                <a class="inline-flex items-center justify-center bg-transparent border-2 border-primary text-primary font-label-md text-label-md font-bold px-6 py-3 rounded-lg hover:bg-surface-container-high transition-colors"
+                    href="/about/">
                     Vraag vervangende pas aan bij Gemeente
                     <span class="material-symbols-outlined ml-2" style="font-size: 18px;">open_in_new</span>
-</a>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="w-full max-w-container-max px-lg md:px-xl mb-4xl">
-<div class="bg-primary text-on-primary rounded-xl p-xl md:p-3xl flex flex-col md:flex-row items-center justify-between gap-xl relative overflow-hidden">
-<div class="absolute -right-20 -top-20 opacity-10 pointer-events-none">
-<span class="material-symbols-outlined fill-icon" style="font-size: 300px;">recycling</span>
-</div>
-<div class="flex flex-col gap-sm relative z-10 max-w-2xl">
-<h2 class="font-headline-md text-headline-md font-bold">Wat mag er in het grof afval?</h2>
-<p class="font-body-base text-body-base text-surface-container-high">
-                        Niet zeker of uw bankstel, tuinhout of oude koelkast onder het gratis stortquotum valt? Bekijk onze uitgebreide gids voor grof afval voordat u naar het milieupark gaat.
+                </a>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="w-full max-w-container-max px-lg md:px-xl mb-4xl">
+            <div
+                class="bg-primary text-on-primary rounded-xl p-xl md:p-3xl flex flex-col md:flex-row items-center justify-between gap-xl relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 opacity-10 pointer-events-none">
+                    <span class="material-symbols-outlined fill-icon" style="font-size: 300px;">recycling</span>
+                </div>
+                <div class="flex flex-col gap-sm relative z-10 max-w-2xl">
+                    <h2 class="font-headline-md text-headline-md font-bold">Wat mag er in het grof afval?</h2>
+                    <p class="font-body-base text-body-base text-surface-container-high">
+                        Niet zeker of uw bankstel, tuinhout of oude koelkast onder het gratis stortquotum valt? Bekijk
+                        onze uitgebreide gids voor grof afval voordat u naar het milieupark gaat.
                     </p>
-</div>
-<div class="relative z-10 whitespace-nowrap">
-<a class="inline-flex items-center justify-center bg-bg-primary text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-container transition-colors shadow-sm font-bold" href="../grof-afval/">
+                </div>
+                <div class="relative z-10 whitespace-nowrap">
+                    <a class="inline-flex items-center justify-center bg-bg-primary text-primary font-label-md text-label-md px-8 py-4 rounded-lg hover:bg-surface-container transition-colors shadow-sm font-bold"
+                        href="/grof-afval/">
                         Gids Grof Afval Bekijken
                         <span class="material-symbols-outlined ml-2" style="font-size: 20px;">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div class="flex flex-col gap-sm">
-<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim" href="../">MinderAfval053</a>
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
-Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in Enschede.
-</p>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../about/">Over ons</a>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../privacy/">Privacybeleid</a>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-md text-center">
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
-&copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
-</p>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.getElementById('mobile-menu-btn');
-  var nav = document.getElementById('mobile-nav');
-  if (btn && nav) {
-    btn.addEventListener('click', function() {
-      nav.classList.toggle('hidden');
-    });
-  }
-});
-</script>
-</body></html>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+            <div class="flex flex-col gap-sm">
+                <a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim"
+                    href="/">MinderAfval053</a>
+                <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
+                    Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in
+                    Enschede.
+                </p>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/about/">Over ons</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/privacy/">Privacybeleid</a>
+            </div>
+        </div>
+        <div class="border-t border-border-color dark:border-outline py-md text-center">
+            <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
+                &copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var nav = document.getElementById('mobile-nav');
+            if (btn && nav) {
+                btn.addEventListener('click', function () {
+                    nav.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

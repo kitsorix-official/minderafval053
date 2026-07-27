@@ -1,230 +1,293 @@
 <!DOCTYPE html>
 
-<html lang="nl"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kwijtschelding &amp; Betalingsregeling | MinderAfval053</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../dist/output.css">
-</head>
-<body class="bg-background text-text-primary antialiased flex flex-col min-h-screen">
-<!-- TopNavBar -->
-<header>
-<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant docked top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="../">MinderAfval053</a>
-<div class="hidden md:flex gap-lg items-center">
-<a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded" href="../">Rekentool</a>
-<a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-label-md text-label-md" href="../veelgestelde-vragen/">FAQ</a>
-<a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded" href="../bespaartips/">Bespaartips</a>
-</div>
+<html lang="nl">
 
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</nav>
-</header>
-<!-- Mobile Nav Panel -->
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-<!-- Main Content Canvas -->
-<main class="flex-grow flex flex-col items-center w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl gap-3xl">
-<!-- Breadcrumbs -->
-<div class="w-full">
-<nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md">
-<ol class="inline-flex items-center space-x-1 md:space-x-3">
-<li class="inline-flex items-center">
-<a class="inline-flex items-center hover:text-primary" href="../">
-<span class="material-symbols-outlined mr-2" style="font-size: 18px;">home</span>
-                            Home
-                        </a>
-</li>
-<li>
-<div class="flex items-center">
-<span class="material-symbols-outlined text-border-color">chevron_right</span>
-<a class="ml-1 hover:text-primary md:ml-2" href="../veelgestelde-vragen/">FAQ</a>
-</div>
-</li>
-<li aria-current="page">
-<div class="flex items-center">
-<span class="material-symbols-outlined text-border-color">chevron_right</span>
-<span class="ml-1 text-text-primary font-bold md:ml-2">Kwijtschelding</span>
-</div>
-</li>
-</ol>
-</nav>
-</div>
-<!-- Page Header -->
-<div class="w-full text-center max-w-3xl">
-<h1 class="font-headline-lg md:font-headline-hero text-headline-lg md:text-headline-hero text-on-surface mb-md">Moeite met betalen?</h1>
-<p class="font-body-base text-body-base text-text-secondary">Ontdek of u in aanmerking komt voor kwijtschelding van de afvalstoffenheffing of hoe u een betalingsregeling kunt treffen via GBTwente.</p>
-</div>
-<!-- Summary Bento Grid -->
-<div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
-<div class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
-<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-primary">info</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Wat is het?</h2>
-<p class="font-body-base text-body-base text-text-secondary text-sm">Volledige of gedeeltelijke vrijstelling van het betalen van de gemeentelijke afvalstoffenheffing voor huishoudens met een laag inkomen en weinig vermogen.</p>
-</div>
-<div class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
-<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-secondary-container">group</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Voor Wie?</h2>
-<p class="font-body-base text-body-base text-text-secondary text-sm">Inwoners van Enschede met een inkomen op of rond bijstandsniveau en minimaal eigen vermogen (spaargeld, auto's etc.).</p>
-</div>
-<div class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
-<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-error">payments</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Hoeveel?</h2>
-<p class="font-body-base text-body-base text-text-secondary text-sm">Meestal betreft het de volledige heffing (Vast + Variabel), maar een gedeeltelijke kwijtschelding is in specifieke gevallen mogelijk afhankelijk van uw draagkracht.</p>
-</div>
-<div class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
-<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center mb-4">
-<span class="material-symbols-outlined text-tertiary">calendar_clock</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Deadline</h2>
-<p class="font-body-base text-body-base text-text-secondary text-sm">Vraag kwijtschelding aan binnen 3 maanden na de dagtekening van uw aanslagbiljet om zeker te zijn van een tijdige afhandeling.</p>
-</div>
-</div>
-<!-- Main Content Area -->
-<div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-xl">
-<!-- Left Column: Checklist & Steps -->
-<div class="lg:col-span-2 flex flex-col gap-xl">
-<!-- Eligibility Checklist -->
-<section class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-lg lg:p-xl">
-<div class="flex items-center gap-sm mb-lg">
-<span class="material-symbols-outlined text-primary text-3xl">fact_check</span>
-<h2 class="font-headline-md text-headline-md text-on-surface">Kom ik in aanmerking?</h2>
-</div>
-<p class="font-body-base text-body-base text-text-secondary mb-md">Dit is een indicatieve checklist. De definitieve beoordeling wordt gedaan door GBTwente op basis van uw complete financiële situatie.</p>
-<ul class="space-y-4">
-<li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
-<span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
-<div>
-<span class="font-label-md text-label-md text-text-primary block mb-1">Inkomen op bijstandsniveau</span>
-<span class="font-body-base text-body-base text-text-secondary text-sm">Uw netto maandinkomen is niet hoger dan de geldende bijstandsnorm voor uw situatie (alleenstaand, samenwonend, etc.).</span>
-</div>
-</li>
-<li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
-<span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
-<div>
-<span class="font-label-md text-label-md text-text-primary block mb-1">Beperkt vermogen</span>
-<span class="font-body-base text-body-base text-text-secondary text-sm">U heeft geen of zeer beperkt spaargeld. Voor alleenstaanden is de grens lager dan voor samenwonenden of gezinnen.</span>
-</div>
-</li>
-<li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
-<span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
-<div>
-<span class="font-label-md text-label-md text-text-primary block mb-1">Geen overwaarde woning / auto</span>
-<span class="font-body-base text-body-base text-text-secondary text-sm">U bezit geen eigen woning met overwaarde en bezit geen voertuig met een waarde hoger dan het drempelbedrag (tenzij medisch noodzakelijk).</span>
-</div>
-</li>
-</ul>
-</section>
-<!-- Application Guide -->
-<section class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-lg lg:p-xl">
-<h2 class="font-headline-md text-headline-md text-on-surface mb-lg">Aanvragen bij GBTwente</h2>
-<div class="relative border-l-2 border-border-color ml-4 space-y-8">
-<div class="relative pl-8">
-<div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">1</div>
-<h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Verzamel uw gegevens</h4>
-<p class="font-body-base text-body-base text-text-secondary">Zorg dat u uw DigiD bij de hand heeft en recente bewijsstukken van inkomen, saldo's van alle bankrekeningen, en eventuele schulden.</p>
-</div>
-<div class="relative pl-8">
-<div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">2</div>
-<h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Log in via Mijn GBTwente</h4>
-<p class="font-body-base text-body-base text-text-secondary">Ga naar de portal van GBTwente en log in met uw DigiD om het aanvraagformulier digitaal te starten.</p>
-</div>
-<div class="relative pl-8">
-<div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">3</div>
-<h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Automatische toetsing Inlichtingenbureau</h4>
-<p class="font-body-base text-body-base text-text-secondary">GBTwente toetst uw gegevens via het Inlichtingenbureau. Indien succesvol krijgt u direct bericht. Anders moet u aanvullende documenten uploaden.</p>
-</div>
-<div class="relative pl-8">
-<div class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-surface-container-high border-2 border-border-color flex items-center justify-center font-bold text-tertiary font-badge text-badge">4</div>
-<h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Beoordeling &amp; Besluit</h4>
-<p class="font-body-base text-body-base text-text-secondary">U ontvangt binnen enkele weken een beschikking met daarin het besluit of u kwijtschelding krijgt.</p>
-</div>
-</div>
-</section>
-</div>
-<!-- Right Column: Payment Plan & CTA -->
-<div class="flex flex-col gap-lg">
-<!-- Payment Plan Info (Attention Block) -->
-<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color border-l-4 border-l-secondary-container p-lg">
-<div class="flex items-center gap-sm mb-md">
-<span class="material-symbols-outlined text-secondary-container">autorenew</span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface">Betalingsregeling</h3>
-</div>
-<p class="font-body-base text-body-base text-text-secondary mb-4">Komt u niet in aanmerking voor kwijtschelding, maar kunt u de aanslag niet in één keer betalen? Vraag dan een betalingsregeling aan.</p>
-<ul class="font-body-base text-body-base text-text-secondary text-sm space-y-2 mb-md list-disc list-inside">
-<li>Spreiden in meerdere termijnen.</li>
-<li>Automatische incasso mogelijk.</li>
-<li>Geen extra kosten indien tijdig aangevraagd.</li>
-</ul>
-</div>
-<!-- Action Card -->
-<div class="bg-surface-container rounded-lg shadow-sm p-lg flex flex-col items-center text-center">
-<img class="w-32 h-32 object-contain mb-md rounded-full bg-bg-primary p-2" data-alt="A clean, modern flat illustration showing a person using a laptop with an official document on screen, symbolizing applying for government tax relief. The style is professional and trustworthy, using mostly blue and green tones with bright, soft light-mode lighting on a white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LX1QxslUBLh6E8ZcS8U0KW7lX-rKOgBxyTQ0g4_HC03E_6kbZn93pQaqczlN5HiBq5la4JRE9dXLhpIx0kKJJwlydpvpbLKOmdtbFoo7IVfxIUaWxjZK3Dc3xgNHVNGqWzBCiAcWT6YIBaaqrnVJFpvjcjNrsPBupm1k2Z9XPgP5vGCc8Ky3pDVw5fb5BIlVkeLtIDGUu6jjYBGZ-NrJ4SqvKdnFdDBmuvXcuK4PlGeSYh1_ppa2EPFZJB_ASPuPW8HY6rCHB2Y"/>
-<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Direct regelen</h3>
-<p class="font-body-base text-body-base text-text-secondary mb-lg text-sm">Regel uw kwijtschelding of betalingsregeling veilig en snel via het online loket van GBTwente.</p>
-<a class="w-full bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-brand-green-dark transition-colors flex items-center justify-center gap-2" href="https://www.gbtwente.nl" rel="noopener noreferrer" target="_blank">
-                        Naar GBTwente
-                        <span class="material-symbols-outlined text-sm">open_in_new</span>
-</a>
-</div>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div class="flex flex-col gap-sm">
-<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim" href="../">MinderAfval053</a>
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
-Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in Enschede.
-</p>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../about/">Over ons</a>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../privacy/">Privacybeleid</a>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-md text-center">
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
-&copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
-</p>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.getElementById('mobile-menu-btn');
-  var nav = document.getElementById('mobile-nav');
-  if (btn && nav) {
-    btn.addEventListener('click', function() {
-      nav.classList.toggle('hidden');
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwijtschelding &amp; Betalingsregeling | MinderAfval053</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/dist/output.css">
+</head>
+
+<body class="bg-background text-text-primary antialiased flex flex-col min-h-screen">
+  <!-- TopNavBar -->
+  <header>
+    <nav
+      class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant docked top-0 sticky z-50">
+      <div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+        <a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity"
+          href="/">MinderAfval053</a>
+        <div class="hidden md:flex gap-lg items-center">
+          <a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded"
+            href="/">Rekentool</a>
+          <a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded"
+            href="/tarieven-2026/">Tarieven 2026</a>
+          <a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded"
+            href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+          <a class="text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-label-md text-label-md"
+            href="/veelgestelde-vragen/">FAQ</a>
+          <a class="text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim font-label-md text-label-md hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors p-sm rounded"
+            href="/bespaartips/">Bespaartips</a>
+        </div>
+
+        <button id="mobile-menu-btn"
+          class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <!-- Mobile Nav Panel -->
+  <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+    <div class="flex flex-col px-lg py-md space-y-sm">
+      <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+        href="/">Rekentool</a>
+      <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+        href="/tarieven-2026/">Tarieven 2026</a>
+      <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+        href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+      <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+        href="/veelgestelde-vragen/">FAQ</a>
+      <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+        href="/bespaartips/">Bespaartips</a>
+    </div>
+  </nav>
+  <!-- Main Content Canvas -->
+  <main class="flex-grow flex flex-col items-center w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl gap-3xl">
+    <!-- Breadcrumbs -->
+    <div class="w-full">
+      <nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+          <li class="inline-flex items-center">
+            <a class="inline-flex items-center hover:text-primary" href="/">
+              <span class="material-symbols-outlined mr-2" style="font-size: 18px;">home</span>
+              Home
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <span class="material-symbols-outlined text-border-color">chevron_right</span>
+              <a class="ml-1 hover:text-primary md:ml-2" href="/veelgestelde-vragen/">FAQ</a>
+            </div>
+          </li>
+          <li aria-current="page">
+            <div class="flex items-center">
+              <span class="material-symbols-outlined text-border-color">chevron_right</span>
+              <span class="ml-1 text-text-primary font-bold md:ml-2">Kwijtschelding</span>
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
+    <!-- Page Header -->
+    <div class="w-full text-center max-w-3xl">
+      <h1 class="font-headline-lg md:font-headline-hero text-headline-lg md:text-headline-hero text-on-surface mb-md">
+        Moeite met betalen?</h1>
+      <p class="font-body-base text-body-base text-text-secondary">Ontdek of u in aanmerking komt voor kwijtschelding
+        van de afvalstoffenheffing of hoe u een betalingsregeling kunt treffen via GBTwente.</p>
+    </div>
+    <!-- Summary Bento Grid -->
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
+      <div
+        class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-primary">info</span>
+        </div>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Wat is het?</h2>
+        <p class="font-body-base text-body-base text-text-secondary text-sm">Volledige of gedeeltelijke vrijstelling van
+          het betalen van de gemeentelijke afvalstoffenheffing voor huishoudens met een laag inkomen en weinig vermogen.
+        </p>
+      </div>
+      <div
+        class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-secondary-container">group</span>
+        </div>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Voor Wie?</h2>
+        <p class="font-body-base text-body-base text-text-secondary text-sm">Inwoners van Enschede met een inkomen op of
+          rond bijstandsniveau en minimaal eigen vermogen (spaargeld, auto's etc.).</p>
+      </div>
+      <div
+        class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-error">payments</span>
+        </div>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Hoeveel?</h2>
+        <p class="font-body-base text-body-base text-text-secondary text-sm">Meestal betreft het de volledige heffing
+          (Vast + Variabel), maar een gedeeltelijke kwijtschelding is in specifieke gevallen mogelijk afhankelijk van uw
+          draagkracht.</p>
+      </div>
+      <div
+        class="bg-bg-primary rounded-lg p-lg shadow-sm border border-border-color flex flex-col items-start hover:shadow-md transition-shadow">
+        <div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center mb-4">
+          <span class="material-symbols-outlined text-tertiary">calendar_clock</span>
+        </div>
+        <h2 class="font-headline-sm text-headline-sm text-on-surface mb-2">Deadline</h2>
+        <p class="font-body-base text-body-base text-text-secondary text-sm">Vraag kwijtschelding aan binnen 3 maanden
+          na de dagtekening van uw aanslagbiljet om zeker te zijn van een tijdige afhandeling.</p>
+      </div>
+    </div>
+    <!-- Main Content Area -->
+    <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-xl">
+      <!-- Left Column: Checklist & Steps -->
+      <div class="lg:col-span-2 flex flex-col gap-xl">
+        <!-- Eligibility Checklist -->
+        <section class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-lg lg:p-xl">
+          <div class="flex items-center gap-sm mb-lg">
+            <span class="material-symbols-outlined text-primary text-3xl">fact_check</span>
+            <h2 class="font-headline-md text-headline-md text-on-surface">Kom ik in aanmerking?</h2>
+          </div>
+          <p class="font-body-base text-body-base text-text-secondary mb-md">Dit is een indicatieve checklist. De
+            definitieve beoordeling wordt gedaan door GBTwente op basis van uw complete financiële situatie.</p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
+              <span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
+              <div>
+                <span class="font-label-md text-label-md text-text-primary block mb-1">Inkomen op bijstandsniveau</span>
+                <span class="font-body-base text-body-base text-text-secondary text-sm">Uw netto maandinkomen is niet
+                  hoger dan de geldende bijstandsnorm voor uw situatie (alleenstaand, samenwonend, etc.).</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
+              <span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
+              <div>
+                <span class="font-label-md text-label-md text-text-primary block mb-1">Beperkt vermogen</span>
+                <span class="font-body-base text-body-base text-text-secondary text-sm">U heeft geen of zeer beperkt
+                  spaargeld. Voor alleenstaanden is de grens lager dan voor samenwonenden of gezinnen.</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-md p-md bg-surface-container-low rounded-lg border border-border-color">
+              <span class="material-symbols-outlined text-brand-green-dark mt-1">check_circle</span>
+              <div>
+                <span class="font-label-md text-label-md text-text-primary block mb-1">Geen overwaarde woning /
+                  auto</span>
+                <span class="font-body-base text-body-base text-text-secondary text-sm">U bezit geen eigen woning met
+                  overwaarde en bezit geen voertuig met een waarde hoger dan het drempelbedrag (tenzij medisch
+                  noodzakelijk).</span>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- Application Guide -->
+        <section class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-lg lg:p-xl">
+          <h2 class="font-headline-md text-headline-md text-on-surface mb-lg">Aanvragen bij GBTwente</h2>
+          <div class="relative border-l-2 border-border-color ml-4 space-y-8">
+            <div class="relative pl-8">
+              <div
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">
+                1</div>
+              <h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Verzamel uw gegevens</h4>
+              <p class="font-body-base text-body-base text-text-secondary">Zorg dat u uw DigiD bij de hand heeft en
+                recente bewijsstukken van inkomen, saldo's van alle bankrekeningen, en eventuele schulden.</p>
+            </div>
+            <div class="relative pl-8">
+              <div
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">
+                2</div>
+              <h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Log in via Mijn GBTwente</h4>
+              <p class="font-body-base text-body-base text-text-secondary">Ga naar de portal van GBTwente en log in met
+                uw DigiD om het aanvraagformulier digitaal te starten.</p>
+            </div>
+            <div class="relative pl-8">
+              <div
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary font-badge text-badge">
+                3</div>
+              <h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Automatische toetsing
+                Inlichtingenbureau</h4>
+              <p class="font-body-base text-body-base text-text-secondary">GBTwente toetst uw gegevens via het
+                Inlichtingenbureau. Indien succesvol krijgt u direct bericht. Anders moet u aanvullende documenten
+                uploaden.</p>
+            </div>
+            <div class="relative pl-8">
+              <div
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-surface-container-high border-2 border-border-color flex items-center justify-center font-bold text-tertiary font-badge text-badge">
+                4</div>
+              <h4 class="font-headline-sm text-headline-sm text-text-primary mb-2">Beoordeling &amp; Besluit</h4>
+              <p class="font-body-base text-body-base text-text-secondary">U ontvangt binnen enkele weken een
+                beschikking met daarin het besluit of u kwijtschelding krijgt.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Right Column: Payment Plan & CTA -->
+      <div class="flex flex-col gap-lg">
+        <!-- Payment Plan Info (Attention Block) -->
+        <div
+          class="bg-bg-primary rounded-lg shadow-sm border border-border-color border-l-4 border-l-secondary-container p-lg">
+          <div class="flex items-center gap-sm mb-md">
+            <span class="material-symbols-outlined text-secondary-container">autorenew</span>
+            <h3 class="font-headline-sm text-headline-sm text-on-surface">Betalingsregeling</h3>
+          </div>
+          <p class="font-body-base text-body-base text-text-secondary mb-4">Komt u niet in aanmerking voor
+            kwijtschelding, maar kunt u de aanslag niet in één keer betalen? Vraag dan een betalingsregeling aan.</p>
+          <ul class="font-body-base text-body-base text-text-secondary text-sm space-y-2 mb-md list-disc list-inside">
+            <li>Spreiden in meerdere termijnen.</li>
+            <li>Automatische incasso mogelijk.</li>
+            <li>Geen extra kosten indien tijdig aangevraagd.</li>
+          </ul>
+        </div>
+        <!-- Action Card -->
+        <div class="bg-surface-container rounded-lg shadow-sm p-lg flex flex-col items-center text-center">
+          <img class="w-32 h-32 object-contain mb-md rounded-full bg-bg-primary p-2"
+            data-alt="A clean, modern flat illustration showing a person using a laptop with an official document on screen, symbolizing applying for government tax relief. The style is professional and trustworthy, using mostly blue and green tones with bright, soft light-mode lighting on a white background."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1LX1QxslUBLh6E8ZcS8U0KW7lX-rKOgBxyTQ0g4_HC03E_6kbZn93pQaqczlN5HiBq5la4JRE9dXLhpIx0kKJJwlydpvpbLKOmdtbFoo7IVfxIUaWxjZK3Dc3xgNHVNGqWzBCiAcWT6YIBaaqrnVJFpvjcjNrsPBupm1k2Z9XPgP5vGCc8Ky3pDVw5fb5BIlVkeLtIDGUu6jjYBGZ-NrJ4SqvKdnFdDBmuvXcuK4PlGeSYh1_ppa2EPFZJB_ASPuPW8HY6rCHB2Y" />
+          <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Direct regelen</h3>
+          <p class="font-body-base text-body-base text-text-secondary mb-lg text-sm">Regel uw kwijtschelding of
+            betalingsregeling veilig en snel via het online loket van GBTwente.</p>
+          <a class="w-full bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-lg hover:bg-brand-green-dark transition-colors flex items-center justify-center gap-2"
+            href="https://www.gbtwente.nl" rel="noopener noreferrer" target="_blank">
+            Naar GBTwente
+            <span class="material-symbols-outlined text-sm">open_in_new</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+      <div class="flex flex-col gap-sm">
+        <a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim"
+          href="/">MinderAfval053</a>
+        <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
+          Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in Enschede.
+        </p>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
+        <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+          href="/about/">Over ons</a>
+      </div>
+      <div class="flex flex-col gap-sm">
+        <h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
+        <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+          href="/privacy/">Privacybeleid</a>
+      </div>
+    </div>
+    <div class="border-t border-border-color dark:border-outline py-md text-center">
+      <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
+        &copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
+      </p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var btn = document.getElementById('mobile-menu-btn');
+      var nav = document.getElementById('mobile-nav');
+      if (btn && nav) {
+        btn.addEventListener('click', function () {
+          nav.classList.toggle('hidden');
+        });
+      }
     });
-  }
-});
-</script>
-</body></html>
+  </script>
+</body>
+
+</html>

@@ -1,199 +1,242 @@
 <!DOCTYPE html>
 
-<html lang="nl"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kies je Container - MinderAfval053</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="../dist/output.css">
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kies je Container - MinderAfval053</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
-<!-- Top Navigation -->
-<header class="bg-surface-container-lowest border-b border-border-color top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary scale-95 active:scale-90 transition-transform" href="../">
+
+<body
+    class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+    <!-- Top Navigation -->
+    <header class="bg-surface-container-lowest border-b border-border-color top-0 sticky z-50">
+        <div
+            class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+            <a class="font-headline-sm text-headline-sm font-extrabold text-primary scale-95 active:scale-90 transition-transform"
+                href="/">
                 MinderAfval053
             </a>
-<!-- Desktop Nav -->
-<nav class="hidden md:flex space-x-xl">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 flex flex-col justify-center h-full pt-1" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1" href="../bespaartips/">Bespaartips</a>
-</nav>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-xl">
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1"
+                    href="/">Rekentool</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1"
+                    href="/tarieven-2026/">Tarieven 2026</a>
+                <a class="font-label-md text-label-md text-primary border-b-2 border-primary pb-1 flex flex-col justify-center h-full pt-1"
+                    href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1"
+                    href="/veelgestelde-vragen/">FAQ</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary transition-colors flex flex-col justify-center h-full pt-1"
+                    href="/bespaartips/">Bespaartips</a>
+            </nav>
 
-<!-- Mobile Nav Panel -->
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
-<main class="w-full pb-4xl">
-<!-- Breadcrumbs -->
-<div class="max-w-container-max mx-auto px-lg md:px-xl py-lg">
-<nav class="flex text-text-secondary font-label-md text-label-md space-x-2 items-center">
-<a class="hover:text-primary transition-colors" href="../">Home</a>
-<span class="material-symbols-outlined text-sm">chevron_right</span>
-<a class="hover:text-primary transition-colors" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<span class="material-symbols-outlined text-sm">chevron_right</span>
-<span class="text-text-primary font-bold">Kies je Container</span>
-</nav>
-</div>
-<!-- Header Section -->
-<section class="max-w-container-max mx-auto px-lg md:px-xl mb-3xl">
-<h1 class="font-headline-lg text-headline-lg text-primary mb-md">Kies je Container</h1>
-<p class="font-body-base text-body-base text-text-secondary max-w-2xl">
-                Vergelijk de 140L en 240L containers om de beste keuze voor jouw huishouden te maken. 
+            <!-- Mobile Nav Panel -->
+            <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+                <div class="flex flex-col px-lg py-md space-y-sm">
+                    <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                        href="/">Rekentool</a>
+                    <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                        href="/tarieven-2026/">Tarieven 2026</a>
+                    <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                        href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+                    <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                        href="/veelgestelde-vragen/">FAQ</a>
+                    <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                        href="/bespaartips/">Bespaartips</a>
+                </div>
+            </nav>
+            <button id="mobile-menu-btn"
+                class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="w-full pb-4xl">
+        <!-- Breadcrumbs -->
+        <div class="max-w-container-max mx-auto px-lg md:px-xl py-lg">
+            <nav class="flex text-text-secondary font-label-md text-label-md space-x-2 items-center">
+                <a class="hover:text-primary transition-colors" href="/">Home</a>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <a class="hover:text-primary transition-colors" href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+                <span class="material-symbols-outlined text-sm">chevron_right</span>
+                <span class="text-text-primary font-bold">Kies je Container</span>
+            </nav>
+        </div>
+        <!-- Header Section -->
+        <section class="max-w-container-max mx-auto px-lg md:px-xl mb-3xl">
+            <h1 class="font-headline-lg text-headline-lg text-primary mb-md">Kies je Container</h1>
+            <p class="font-body-base text-body-base text-text-secondary max-w-2xl">
+                Vergelijk de 140L en 240L containers om de beste keuze voor jouw huishouden te maken.
                 Vanaf 2026 betaal je per lediging, dus de juiste maat kan veel geld besparen.
             </p>
-</section>
-<!-- Comparison Cards -->
-<section class="max-w-container-max mx-auto px-lg md:px-xl mb-4xl">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
-<!-- 140L Card -->
-<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
-<div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
-<div class="p-xl flex-grow">
-<div class="flex justify-between items-start mb-lg">
-<div>
-<h2 class="font-headline-md text-headline-md text-text-primary">140 Liter</h2>
-<p class="font-label-md text-label-md text-text-secondary mt-1">De compacte keuze</p>
-</div>
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
-<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">delete</span>
-</div>
-</div>
-<div class="mb-xl">
-<span class="font-headline-lg text-headline-lg text-primary">€ 1,20</span>
-<span class="font-body-base text-body-base text-text-secondary"> / lediging</span>
-</div>
-<ul class="space-y-sm mb-xl">
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
+        </section>
+        <!-- Comparison Cards -->
+        <section class="max-w-container-max mx-auto px-lg md:px-xl mb-4xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+                <!-- 140L Card -->
+                <div
+                    class="bg-bg-primary rounded-lg shadow-sm border border-border-color hover:shadow-md transition-shadow relative overflow-hidden flex flex-col">
+                    <div class="absolute top-0 left-0 w-1 h-full bg-primary-container"></div>
+                    <div class="p-xl flex-grow">
+                        <div class="flex justify-between items-start mb-lg">
+                            <div>
+                                <h2 class="font-headline-md text-headline-md text-text-primary">140 Liter</h2>
+                                <p class="font-label-md text-label-md text-text-secondary mt-1">De compacte keuze</p>
+                            </div>
+                            <div
+                                class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-primary-container">
+                                <span class="material-symbols-outlined text-3xl"
+                                    style="font-variation-settings: 'FILL' 1;">delete</span>
+                            </div>
+                        </div>
+                        <div class="mb-xl">
+                            <span class="font-headline-lg text-headline-lg text-primary">€ 1,20</span>
+                            <span class="font-body-base text-body-base text-text-secondary"> / lediging</span>
+                        </div>
+                        <ul class="space-y-sm mb-xl">
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
                                 Geschikt voor 1-2 personen
                             </li>
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
                                 Neemt minder ruimte in beslag
                             </li>
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span class="material-symbols-outlined text-primary-container mr-sm">check_circle</span>
                                 Goedkoper per keer aan de straat
                             </li>
-<li class="flex items-center text-text-secondary font-body-base text-body-base opacity-70">
-<span class="material-symbols-outlined mr-sm">info</span>
+                            <li class="flex items-center text-text-secondary font-body-base text-body-base opacity-70">
+                                <span class="material-symbols-outlined mr-sm">info</span>
                                 Let op: sneller vol bij groot huishouden
                             </li>
-</ul>
-</div>
-<div class="p-xl pt-0 mt-auto">
-<button class="w-full bg-surface-container-low text-primary font-label-md text-label-md font-bold py-3 px-6 rounded border border-border-color hover:bg-surface-container-high transition-colors text-center block">
+                        </ul>
+                    </div>
+                    <div class="p-xl pt-0 mt-auto">
+                        <button
+                            class="w-full bg-surface-container-low text-primary font-label-md text-label-md font-bold py-3 px-6 rounded border border-border-color hover:bg-surface-container-high transition-colors text-center block">
                             Kies 140L
                         </button>
-</div>
-</div>
-<!-- 240L Card -->
-<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color hover:shadow-md transition-shadow relative overflow-hidden flex flex-col border-l-4 border-l-secondary-container">
-<div class="p-xl flex-grow">
-<div class="flex justify-between items-start mb-lg">
-<div>
-<div class="flex items-center gap-2 mb-1">
-<h2 class="font-headline-md text-headline-md text-text-primary">240 Liter</h2>
-<span class="font-badge text-badge bg-secondary-fixed-dim text-on-secondary-container px-2 py-1 rounded-full uppercase">Standaard</span>
-</div>
-<p class="font-label-md text-label-md text-text-secondary">De ruime keuze</p>
-</div>
-<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-secondary-container">
-<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">delete</span>
-</div>
-</div>
-<div class="mb-xl">
-<span class="font-headline-lg text-headline-lg text-secondary">€ 2,00</span>
-<span class="font-body-base text-body-base text-text-secondary"> / lediging</span>
-</div>
-<ul class="space-y-sm mb-xl">
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
+                    </div>
+                </div>
+                <!-- 240L Card -->
+                <div
+                    class="bg-bg-primary rounded-lg shadow-sm border border-border-color hover:shadow-md transition-shadow relative overflow-hidden flex flex-col border-l-4 border-l-secondary-container">
+                    <div class="p-xl flex-grow">
+                        <div class="flex justify-between items-start mb-lg">
+                            <div>
+                                <div class="flex items-center gap-2 mb-1">
+                                    <h2 class="font-headline-md text-headline-md text-text-primary">240 Liter</h2>
+                                    <span
+                                        class="font-badge text-badge bg-secondary-fixed-dim text-on-secondary-container px-2 py-1 rounded-full uppercase">Standaard</span>
+                                </div>
+                                <p class="font-label-md text-label-md text-text-secondary">De ruime keuze</p>
+                            </div>
+                            <div
+                                class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center text-secondary-container">
+                                <span class="material-symbols-outlined text-3xl"
+                                    style="font-variation-settings: 'FILL' 1;">delete</span>
+                            </div>
+                        </div>
+                        <div class="mb-xl">
+                            <span class="font-headline-lg text-headline-lg text-secondary">€ 2,00</span>
+                            <span class="font-body-base text-body-base text-text-secondary"> / lediging</span>
+                        </div>
+                        <ul class="space-y-sm mb-xl">
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
                                 Geschikt voor gezinnen (3+ personen)
                             </li>
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
                                 Minder vaak aan de straat zetten
                             </li>
-<li class="flex items-center text-text-primary font-body-base text-body-base">
-<span class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
+                            <li class="flex items-center text-text-primary font-body-base text-body-base">
+                                <span
+                                    class="material-symbols-outlined text-secondary-container mr-sm">check_circle</span>
                                 Relatief goedkoper per liter afval
                             </li>
-</ul>
-</div>
-<div class="p-xl pt-0 mt-auto">
-<button class="w-full bg-primary text-on-primary font-label-md text-label-md font-bold py-3 px-6 rounded hover:bg-brand-green-dark transition-colors text-center block">
+                        </ul>
+                    </div>
+                    <div class="p-xl pt-0 mt-auto">
+                        <button
+                            class="w-full bg-primary text-on-primary font-label-md text-label-md font-bold py-3 px-6 rounded hover:bg-brand-green-dark transition-colors text-center block">
                             Kies 240L
                         </button>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Block -->
-<section class="max-w-container-max mx-auto px-lg md:px-xl">
-<div class="bg-tertiary-fixed rounded-xl p-xl md:p-2xl flex flex-col md:flex-row items-center justify-between shadow-sm">
-<div class="mb-lg md:mb-0 max-w-xl">
-<h2 class="font-headline-sm text-headline-sm text-on-tertiary-fixed mb-sm">Twijfel je nog?</h2>
-<p class="font-body-base text-body-base text-on-tertiary-fixed-variant">
-                        Gebruik onze rekentool om een exacte berekening te maken voor jouw persoonlijke situatie op basis van je huidige afvalgedrag.
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Block -->
+        <section class="max-w-container-max mx-auto px-lg md:px-xl">
+            <div
+                class="bg-tertiary-fixed rounded-xl p-xl md:p-2xl flex flex-col md:flex-row items-center justify-between shadow-sm">
+                <div class="mb-lg md:mb-0 max-w-xl">
+                    <h2 class="font-headline-sm text-headline-sm text-on-tertiary-fixed mb-sm">Twijfel je nog?</h2>
+                    <p class="font-body-base text-body-base text-on-tertiary-fixed-variant">
+                        Gebruik onze rekentool om een exacte berekening te maken voor jouw persoonlijke situatie op
+                        basis van je huidige afvalgedrag.
                     </p>
-</div>
-<button class="bg-on-tertiary-fixed text-on-primary font-label-md text-label-md font-bold py-3 px-8 rounded hover:opacity-90 transition-opacity whitespace-nowrap">
+                </div>
+                <button
+                    class="bg-on-tertiary-fixed text-on-primary font-label-md text-label-md font-bold py-3 px-8 rounded hover:opacity-90 transition-opacity whitespace-nowrap">
                     Start Rekentool
                 </button>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div class="flex flex-col gap-sm">
-<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim" href="../">MinderAfval053</a>
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
-Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in Enschede.
-</p>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../about/">Over ons</a>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../privacy/">Privacybeleid</a>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-md text-center">
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
-&copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
-</p>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.getElementById('mobile-menu-btn');
-  var nav = document.getElementById('mobile-nav');
-  if (btn && nav) {
-    btn.addEventListener('click', function() {
-      nav.classList.toggle('hidden');
-    });
-  }
-});
-</script>
-</body></html>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+            <div class="flex flex-col gap-sm">
+                <a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim"
+                    href="/">MinderAfval053</a>
+                <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
+                    Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in
+                    Enschede.
+                </p>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/about/">Over ons</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/privacy/">Privacybeleid</a>
+            </div>
+        </div>
+        <div class="border-t border-border-color dark:border-outline py-md text-center">
+            <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
+                &copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var nav = document.getElementById('mobile-nav');
+            if (btn && nav) {
+                btn.addEventListener('click', function () {
+                    nav.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

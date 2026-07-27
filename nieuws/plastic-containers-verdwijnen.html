@@ -1,144 +1,216 @@
 <!DOCTYPE html>
 <html class="light" lang="nl">
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plastic containers verdwijnen uit straatbeeld Enschede - MinderAfval053</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"/>
-<style>
-    .card-shadow {
-        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
-        transition: box-shadow 0.3s ease, transform 0.3s ease;
-    }
-    .card-shadow:hover {
-        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-        transform: translateY(-2px);
-    }
-</style>
-<link rel="stylesheet" href="../dist/output.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic containers verdwijnen uit straatbeeld Enschede - MinderAfval053</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <style>
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .card-shadow:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+    </style>
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
+
 <body class="bg-background text-text-primary font-body-base min-h-screen flex flex-col">
-<header>
-<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant w-full top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="../">MinderAfval053</a>
-<ul class="hidden md:flex gap-lg items-center">
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../">Rekentool</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../tarieven-2026/">Tarieven 2026</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../veelgestelde-vragen/">FAQ</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../bespaartips/">Bespaartips</a></li>
-</ul>
-<div class="flex items-center gap-4">
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</nav>
-</header>
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-<main class="flex-grow w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl md:py-4xl space-y-3xl">
-<nav aria-label="Breadcrumb" class="mb-lg">
-<ol class="flex items-center space-x-2 font-label-md text-label-md text-text-secondary">
-<li><a class="hover:text-primary transition-colors flex items-center" href="../"><span class="material-symbols-outlined text-[18px] mr-1">home</span>Home</a></li>
-<li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
-<li><a class="hover:text-primary transition-colors" href="../nieuws/">Nieuws</a></li>
-<li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
-<li><span aria-current="page" class="text-text-primary font-medium">Plastic containers verdwijnen</span></li>
-</ol>
-</nav>
-<article class="max-w-3xl mx-auto">
-<div class="mb-xl">
-<div class="flex items-center text-text-muted font-label-md text-label-md mb-sm space-x-4">
-<span class="flex items-center"><span class="material-symbols-outlined text-[18px] mr-1">calendar_today</span> 20 Jul 2025</span>
-<span class="flex items-center"><span class="material-symbols-outlined text-[18px] mr-1">schedule</span> 5 min lezen</span>
-</div>
-<span class="bg-primary-container text-on-primary-container font-badge text-badge px-3 py-1 rounded-full uppercase tracking-wide">Belangrijk</span>
-<h1 class="font-headline-lg text-headline-lg text-text-primary mt-md mb-lg">Plastic containers verdwijnen langzaam maar zeker uit het straatbeeld van Enschede</h1>
-</div>
-<div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-xl">
-<img alt="Oranje PMD containers aan de straat in Enschede" class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900&h=500&fit=crop"/>
-</div>
-<div class="prose-custom space-y-lg font-body-base text-body-base text-text-secondary">
-<p class="text-lg text-text-primary font-medium">Ik wandel al een tijdje door de wijk en wat me steeds meer opvalt: die oranje plastic containers verdwijnen uit ons straatbeeld. In de binnenstad zijn ze al volledig weg, en ook in de wijken worden ze stuk voor stuk opgehaald. Hoog tijd om eens te kijken wat dit precies betekent voor jou als bewoner van Enschede.</p>
+    <header>
+        <nav
+            class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant w-full top-0 sticky z-50">
+            <div
+                class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+                <a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity"
+                    href="/">MinderAfval053</a>
+                <ul class="hidden md:flex gap-lg items-center">
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/">Rekentool</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/tarieven-2026/">Tarieven 2026</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/veelgestelde-vragen/">FAQ</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/bespaartips/">Bespaartips</a></li>
+                </ul>
+                <div class="flex items-center gap-4">
+                    <button id="mobile-menu-btn"
+                        class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+        <div class="flex flex-col px-lg py-md space-y-sm">
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/">Rekentool</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/tarieven-2026/">Tarieven 2026</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/veelgestelde-vragen/">FAQ</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/bespaartips/">Bespaartips</a>
+        </div>
+    </nav>
+    <main class="flex-grow w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl md:py-4xl space-y-3xl">
+        <nav aria-label="Breadcrumb" class="mb-lg">
+            <ol class="flex items-center space-x-2 font-label-md text-label-md text-text-secondary">
+                <li><a class="hover:text-primary transition-colors flex items-center" href="/"><span
+                            class="material-symbols-outlined text-[18px] mr-1">home</span>Home</a></li>
+                <li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
+                <li><a class="hover:text-primary transition-colors" href="/nieuws/">Nieuws</a></li>
+                <li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
+                <li><span aria-current="page" class="text-text-primary font-medium">Plastic containers verdwijnen</span>
+                </li>
+            </ol>
+        </nav>
+        <article class="max-w-3xl mx-auto">
+            <div class="mb-xl">
+                <div class="flex items-center text-text-muted font-label-md text-label-md mb-sm space-x-4">
+                    <span class="flex items-center"><span
+                            class="material-symbols-outlined text-[18px] mr-1">calendar_today</span> 20 Jul 2025</span>
+                    <span class="flex items-center"><span
+                            class="material-symbols-outlined text-[18px] mr-1">schedule</span> 5 min lezen</span>
+                </div>
+                <span
+                    class="bg-primary-container text-on-primary-container font-badge text-badge px-3 py-1 rounded-full uppercase tracking-wide">Belangrijk</span>
+                <h1 class="font-headline-lg text-headline-lg text-text-primary mt-md mb-lg">Plastic containers
+                    verdwijnen langzaam maar zeker uit het straatbeeld van Enschede</h1>
+            </div>
+            <div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-xl">
+                <img alt="Oranje PMD containers aan de straat in Enschede" class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900&h=500&fit=crop" />
+            </div>
+            <div class="prose-custom space-y-lg font-body-base text-body-base text-text-secondary">
+                <p class="text-lg text-text-primary font-medium">Ik wandel al een tijdje door de wijk en wat me steeds
+                    meer opvalt: die oranje plastic containers verdwijnen uit ons straatbeeld. In de binnenstad zijn ze
+                    al volledig weg, en ook in de wijken worden ze stuk voor stuk opgehaald. Hoog tijd om eens te kijken
+                    wat dit precies betekent voor jou als bewoner van Enschede.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat is er aan de hand?</h2>
-<p>De oranje PMD-containers — voor plastic verpakkingen, blik en drinkpakken — worden sinds april 2025 niet meer op de reguliere manier ingezameld in delen van Enschede. Twente Milieu (de gezamenlijke afvaldienst van de gemeenten in de regio Twente) heeft het inzamelsysteem flink op de schop genomen. De containers worden in fases opgehaald en vervangen door een nieuw systeem dat goedkoper en flexibeler is.</p>
-<p>De reden? Twee-en-een-half tot drie miljoen kilo PMD-verpakkingen zamelt de regio jaarlijks in. Dat kost handenvol geld: onderhoud van de containers, het placen en ophalen, en de logistiek eromheen. Volgens Twente Milieu is een groot deel van die kosten niet nodig als je de inzameling anders organiseert.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat is er aan de hand?</h2>
+                <p>De oranje PMD-containers — voor plastic verpakkingen, blik en drinkpakken — worden sinds april 2025
+                    niet meer op de reguliere manier ingezameld in delen van Enschede. Twente Milieu (de gezamenlijke
+                    afvaldienst van de gemeenten in de regio Twente) heeft het inzamelsysteem flink op de schop genomen.
+                    De containers worden in fases opgehaald en vervangen door een nieuw systeem dat goedkoper en
+                    flexibeler is.</p>
+                <p>De reden? Twee-en-een-half tot drie miljoen kilo PMD-verpakkingen zamelt de regio jaarlijks in. Dat
+                    kost handenvol geld: onderhoud van de containers, het placen en ophalen, en de logistiek eromheen.
+                    Volgens Twente Milieu is een groot deel van die kosten niet nodig als je de inzameling anders
+                    organiseert.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Hoe werkt het nu?</h2>
-<p>In de binnenstad is het al een tijdje anders. Daar zamelt Twente Milieu het PMD in met elektrische bakfietsen — het project InzamelHelden. Buurtbewoners kunnen hun plastic verpakkingen, blik en drinkpakken gewoon aanleveren bij een van de inzamellocaties. Dat werkt verrassend goed: ze zamelen er wekelijks meer dan duizend kilo aan together.</p>
-<p>Buiten de binnenstad wordt het ingewikkelder. Daar worden de containers dus opgehaald, en veel bewoners vragen zich terecht af: wat komt ervoor in de plaats? Het antwoord is helaas niet eenduidig. Twente Milieu onderzoekt meerdere opties, waaronder grotere centrale inzamelpunten, PMD-zakken bij de restafvalcontainer, en meer milieu-straatjes.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Hoe werkt het nu?</h2>
+                <p>In de binnenstad is het al een tijdje anders. Daar zamelt Twente Milieu het PMD in met elektrische
+                    bakfietsen — het project InzamelHelden. Buurtbewoners kunnen hun plastic verpakkingen, blik en
+                    drinkpakken gewoon aanleveren bij een van de inzamellocaties. Dat werkt verrassend goed: ze zamelen
+                    er wekelijks meer dan duizend kilo aan together.</p>
+                <p>Buiten de binnenstad wordt het ingewikkelder. Daar worden de containers dus opgehaald, en veel
+                    bewoners vragen zich terecht af: wat komt ervoor in de plaats? Het antwoord is helaas niet
+                    eenduidig. Twente Milieu onderzoekt meerdere opties, waaronder grotere centrale inzamelpunten,
+                    PMD-zakken bij de restafvalcontainer, en meer milieu-straatjes.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat kun jij doen?</h2>
-<p>Het allerbelangrijkste: blijf PMD scheiden! Of je nu een container hebt, een PMD-zak gebruikt, of naar een inzamelpunt loopt — zorg dat je plastic verpakkingen, blik en drinkpakken gescheiden houdt van je restafval. Het scheelt aanzienlijk in je afvalkosten, want PMD valt onder het goedkoopste tarief (€1,38 per 40 liter).</p>
-<p>Praktische tips:</p>
-<ul class="list-disc pl-lg space-y-sm">
-<li>Heb je nog een oranje container? Gebruik deze zolang je hem hebt. Hij is niet verboden.</li>
-<li>Geen container meer? Kijk op <a href="https://www.twentemilieu.nl" class="text-primary hover:text-brand-green-dark transition-colors font-medium">twentemilieu.nl</a> waar je PMD kwijt kunt in jouw buurt.</li>
-<li>Spoel verpakkingen even af voordat je ze in de zak doet. Dat voorkomt stank en ongedierte.</li>
-<li>Drinkpakken mogen erbij — dat is een veelgemaakte fout!</li>
-</ul>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat kun jij doen?</h2>
+                <p>Het allerbelangrijkste: blijf PMD scheiden! Of je nu een container hebt, een PMD-zak gebruikt, of
+                    naar een inzamelpunt loopt — zorg dat je plastic verpakkingen, blik en drinkpakken gescheiden houdt
+                    van je restafval. Het scheelt aanzienlijk in je afvalkosten, want PMD valt onder het goedkoopste
+                    tarief (€1,38 per 40 liter).</p>
+                <p>Praktische tips:</p>
+                <ul class="list-disc pl-lg space-y-sm">
+                    <li>Heb je nog een oranje container? Gebruik deze zolang je hem hebt. Hij is niet verboden.</li>
+                    <li>Geen container meer? Kijk op <a href="https://www.twentemilieu.nl"
+                            class="text-primary hover:text-brand-green-dark transition-colors font-medium">twentemilieu.nl</a>
+                        waar je PMD kwijt kunt in jouw buurt.</li>
+                    <li>Spoel verpakkingen even af voordat je ze in de zak doet. Dat voorkomt stank en ongedierte.</li>
+                    <li>Drinkpakken mogen erbij — dat is een veelgemaakte fout!</li>
+                </ul>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">De grote vraag</h2>
-<p>De hamvraag is natuurlijk: wordt dit systeem beter dan wat we hadden? Twente Milieu belooft van wel. Met meer centrale punten kunnen ze efficiënter inzamelen en beter controleren of het afval goed gescheiden is. Maar eerlijk is eerlijk: het is een beetje wennen. Vooral voor ouderen en mensen die ver van een inzamelpunt wonen kan dit lastig zijn.</p>
-<p>Het is aan de gemeente en Twente Milieu om ervoor te zorgen dat de overgang soepel verloopt. Informatievoorziening is daarbij cruciaal — en daar schort het nog wel eens aan. Twente Milieu heeft een kaart online gezet met alle inzamelpunten, maar veel bewoners weten nog niet van het bestaan af.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">De grote vraag</h2>
+                <p>De hamvraag is natuurlijk: wordt dit systeem beter dan wat we hadden? Twente Milieu belooft van wel.
+                    Met meer centrale punten kunnen ze efficiënter inzamelen en beter controleren of het afval goed
+                    gescheiden is. Maar eerlijk is eerlijk: het is een beetje wennen. Vooral voor ouderen en mensen die
+                    ver van een inzamelpunt wonen kan dit lastig zijn.</p>
+                <p>Het is aan de gemeente en Twente Milieu om ervoor te zorgen dat de overgang soepel verloopt.
+                    Informatievoorziening is daarbij cruciaal — en daar schort het nog wel eens aan. Twente Milieu heeft
+                    een kaart online gezet met alle inzamelpunten, maar veel bewoners weten nog niet van het bestaan af.
+                </p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat ik ervan vind</h2>
-<p>Als hobbyist en afval-nerd uit Enschede vind ik het een spannende ontwikkeling. Aan de ene kant snap ik de kostenbesparing — die containers zijn duur in onderhoud. Aan de andere kant baal ik er een beetje van dat het gewoon verdwijnt zonder dat iemand gevraagd is of je er blij mee bent. Dat is typisch Twents: gewoon doen, uitleggen komt later.</p>
-<p>Maar goed, als het uiteindelijk leidt tot meer recycling en lagere kosten, dan is het wat mij betreft een goeie zet. We moeten toch allemaal ons steentje bijdragen, nietwaar?</p>
-</div>
-<div class="mt-xl pt-lg border-t border-border-color">
-<p class="font-label-md text-label-md text-text-muted">Bronnen: <a href="https://www.twentemilieu.nl/pmd-inzameling" class="text-primary hover:text-brand-green-dark transition-colors" target="_blank" rel="noopener">Twente Milieu — PMD inzameling</a>, <a href="https://1twente.nl/plastic-containers-verwijderd" class="text-primary hover:text-brand-green-dark transition-colors" target="_blank" rel="noopener">1Twente — Plastic containers verwijderd</a></p>
-</div>
-<div class="mt-xl flex justify-between items-center">
-<a class="inline-flex items-center font-label-md text-label-md text-primary font-bold hover:text-brand-green-dark transition-colors" href="../nieuws/">
-<span class="material-symbols-outlined mr-1">arrow_back</span> Terug naar nieuws
-</a>
-</div>
-</article>
-</main>
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div>
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary" href="../">MinderAfval053</a>
-<p class="mt-sm font-body-sm text-body-sm text-text-secondary">Onafhankelijke informatie over afval en Diftar in Enschede. Wij helpen inwoners besparen op afvalkosten.</p>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg text-text-primary mb-md">Projectinformatie</h4>
-<ul class="space-y-sm">
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../over-ons/">Over ons</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../veelgestelde-vragen/">Veelgestelde vragen</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../nieuws/">Nieuws</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg text-text-primary mb-md">Privacybeleid</h4>
-<ul class="space-y-sm">
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/">Privacybeleid</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/#cookies">Functionele Cookies</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/#open-source">Open Broncode</a></li>
-</ul>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-lg px-lg max-w-container-max mx-auto text-center">
-<p class="font-body-sm text-body-sm text-text-muted">© 2026 MinderAfval053. Alle rechten voorbehouden.</p>
-</div>
-</footer>
-<script>
-document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-document.getElementById('mobile-nav')?.classList.toggle('hidden');
-});
-</script>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat ik ervan vind</h2>
+                <p>Als hobbyist en afval-nerd uit Enschede vind ik het een spannende ontwikkeling. Aan de ene kant snap
+                    ik de kostenbesparing — die containers zijn duur in onderhoud. Aan de andere kant baal ik er een
+                    beetje van dat het gewoon verdwijnt zonder dat iemand gevraagd is of je er blij mee bent. Dat is
+                    typisch Twents: gewoon doen, uitleggen komt later.</p>
+                <p>Maar goed, als het uiteindelijk leidt tot meer recycling en lagere kosten, dan is het wat mij betreft
+                    een goeie zet. We moeten toch allemaal ons steentje bijdragen, nietwaar?</p>
+            </div>
+            <div class="mt-xl pt-lg border-t border-border-color">
+                <p class="font-label-md text-label-md text-text-muted">Bronnen: <a
+                        href="https://www.twentemilieu.nl/pmd-inzameling"
+                        class="text-primary hover:text-brand-green-dark transition-colors" target="_blank"
+                        rel="noopener">Twente Milieu — PMD inzameling</a>, <a
+                        href="https://1twente.nl/plastic-containers-verwijderd"
+                        class="text-primary hover:text-brand-green-dark transition-colors" target="_blank"
+                        rel="noopener">1Twente — Plastic containers verwijderd</a></p>
+            </div>
+            <div class="mt-xl flex justify-between items-center">
+                <a class="inline-flex items-center font-label-md text-label-md text-primary font-bold hover:text-brand-green-dark transition-colors"
+                    href="/nieuws/">
+                    <span class="material-symbols-outlined mr-1">arrow_back</span> Terug naar nieuws
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+            <div>
+                <a class="font-headline-sm text-headline-sm font-extrabold text-primary" href="/">MinderAfval053</a>
+                <p class="mt-sm font-body-sm text-body-sm text-text-secondary">Onafhankelijke informatie over afval en
+                    Diftar in Enschede. Wij helpen inwoners besparen op afvalkosten.</p>
+            </div>
+            <div>
+                <h4 class="font-label-lg text-label-lg text-text-primary mb-md">Projectinformatie</h4>
+                <ul class="space-y-sm">
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/over-ons/">Over ons</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/veelgestelde-vragen/">Veelgestelde vragen</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/nieuws/">Nieuws</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-lg text-label-lg text-text-primary mb-md">Privacybeleid</h4>
+                <ul class="space-y-sm">
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/">Privacybeleid</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/#cookies">Functionele Cookies</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/#open-source">Open Broncode</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-border-color dark:border-outline py-lg px-lg max-w-container-max mx-auto text-center">
+            <p class="font-body-sm text-body-sm text-text-muted">© 2026 MinderAfval053. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
+            document.getElementById('mobile-nav')?.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>

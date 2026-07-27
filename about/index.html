@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 
-<html class="light" lang="nl"><head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Over MinderAfval053 - Transparantie &amp; Informatie</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
+<html class="light" lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over MinderAfval053 - Transparantie &amp; Informatie</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .material-symbols-outlined.filled {
             font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
-        
+
         /* Subtle shadow for standard cards */
         .card-shadow {
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
             transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
         }
+
         .card-shadow:hover {
-            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
             transform: translateY(-2px);
         }
-        
+
         /* Dashboard background pattern */
         .bg-pattern {
             background-color: #f7f9fb;
@@ -32,241 +41,308 @@
             background-size: 24px 24px;
         }
     </style>
-<link rel="stylesheet" href="../dist/output.css">
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
-<body class="bg-background text-on-background font-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar (Shared Component) -->
-<header>
-<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant docked top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<!-- Brand -->
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="../">
-                MinderAfval053
-            </a>
-<!-- Desktop Nav Links -->
-<div class="hidden md:flex items-center space-x-lg">
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform" href="../">
-                    Rekentool
+
+<body
+    class="bg-background text-on-background font-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar (Shared Component) -->
+    <header>
+        <nav
+            class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant docked top-0 sticky z-50">
+            <div
+                class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+                <!-- Brand -->
+                <a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity"
+                    href="/">
+                    MinderAfval053
                 </a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform" href="../tarieven-2026/">
-                    Tarieven 2026
-                </a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform" href="../hoe-werkt-diftar/">
-                    Hoe Werkt Diftar
-                </a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform" href="../veelgestelde-vragen/">
-                    FAQ
-                </a>
-<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform" href="../bespaartips/">
-                    Bespaartips
-                </a>
-</div>
-<!-- Trailing Actions -->
-<div class="flex items-center space-x-sm">
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</nav>
-<!-- Mobile Nav Panel -->
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-</header>
-<!-- Main Content Area -->
-<main class="w-full flex-grow flex flex-col min-h-screen">
-<!-- Hero Section -->
-<header class="bg-surface-container dark:bg-on-background pt-4xl pb-4xl px-lg md:px-xl relative overflow-hidden">
-<div class="max-w-container-max mx-auto relative z-10">
-<!-- Breadcrumbs -->
-<nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md mb-lg">
-<ol class="inline-flex items-center space-x-1 md:space-x-3">
-<li class="inline-flex items-center">
-<a class="inline-flex items-center hover:text-primary transition-colors" href="../">
-<span class="material-symbols-outlined text-[18px] mr-1">home</span>
-                        Home
-                      </a>
-</li>
-<li>
-<div class="flex items-center">
-<span class="material-symbols-outlined text-[18px] mx-1">chevron_right</span>
-<span class="text-text-primary ml-1 md:ml-2 font-medium">Over MinderAfval053</span>
-</div>
-</li>
-</ol>
-</nav>
-<div class="max-w-3xl">
-<h1 class="font-headline-hero-mobile text-headline-hero-mobile md:font-headline-hero md:text-headline-hero text-on-background mb-md">
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-lg">
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform"
+                        href="/">
+                        Rekentool
+                    </a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform"
+                        href="/tarieven-2026/">
+                        Tarieven 2026
+                    </a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform"
+                        href="/hoe-werkt-diftar/">
+                        Hoe Werkt Diftar
+                    </a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform"
+                        href="/veelgestelde-vragen/">
+                        FAQ
+                    </a>
+                    <a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 transition-transform"
+                        href="/bespaartips/">
+                        Bespaartips
+                    </a>
+                </div>
+                <!-- Trailing Actions -->
+                <div class="flex items-center space-x-sm">
+                    <button id="mobile-menu-btn"
+                        class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile Nav Panel -->
+        <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+            <div class="flex flex-col px-lg py-md space-y-sm">
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                    href="/">Rekentool</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                    href="/tarieven-2026/">Tarieven 2026</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                    href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                    href="/veelgestelde-vragen/">FAQ</a>
+                <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                    href="/bespaartips/">Bespaartips</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content Area -->
+    <main class="w-full flex-grow flex flex-col min-h-screen">
+        <!-- Hero Section -->
+        <header
+            class="bg-surface-container dark:bg-on-background pt-4xl pb-4xl px-lg md:px-xl relative overflow-hidden">
+            <div class="max-w-container-max mx-auto relative z-10">
+                <!-- Breadcrumbs -->
+                <nav aria-label="Breadcrumb" class="flex text-text-secondary font-label-md text-label-md mb-lg">
+                    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                        <li class="inline-flex items-center">
+                            <a class="inline-flex items-center hover:text-primary transition-colors" href="/">
+                                <span class="material-symbols-outlined text-[18px] mr-1">home</span>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                                <span class="material-symbols-outlined text-[18px] mx-1">chevron_right</span>
+                                <span class="text-text-primary ml-1 md:ml-2 font-medium">Over MinderAfval053</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+                <div class="max-w-3xl">
+                    <h1
+                        class="font-headline-hero-mobile text-headline-hero-mobile md:font-headline-hero md:text-headline-hero text-on-background mb-md">
                         Over MinderAfval053
                     </h1>
-<p class="font-body-base text-body-base text-text-secondary mb-xl max-w-2xl text-lg">
-                        Een onafhankelijk initiatief gericht op transparantie en inzicht in het nieuwe Diftar afvalbeleid van de gemeente Enschede (2026).
+                    <p class="font-body-base text-body-base text-text-secondary mb-xl max-w-2xl text-lg">
+                        Een onafhankelijk initiatief gericht op transparantie en inzicht in het nieuwe Diftar
+                        afvalbeleid van de gemeente Enschede (2026).
                     </p>
-</div>
-</div>
-<!-- Abstract decorative element to maintain modern dashboard feel -->
-<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none hidden md:block">
-<svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
-<defs>
-<pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
-<path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"></path>
-</pattern>
-</defs>
-<rect class="text-primary" fill="url(#grid)" height="100" width="100"></rect>
-</svg>
-</div>
-</header>
-<!-- Content Canvas (Bento Layout) -->
-<div class="bg-pattern flex-grow py-3xl px-lg md:px-xl">
-<div class="max-w-container-max mx-auto">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-lg -mt-16">
-<!-- Left Column (Main Content) -->
-<div class="md:col-span-8 flex flex-col gap-lg">
-<!-- Project Story Card -->
-<section class="bg-bg-primary rounded-xl card-shadow p-lg md:p-xl">
-<div class="flex items-center space-x-sm mb-md">
-<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined filled" data-weight="fill">lightbulb</span>
-</div>
-<h2 class="font-headline-md text-headline-md text-on-surface">Het Project</h2>
-</div>
-<div class="prose prose-slate max-w-none text-text-secondary font-body-base text-body-base space-y-4">
-<p>
-                                    MinderAfval053 is ontstaan uit de behoefte aan duidelijke, onafhankelijke informatie over de invoering van Diftar (Gedifferentieerde Tarieven) in Enschede. Vanaf 2026 verandert de manier waarop inwoners betalen voor afvalverwerking: je betaalt niet langer een vast bedrag, maar per keer dat je restafval aanbiedt of per kilo.
+                </div>
+            </div>
+            <!-- Abstract decorative element to maintain modern dashboard feel -->
+            <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none hidden md:block">
+                <svg height="100%" preserveaspectratio="none" viewbox="0 0 100 100" width="100%">
+                    <defs>
+                        <pattern height="10" id="grid" patternunits="userSpaceOnUse" width="10">
+                            <path d="M 10 0 L 0 0 0 10" fill="none" stroke="currentColor" stroke-width="0.5"></path>
+                        </pattern>
+                    </defs>
+                    <rect class="text-primary" fill="url(#grid)" height="100" width="100"></rect>
+                </svg>
+            </div>
+        </header>
+        <!-- Content Canvas (Bento Layout) -->
+        <div class="bg-pattern flex-grow py-3xl px-lg md:px-xl">
+            <div class="max-w-container-max mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-lg -mt-16">
+                    <!-- Left Column (Main Content) -->
+                    <div class="md:col-span-8 flex flex-col gap-lg">
+                        <!-- Project Story Card -->
+                        <section class="bg-bg-primary rounded-xl card-shadow p-lg md:p-xl">
+                            <div class="flex items-center space-x-sm mb-md">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined filled" data-weight="fill">lightbulb</span>
+                                </div>
+                                <h2 class="font-headline-md text-headline-md text-on-surface">Het Project</h2>
+                            </div>
+                            <div
+                                class="prose prose-slate max-w-none text-text-secondary font-body-base text-body-base space-y-4">
+                                <p>
+                                    MinderAfval053 is ontstaan uit de behoefte aan duidelijke, onafhankelijke informatie
+                                    over de invoering van Diftar (Gedifferentieerde Tarieven) in Enschede. Vanaf 2026
+                                    verandert de manier waarop inwoners betalen voor afvalverwerking: je betaalt niet
+                                    langer een vast bedrag, maar per keer dat je restafval aanbiedt of per kilo.
                                 </p>
-<p>
-                                    Het doel van dit platform is om complexe beleidsstukken en tariefstructuren te vertalen naar begrijpelijke, gepersonaliseerde inzichten. Door middel van onze rekentool kunnen inwoners van Enschede nu al inschatten wat de financiële impact van dit nieuwe beleid zal zijn op hun persoonlijke situatie, en hoe zij door beter te scheiden kosten kunnen besparen.
+                                <p>
+                                    Het doel van dit platform is om complexe beleidsstukken en tariefstructuren te
+                                    vertalen naar begrijpelijke, gepersonaliseerde inzichten. Door middel van onze
+                                    rekentool kunnen inwoners van Enschede nu al inschatten wat de financiële impact van
+                                    dit nieuwe beleid zal zijn op hun persoonlijke situatie, en hoe zij door beter te
+                                    scheiden kosten kunnen besparen.
                                 </p>
-<p>
-                                    Wij zijn <strong>geen</strong> onderdeel van de gemeente Enschede of Twente Milieu. Dit is een burgerinitiatief gebouwd met openbare data om transparantie te bevorderen.
+                                <p>
+                                    Wij zijn <strong>geen</strong> onderdeel van de gemeente Enschede of Twente Milieu.
+                                    Dit is een burgerinitiatief gebouwd met openbare data om transparantie te
+                                    bevorderen.
                                 </p>
-</div>
-</section>
-<!-- Data Sources List (Bento style internal grid) -->
-<section class="bg-bg-primary rounded-xl card-shadow p-lg md:p-xl">
-<div class="flex items-center space-x-sm mb-lg">
-<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
-<span class="material-symbols-outlined filled" data-weight="fill">database</span>
-</div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bronnen &amp; Data</h2>
-</div>
-<p class="text-text-secondary mb-md">
-                                De berekeningen en informatie op dit platform zijn gebaseerd op officiële, openbare documenten.
+                            </div>
+                        </section>
+                        <!-- Data Sources List (Bento style internal grid) -->
+                        <section class="bg-bg-primary rounded-xl card-shadow p-lg md:p-xl">
+                            <div class="flex items-center space-x-sm mb-lg">
+                                <div
+                                    class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+                                    <span class="material-symbols-outlined filled" data-weight="fill">database</span>
+                                </div>
+                                <h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Bronnen &amp;
+                                    Data</h2>
+                            </div>
+                            <p class="text-text-secondary mb-md">
+                                De berekeningen en informatie op dit platform zijn gebaseerd op officiële, openbare
+                                documenten.
                             </p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
-<!-- Source Item 1 -->
-<div class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-label-md text-label-md font-bold text-text-primary">Raadsvoorstel Diftar</h3>
-<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
-</div>
-<p class="text-sm text-text-secondary">Definitief besluit gemeenteraad Enschede (2024).</p>
-</div>
-<!-- Source Item 2 -->
-<div class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-label-md text-label-md font-bold text-text-primary">Tarievenoverzicht 2026 (Concept)</h3>
-<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
-</div>
-<p class="text-sm text-text-secondary">Verwachte basis- en variabel tarief structuur.</p>
-</div>
-<!-- Source Item 3 -->
-<div class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-label-md text-label-md font-bold text-text-primary">VANG Doelstellingen</h3>
-<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
-</div>
-<p class="text-sm text-text-secondary">Landelijke 'Van Afval Naar Grondstof' richtlijnen.</p>
-</div>
-<!-- Source Item 4 -->
-<div class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
-<div class="flex justify-between items-start mb-2">
-<h3 class="font-label-md text-label-md font-bold text-text-primary">Twente Milieu Afvalkalender</h3>
-<span class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
-</div>
-<p class="text-sm text-text-secondary">Data m.b.t. ledigingsfrequenties en inzamelmiddelen.</p>
-</div>
-</div>
-</section>
-</div>
-<!-- Right Column (Sidebar) -->
-<div class="md:col-span-4 flex flex-col gap-lg">
-<!-- Disclaimer Box (Attention Block Style) -->
-<aside class="bg-surface-container-low border-l-4 border-secondary-container rounded-r-xl p-lg shadow-sm">
-<div class="flex items-center space-x-2 mb-sm">
-<span class="material-symbols-outlined text-secondary-container">info</span>
-<h3 class="font-label-md text-label-md font-bold text-on-surface">Disclaimer</h3>
-</div>
-<p class="text-sm text-text-secondary leading-relaxed">
-                                Aan de berekeningen op deze website kunnen <strong>geen rechten worden ontleend</strong>. De tool geeft een indicatie op basis van de huidige bekende concept-tarieven. Definitieve tarieven voor 2026 worden eind 2025 vastgesteld door de gemeenteraad.
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-md">
+                                <!-- Source Item 1 -->
+                                <div
+                                    class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="font-label-md text-label-md font-bold text-text-primary">
+                                            Raadsvoorstel Diftar</h3>
+                                        <span
+                                            class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">Definitief besluit gemeenteraad Enschede
+                                        (2024).</p>
+                                </div>
+                                <!-- Source Item 2 -->
+                                <div
+                                    class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="font-label-md text-label-md font-bold text-text-primary">
+                                            Tarievenoverzicht 2026 (Concept)</h3>
+                                        <span
+                                            class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">Verwachte basis- en variabel tarief
+                                        structuur.</p>
+                                </div>
+                                <!-- Source Item 3 -->
+                                <div
+                                    class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="font-label-md text-label-md font-bold text-text-primary">VANG
+                                            Doelstellingen</h3>
+                                        <span
+                                            class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">Landelijke 'Van Afval Naar Grondstof'
+                                        richtlijnen.</p>
+                                </div>
+                                <!-- Source Item 4 -->
+                                <div
+                                    class="bg-surface rounded-lg p-md border border-border-color hover:border-primary transition-colors group">
+                                    <div class="flex justify-between items-start mb-2">
+                                        <h3 class="font-label-md text-label-md font-bold text-text-primary">Twente
+                                            Milieu Afvalkalender</h3>
+                                        <span
+                                            class="material-symbols-outlined text-text-muted group-hover:text-primary transition-colors text-sm">open_in_new</span>
+                                    </div>
+                                    <p class="text-sm text-text-secondary">Data m.b.t. ledigingsfrequenties en
+                                        inzamelmiddelen.</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Right Column (Sidebar) -->
+                    <div class="md:col-span-4 flex flex-col gap-lg">
+                        <!-- Disclaimer Box (Attention Block Style) -->
+                        <aside
+                            class="bg-surface-container-low border-l-4 border-secondary-container rounded-r-xl p-lg shadow-sm">
+                            <div class="flex items-center space-x-2 mb-sm">
+                                <span class="material-symbols-outlined text-secondary-container">info</span>
+                                <h3 class="font-label-md text-label-md font-bold text-on-surface">Disclaimer</h3>
+                            </div>
+                            <p class="text-sm text-text-secondary leading-relaxed">
+                                Aan de berekeningen op deze website kunnen <strong>geen rechten worden
+                                    ontleend</strong>. De tool geeft een indicatie op basis van de huidige bekende
+                                concept-tarieven. Definitieve tarieven voor 2026 worden eind 2025 vastgesteld door de
+                                gemeenteraad.
                             </p>
-</aside>
-<!-- Contact & Contribution -->
-<div class="bg-bg-primary rounded-xl card-shadow p-lg">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-md">Meebouwen?</h3>
-<p class="text-sm text-text-secondary mb-lg">
-                                MinderAfval053 is open-source. Zie je een fout in de berekening, of wil je helpen het platform te verbeteren? Wij verwelkomen bijdragen via GitHub.
+                        </aside>
+                        <!-- Contact & Contribution -->
+                        <div class="bg-bg-primary rounded-xl card-shadow p-lg">
+                            <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-md">Meebouwen?
+                            </h3>
+                            <p class="text-sm text-text-secondary mb-lg">
+                                MinderAfval053 is open-source. Zie je een fout in de berekening, of wil je helpen het
+                                platform te verbeteren? Wij verwelkomen bijdragen via GitHub.
                             </p>
-<a class="flex items-center justify-center w-full px-4 py-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold rounded-DEFAULT hover:bg-tertiary-fixed-dim transition-colors mb-sm group" href="https://github.com/minderafval053/minderafval053">
-<!-- Standard GitHub icon SVG as a placeholder since it's not in standard Material Symbols -->
-<svg aria-hidden="true" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="currentColor" viewbox="0 0 24 24">
-<path clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" fill-rule="evenodd"></path>
-</svg>
+                            <a class="flex items-center justify-center w-full px-4 py-3 bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-bold rounded-DEFAULT hover:bg-tertiary-fixed-dim transition-colors mb-sm group"
+                                href="https://github.com/minderafval053/minderafval053">
+                                <!-- Standard GitHub icon SVG as a placeholder since it's not in standard Material Symbols -->
+                                <svg aria-hidden="true" class="w-5 h-5 mr-2 group-hover:scale-110 transition-transform"
+                                    fill="currentColor" viewbox="0 0 24 24">
+                                    <path clip-rule="evenodd"
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
                                 Bekijk op GitHub
                             </a>
-<div class="mt-lg pt-lg border-t border-border-color">
-<h4 class="font-label-md text-label-md text-text-primary font-bold mb-2">Contact</h4>
-<a class="inline-flex items-center text-sm text-primary hover:underline group" href="mailto:info@minderafval053.nl">
-<span class="material-symbols-outlined text-sm mr-1 group-hover:scale-110 transition-transform">mail</span>
+                            <div class="mt-lg pt-lg border-t border-border-color">
+                                <h4 class="font-label-md text-label-md text-text-primary font-bold mb-2">Contact</h4>
+                                <a class="inline-flex items-center text-sm text-primary hover:underline group"
+                                    href="mailto:info@minderafval053.nl">
+                                    <span
+                                        class="material-symbols-outlined text-sm mr-1 group-hover:scale-110 transition-transform">mail</span>
                                     info@minderafval053.nl
                                 </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div class="flex flex-col gap-sm">
-<a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim" href="../">MinderAfval053</a>
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
-Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in Enschede.
-</p>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../about/">Over ons</a>
-</div>
-<div class="flex flex-col gap-sm">
-<h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
-<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors" href="../privacy/">Privacybeleid</a>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-md text-center">
-<p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
-&copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
-</p>
-</div>
-</footer>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  var btn = document.getElementById('mobile-menu-btn');
-  var nav = document.getElementById('mobile-nav');
-  if (btn && nav) {
-    btn.addEventListener('click', function() {
-      nav.classList.toggle('hidden');
-    });
-  }
-});
-</script>
-</body></html>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+            <div class="flex flex-col gap-sm">
+                <a class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim"
+                    href="/">MinderAfval053</a>
+                <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant max-w-xs">
+                    Onafhankelijk platform voor eerlijke en transparante informatie over afvalstoffenheffing in
+                    Enschede.
+                </p>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Projectinformatie</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/about/">Over ons</a>
+            </div>
+            <div class="flex flex-col gap-sm">
+                <h4 class="font-label-md text-label-md text-primary font-bold">Juridisch</h4>
+                <a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary transition-colors"
+                    href="/privacy/">Privacybeleid</a>
+            </div>
+        </div>
+        <div class="border-t border-border-color dark:border-outline py-md text-center">
+            <p class="font-body-base text-body-base text-text-secondary dark:text-surface-variant text-sm">
+                &copy; 2026 MinderAfval053 Enschede. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var btn = document.getElementById('mobile-menu-btn');
+            var nav = document.getElementById('mobile-nav');
+            if (btn && nav) {
+                btn.addEventListener('click', function () {
+                    nav.classList.toggle('hidden');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

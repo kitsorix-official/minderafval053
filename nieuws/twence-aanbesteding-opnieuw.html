@@ -1,133 +1,226 @@
 <!DOCTYPE html>
 <html class="light" lang="nl">
+
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Twence nascheidingsinstallatie: aanbesteding opnieuw - MinderAfval053</title>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"/>
-<style>.card-shadow{box-shadow:0 1px 3px rgba(0,0,0,0.08);transition:box-shadow .3s,transform .3s}.card-shadow:hover{box-shadow:0 4px 12px rgba(0,0,0,0.12);transform:translateY(-2px)}</style>
-<link rel="stylesheet" href="../dist/output.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twence nascheidingsinstallatie: aanbesteding opnieuw - MinderAfval053</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <style>
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+            transition: box-shadow .3s, transform .3s
+        }
+
+        .card-shadow:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px)
+        }
+    </style>
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
+
 <body class="bg-background text-text-primary font-body-base min-h-screen flex flex-col">
-<header>
-<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant w-full top-0 sticky z-50">
-<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity" href="../">MinderAfval053</a>
-<ul class="hidden md:flex gap-lg items-center">
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../">Rekentool</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../tarieven-2026/">Tarieven 2026</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../veelgestelde-vragen/">FAQ</a></li>
-<li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md" href="../bespaartips/">Bespaartips</a></li>
-</ul>
-<div class="flex items-center gap-4">
-<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</div>
-</nav>
-</header>
-<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
-<div class="flex flex-col px-lg py-md space-y-sm">
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../">Rekentool</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/">Tarieven 2026</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/">Hoe Werkt Diftar</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/">FAQ</a>
-<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/">Bespaartips</a>
-</div>
-</nav>
-<main class="flex-grow w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl md:py-4xl space-y-3xl">
-<nav aria-label="Breadcrumb" class="mb-lg">
-<ol class="flex items-center space-x-2 font-label-md text-label-md text-text-secondary">
-<li><a class="hover:text-primary transition-colors flex items-center" href="../"><span class="material-symbols-outlined text-[18px] mr-1">home</span>Home</a></li>
-<li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
-<li><a class="hover:text-primary transition-colors" href="../nieuws/">Nieuws</a></li>
-<li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
-<li><span aria-current="page" class="text-text-primary font-medium">Twence aanbesteding opnieuw</span></li>
-</ol>
-</nav>
-<article class="max-w-3xl mx-auto">
-<div class="mb-xl">
-<div class="flex items-center text-text-muted font-label-md text-label-md mb-sm space-x-4">
-<span class="flex items-center"><span class="material-symbols-outlined text-[18px] mr-1">calendar_today</span> 13 Jul 2026</span>
-<span class="flex items-center"><span class="material-symbols-outlined text-[18px] mr-1">schedule</span> 6 min lezen</span>
-</div>
-<span class="bg-red-100 text-red-800 font-badge text-badge px-3 py-1 rounded-full uppercase tracking-wide">Breaking</span>
-<h1 class="font-headline-lg text-headline-lg text-text-primary mt-md mb-lg">De 14 miljoen euro van Twence is in duigen gevallen — en daar moeten wij ons zorgen over maken</h1>
-</div>
-<div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-xl">
-<img alt="Afvalverwerking bij Twence in Hengelo" class="object-cover w-full h-full" src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900&h=500&fit=crop"/>
-</div>
-<div class="prose-custom space-y-lg font-body-base text-body-base text-text-secondary">
-<p class="text-lg text-text-primary font-medium">Oké, ik zal maar meteen met de deur in huis vallen: dat plan van Twence voor een nascheidingsinstallatie van 14 miljoen euro? Dat is mislukt. De aanbesteding die eerder dit jaar is uitgezet, heeft niet geleid tot een gunning. En dat terwijl we al hadden gerekend op die installatie vanaf 2028. Nou, die datum is nu heel ver weg.</p>
+    <header>
+        <nav
+            class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant w-full top-0 sticky z-50">
+            <div
+                class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+                <a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim hover:opacity-80 transition-opacity"
+                    href="/">MinderAfval053</a>
+                <ul class="hidden md:flex gap-lg items-center">
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/">Rekentool</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/tarieven-2026/">Tarieven 2026</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/veelgestelde-vragen/">FAQ</a></li>
+                    <li><a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-surface-variant transition-colors px-3 py-2 rounded-md"
+                            href="/bespaartips/">Bespaartips</a></li>
+                </ul>
+                <div class="flex items-center gap-4">
+                    <button id="mobile-menu-btn"
+                        class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+        <div class="flex flex-col px-lg py-md space-y-sm">
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/">Rekentool</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/tarieven-2026/">Tarieven 2026</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/hoe-werkt-diftar/">Hoe Werkt Diftar</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/veelgestelde-vragen/">FAQ</a>
+            <a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded"
+                href="/bespaartips/">Bespaartips</a>
+        </div>
+    </nav>
+    <main class="flex-grow w-full max-w-container-max mx-auto px-lg md:px-xl py-3xl md:py-4xl space-y-3xl">
+        <nav aria-label="Breadcrumb" class="mb-lg">
+            <ol class="flex items-center space-x-2 font-label-md text-label-md text-text-secondary">
+                <li><a class="hover:text-primary transition-colors flex items-center" href="/"><span
+                            class="material-symbols-outlined text-[18px] mr-1">home</span>Home</a></li>
+                <li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
+                <li><a class="hover:text-primary transition-colors" href="/nieuws/">Nieuws</a></li>
+                <li><span class="material-symbols-outlined text-[16px] text-text-muted">chevron_right</span></li>
+                <li><span aria-current="page" class="text-text-primary font-medium">Twence aanbesteding opnieuw</span>
+                </li>
+            </ol>
+        </nav>
+        <article class="max-w-3xl mx-auto">
+            <div class="mb-xl">
+                <div class="flex items-center text-text-muted font-label-md text-label-md mb-sm space-x-4">
+                    <span class="flex items-center"><span
+                            class="material-symbols-outlined text-[18px] mr-1">calendar_today</span> 13 Jul 2026</span>
+                    <span class="flex items-center"><span
+                            class="material-symbols-outlined text-[18px] mr-1">schedule</span> 6 min lezen</span>
+                </div>
+                <span
+                    class="bg-red-100 text-red-800 font-badge text-badge px-3 py-1 rounded-full uppercase tracking-wide">Breaking</span>
+                <h1 class="font-headline-lg text-headline-lg text-text-primary mt-md mb-lg">De 14 miljoen euro van
+                    Twence is in duigen gevallen — en daar moeten wij ons zorgen over maken</h1>
+            </div>
+            <div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-xl">
+                <img alt="Afvalverwerking bij Twence in Hengelo" class="object-cover w-full h-full"
+                    src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=900&h=500&fit=crop" />
+            </div>
+            <div class="prose-custom space-y-lg font-body-base text-body-base text-text-secondary">
+                <p class="text-lg text-text-primary font-medium">Oké, ik zal maar meteen met de deur in huis vallen: dat
+                    plan van Twence voor een nascheidingsinstallatie van 14 miljoen euro? Dat is mislukt. De
+                    aanbesteding die eerder dit jaar is uitgezet, heeft niet geleid tot een gunning. En dat terwijl we
+                    al hadden gerekend op die installatie vanaf 2028. Nou, die datum is nu heel ver weg.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat is er precies gebeurd?</h2>
-<p>Twence had een aanbesteding in de markt gezet voor de bouw van een nascheidingsinstallatie — dat is die machine die pmd (plastic, metaal, drankverpakkingen) uit het restafval moet halen. De bedoeling was dat hoogbouwbewoners in Enschede en Hengelo straks hun plastic niet meer zelf hoeven te scheiden, maar dat een machine dat voor ze doet.</p>
-<p>De gunning had op 5 mei moeten plaatsvinden, maar daarna bleef het stil. En nu blijkt waarom: koepelorganisatie Verpact — de organisatie die namens de verpakkingsindustrie de regels bepaalt — heeft het ontwerp aangepast. Dat betekent dat de hele aanbestedingsprocedure opnieuw moet. Volgens antwoorden van het Hengelose college op raadsvragen is dit bevestigd.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat is er precies gebeurd?</h2>
+                <p>Twence had een aanbesteding in de markt gezet voor de bouw van een nascheidingsinstallatie — dat is
+                    die machine die pmd (plastic, metaal, drankverpakkingen) uit het restafval moet halen. De bedoeling
+                    was dat hoogbouwbewoners in Enschede en Hengelo straks hun plastic niet meer zelf hoeven te
+                    scheiden, maar dat een machine dat voor ze doet.</p>
+                <p>De gunning had op 5 mei moeten plaatsvinden, maar daarna bleef het stil. En nu blijkt waarom:
+                    koepelorganisatie Verpact — de organisatie die namens de verpakkingsindustrie de regels bepaalt —
+                    heeft het ontwerp aangepast. Dat betekent dat de hele aanbestedingsprocedure opnieuw moet. Volgens
+                    antwoorden van het Hengelose college op raadsvragen is dit bevestigd.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Is dat budget van 14 miljoen euro nog realistisch?</h2>
-<p>Eerlijk gezegd: dat weet niemand. De Hengelose fractie van Anders! heeft dat direct gevraagd, en het antwoord was veelzeggend: "Hoe dit eruit zal zien in de nieuwe aanbesteding is op dit moment nog niet duidelijk." Dat is natuurlijk niet wat je wilt horen als inwoner van de regio waar dit afval wordt verwerkt.</p>
-<p>Ik bedoel, 14 miljoen euro is al een hoop geld. Maar als het ontwerp wordt aangepast voor "toekomstbestendigheid" — wat dat dan ook mag betekenen — dan gaan de kosten waarschijnlijk niet omlaag. En als Twence de businesscase niet rond krijgt, dan moeten ze het restafval van hoogbouwbewoners ergens anders laten nascheiden. Waarschijnlijk bij Attero in Drenthe. En dan moet het overgebleven restafval weer terug naar Hengelo. Dat klinkt niet bepaald efficient, toch?</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Is dat budget van 14 miljoen euro
+                    nog realistisch?</h2>
+                <p>Eerlijk gezegd: dat weet niemand. De Hengelose fractie van Anders! heeft dat direct gevraagd, en het
+                    antwoord was veelzeggend: "Hoe dit eruit zal zien in de nieuwe aanbesteding is op dit moment nog
+                    niet duidelijk." Dat is natuurlijk niet wat je wilt horen als inwoner van de regio waar dit afval
+                    wordt verwerkt.</p>
+                <p>Ik bedoel, 14 miljoen euro is al een hoop geld. Maar als het ontwerp wordt aangepast voor
+                    "toekomstbestendigheid" — wat dat dan ook mag betekenen — dan gaan de kosten waarschijnlijk niet
+                    omlaag. En als Twence de businesscase niet rond krijgt, dan moeten ze het restafval van
+                    hoogbouwbewoners ergens anders laten nascheiden. Waarschijnlijk bij Attero in Drenthe. En dan moet
+                    het overgebleven restafval weer terug naar Hengelo. Dat klinkt niet bepaald efficient, toch?</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Attero waarschuwt voor onomkeerbare stappen</h2>
-<p>Hier wordt het interesant. Concurrent Attero — een andere afvalverwerker — heeft zich onlangs gemeld bij de gemeenteraden van Enschede en Hengelo met een brief. Daarin waarschuwt het bedrijf voor "onomkeerbare stappen" bij het bouwen van een nascheidingsinstallatie. Dat is een behoorlijke waarschuwing, als je het mij vraagt.</p>
-<p>Deze brief heeft in Enschede geleid tot een hele reeks raadsvragen van Burgerbelangen. Raadslid Joffrey Vogelzang wil vooral weten wat de mogelijke gevolgen zijn en waarom het college niet heeft gekozen voor een openbare aanbesteding van de nascheiding. Best logische vragen, als je het mij vraagt.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Attero waarschuwt voor
+                    onomkeerbare stappen</h2>
+                <p>Hier wordt het interesant. Concurrent Attero — een andere afvalverwerker — heeft zich onlangs gemeld
+                    bij de gemeenteraden van Enschede en Hengelo met een brief. Daarin waarschuwt het bedrijf voor
+                    "onomkeerbare stappen" bij het bouwen van een nascheidingsinstallatie. Dat is een behoorlijke
+                    waarschuwing, als je het mij vraagt.</p>
+                <p>Deze brief heeft in Enschede geleid tot een hele reeks raadsvragen van Burgerbelangen. Raadslid
+                    Joffrey Vogelzang wil vooral weten wat de mogelijke gevolgen zijn en waarom het college niet heeft
+                    gekozen voor een openbare aanbesteding van de nascheiding. Best logische vragen, als je het mij
+                    vraagt.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">En dan is er ook nog die rechtszaak</h2>
-<p>Achter de schermen speelt er nog iets heel anders: een hoger beroep in een zaak tussen afvalverwerker AVR en Twence. Als de rechter oordeelt dat de BV van Twence die het verbranden van bedrijfsafval regelt niet los kan worden gezien van de publieke entiteiten die het huisvuil verwerken, dan moeten de aandeelhoudende gemeenten het verwerken van huishoudelijk afval voortaan openbaar aanbesteden.</p>
-<p>En dat zou grote gevolgen hebben. Niet alleen voor Twence, maar voor alle vijftien gemeenten in Twente en de Achterhoek die aandeelhouder zijn. Het is nog afwachten wat de rechter beslist, maar het geeft wel aan dat er meer op het spel staat dan alleen een nascheidingsinstallatie.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">En dan is er ook nog die
+                    rechtszaak</h2>
+                <p>Achter de schermen speelt er nog iets heel anders: een hoger beroep in een zaak tussen afvalverwerker
+                    AVR en Twence. Als de rechter oordeelt dat de BV van Twence die het verbranden van bedrijfsafval
+                    regelt niet los kan worden gezien van de publieke entiteiten die het huisvuil verwerken, dan moeten
+                    de aandeelhoudende gemeenten het verwerken van huishoudelijk afval voortaan openbaar aanbesteden.
+                </p>
+                <p>En dat zou grote gevolgen hebben. Niet alleen voor Twence, maar voor alle vijftien gemeenten in
+                    Twente en de Achterhoek die aandeelhouder zijn. Het is nog afwachten wat de rechter beslist, maar
+                    het geeft wel aan dat er meer op het spel staat dan alleen een nascheidingsinstallatie.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat betekent dit voor jou als bewoner?</h2>
-<p>Laten we even eerlijk zijn: op korte termijn verandert er niet zoveel. De bovengrondse en ondergrondse containers voor pmd moeten uiterlijk 1 januari 2027 van straat. Tot die tijd loopt de inzameling gewoon door. Maar vanaf 2027 worden de kosten voor nascheiding volledig voor rekening van de gemeente — en dat betekent uiteindelijk dat jij er via de afvalstoffenheffing voor betaalt.</p>
-<p>En dan te bedenken dat Enschede en Hengelo in het gunstigste geval pas vanaf 1 januari 2028 gebruik kunnen maken van een nascheidingsinstallatie bij Twence. Tot die tijd zal het overbrugd moeten worden — bijvoorbeeld door elders na te scheiden. Maar dat is niet gratis, en die kosten worden doorberekend.</p>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Wat betekent dit voor jou als
+                    bewoner?</h2>
+                <p>Laten we even eerlijk zijn: op korte termijn verandert er niet zoveel. De bovengrondse en
+                    ondergrondse containers voor pmd moeten uiterlijk 1 januari 2027 van straat. Tot die tijd loopt de
+                    inzameling gewoon door. Maar vanaf 2027 worden de kosten voor nascheiding volledig voor rekening van
+                    de gemeente — en dat betekent uiteindelijk dat jij er via de afvalstoffenheffing voor betaalt.</p>
+                <p>En dan te bedenken dat Enschede en Hengelo in het gunstigste geval pas vanaf 1 januari 2028 gebruik
+                    kunnen maken van een nascheidingsinstallatie bij Twence. Tot die tijd zal het overbrugd moeten
+                    worden — bijvoorbeeld door elders na te scheiden. Maar dat is niet gratis, en die kosten worden
+                    doorberekend.</p>
 
-<h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Mijn mening</h2>
-<p>Ik word hier eerlijk gezegd niet vrolijk van. Als inwoner van Enschede wil je gewoon dat je afval goed wordt verwerkt en dat de kosten beheersbaar blijven. Maar nu lijkt het erop dat we een dure tussentijd tegemoet gaan, zonder dat er een duidelijk plan is. En dat terwijl we al jaren bezig zijn met diftar en het beter scheiden van afval.</p>
-<p>De enige positieve noot: het probleem wordt erkend en er wordt over gepraat. Maar praten is niet hetzelfde als oplossen. En ondertussen betaal jij en ik wel die rekening.</p>
-</div>
-<div class="mt-xl pt-lg border-t border-border-color">
-<p class="font-label-md text-label-md text-text-muted">Bronnen: <a href="https://www.1twente.nl/artikel/6228853/aanbesteding-voor-nascheiding-restafval-bij-twence-moet-opnieuw-is-14-miljoen-euro-nog-realistisch" class="text-primary hover:text-brand-green-dark transition-colors" target="_blank" rel="noopener">1Twente — Aanbesteding nascheiding opnieuw</a>, <a href="https://www.1twente.nl/artikel/6002533/installatie-voor-nascheiding-bij-twence-mag-14-miljoen-kosten-en-moet-binnen-twee-jaar-af" class="text-primary hover:text-brand-green-dark transition-colors" target="_blank" rel="noopener">1Twente — Nascheidingsinstallatie 14 miljoen</a></p>
-</div>
-<div class="mt-xl flex justify-between items-center">
-<a class="inline-flex items-center font-label-md text-label-md text-primary font-bold hover:text-brand-green-dark transition-colors" href="../nieuws/">
-<span class="material-symbols-outlined mr-1">arrow_back</span> Terug naar nieuws
-</a>
-</div>
-</article>
-</main>
-<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
-<div>
-<a class="font-headline-sm text-headline-sm font-extrabold text-primary" href="../">MinderAfval053</a>
-<p class="mt-sm font-body-sm text-body-sm text-text-secondary">Onafhankelijke informatie over afval en Diftar in Enschede. Wij helpen inwoners besparen op afvalkosten.</p>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg text-text-primary mb-md">Projectinformatie</h4>
-<ul class="space-y-sm">
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../about/">Over ons</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../veelgestelde-vragen/">Veelgestelde vragen</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../nieuws/">Nieuws</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-label-lg text-label-lg text-text-primary mb-md">Privacybeleid</h4>
-<ul class="space-y-sm">
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/">Privacybeleid</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/#cookies">Functionele Cookies</a></li>
-<li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors" href="../privacy/#open-source">Open Broncode</a></li>
-</ul>
-</div>
-</div>
-<div class="border-t border-border-color dark:border-outline py-lg px-lg max-w-container-max mx-auto text-center">
-<p class="font-body-sm text-body-sm text-text-muted">&copy; 2026 MinderAfval053. Alle rechten voorbehouden.</p>
-</div>
-</footer>
-<script>
-document.getElementById('mobile-menu-btn')?.addEventListener('click', function() {
-document.getElementById('mobile-nav')?.classList.toggle('hidden');
-});
-</script>
+                <h2 class="font-headline-sm text-headline-sm text-text-primary pt-md">Mijn mening</h2>
+                <p>Ik word hier eerlijk gezegd niet vrolijk van. Als inwoner van Enschede wil je gewoon dat je afval
+                    goed wordt verwerkt en dat de kosten beheersbaar blijven. Maar nu lijkt het erop dat we een dure
+                    tussentijd tegemoet gaan, zonder dat er een duidelijk plan is. En dat terwijl we al jaren bezig zijn
+                    met diftar en het beter scheiden van afval.</p>
+                <p>De enige positieve noot: het probleem wordt erkend en er wordt over gepraat. Maar praten is niet
+                    hetzelfde als oplossen. En ondertussen betaal jij en ik wel die rekening.</p>
+            </div>
+            <div class="mt-xl pt-lg border-t border-border-color">
+                <p class="font-label-md text-label-md text-text-muted">Bronnen: <a
+                        href="https://www.1twente.nl/artikel/6228853/aanbesteding-voor-nascheiding-restafval-bij-twence-moet-opnieuw-is-14-miljoen-euro-nog-realistisch"
+                        class="text-primary hover:text-brand-green-dark transition-colors" target="_blank"
+                        rel="noopener">1Twente — Aanbesteding nascheiding opnieuw</a>, <a
+                        href="https://www.1twente.nl/artikel/6002533/installatie-voor-nascheiding-bij-twence-mag-14-miljoen-kosten-en-moet-binnen-twee-jaar-af"
+                        class="text-primary hover:text-brand-green-dark transition-colors" target="_blank"
+                        rel="noopener">1Twente — Nascheidingsinstallatie 14 miljoen</a></p>
+            </div>
+            <div class="mt-xl flex justify-between items-center">
+                <a class="inline-flex items-center font-label-md text-label-md text-primary font-bold hover:text-brand-green-dark transition-colors"
+                    href="/nieuws/">
+                    <span class="material-symbols-outlined mr-1">arrow_back</span> Terug naar nieuws
+                </a>
+            </div>
+        </article>
+    </main>
+    <footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+            <div>
+                <a class="font-headline-sm text-headline-sm font-extrabold text-primary" href="/">MinderAfval053</a>
+                <p class="mt-sm font-body-sm text-body-sm text-text-secondary">Onafhankelijke informatie over afval en
+                    Diftar in Enschede. Wij helpen inwoners besparen op afvalkosten.</p>
+            </div>
+            <div>
+                <h4 class="font-label-lg text-label-lg text-text-primary mb-md">Projectinformatie</h4>
+                <ul class="space-y-sm">
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/about/">Over ons</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/veelgestelde-vragen/">Veelgestelde vragen</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/nieuws/">Nieuws</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-label-lg text-label-lg text-text-primary mb-md">Privacybeleid</h4>
+                <ul class="space-y-sm">
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/">Privacybeleid</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/#cookies">Functionele Cookies</a></li>
+                    <li><a class="font-body-sm text-body-sm text-text-secondary hover:text-primary transition-colors"
+                            href="/privacy/#open-source">Open Broncode</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-border-color dark:border-outline py-lg px-lg max-w-container-max mx-auto text-center">
+            <p class="font-body-sm text-body-sm text-text-muted">&copy; 2026 MinderAfval053. Alle rechten voorbehouden.
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('mobile-menu-btn')?.addEventListener('click', function () {
+            document.getElementById('mobile-nav')?.classList.toggle('hidden');
+        });
+    </script>
 </body>
+
 </html>
