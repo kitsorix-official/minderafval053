@@ -1,0 +1,225 @@
+# MinderAfval053
+
+> An independent, open-source Dutch civic information platform providing transparent waste cost calculations and practical guidance for the Diftar (differentiated waste tariffs) system introduced in Enschede, Netherlands in 2026.
+
+## Overview
+
+MinderAfval053 is a citizen-initiated, non-governmental website dedicated to making the new Diftar waste management policy in Enschede understandable and financially transparent for all residents. The platform translates complex municipal policy documents and tariff structures into clear, personalized insights. It is **not** affiliated with the Municipality of Enschede or Twente Milieu.
+
+- **Website:** https://minderafval053.nl
+- **Language:** Dutch (nl)
+- **Location:** Enschede, Overijssel, Netherlands
+- **License:** Open source (public repository)
+- **GitHub:** https://github.com/kitsorix-official/minderafval053
+- **Contact:** info@minderafval053.nl
+- **Last Updated:** 2026
+
+## What is Diftar?
+
+Diftar (Gedifferentieerde Tarieven, meaning "Differentiated Tariffs") is a waste management pricing system where residents pay a fixed annual base fee (vastrecht) plus a variable fee each time their residual waste (restafval) is collected. The system is designed to incentivize better waste separation: the more you recycle (GFT organic waste, PMD plastics, paper), the less residual waste you produce and the lower your costs.
+
+Key principles:
+- Every household pays a fixed annual base tariff (approximately EUR 264.84 in 2026)
+- Variable costs per residual waste collection vary by container size (EUR 4.50 for 140L, EUR 7.50 for 240L)
+- Underground containers cost EUR 1.50 per 30L deposit
+- GFT (organic waste), PMD (plastic packaging), paper, and glass collection remain free
+- Better waste separation directly reduces annual costs
+
+## Key Features
+
+### Waste Cost Calculator (Rekentool)
+The core feature of MinderAfval053 is an interactive calculator that allows residents to estimate their annual waste costs based on:
+- Container size (140L or 240L)
+- Collection frequency (0-26 times per year)
+- Whether they use underground containers
+- Household size and waste separation behavior
+
+### Tariff Overview 2026
+Complete breakdown of all waste tariffs for Enschede in 2026, including:
+- Fixed base tariff: EUR 264.84 per year
+- 140L residual waste container: EUR 4.50 per collection
+- 240L residual waste container: EUR 7.50 per collection
+- Underground container: EUR 1.50 per 30L deposit
+- Example cost scenarios for small (1-2 persons), average (3-4 persons), and large (5+ persons) households
+
+### How Diftar Works (5-Step Explanation)
+An interactive walkthrough explaining the Diftar system in 5 clear steps:
+1. Fixed base tariff
+2. Container size selection
+3. Cost per collection
+4. Waste separation benefits
+5. Potential savings
+
+### Waste Collection Calendar
+Postcode-based waste collection schedule showing:
+- Weekly collection overview (which waste type on which day)
+- Monthly calendar view with color-coded collection days
+- Holiday schedule with replacement collection dates for 2026
+- PDF calendar download option
+
+### Savings Tips (Bespaartips)
+Top 10 practical tips to reduce waste costs, with estimated savings:
+1. Proper GFT separation (up to EUR 48/year savings)
+2. Flattening packaging (up to EUR 30/year savings)
+3. Diaper recycling at free collection points (up to EUR 65/year savings)
+4. Textile to textile containers (up to EUR 15/year savings)
+5. Conscious shopping (up to EUR 20/year savings)
+6. Kitchen waste sorting bins
+7. Recycling center visits for bulky items
+8. Nee/Nee stickers for unwanted paper
+9. Compressing waste bags
+10. Litter cleanup participation
+
+### Container Comparison
+Side-by-side comparison of 140L and 240L containers:
+- 140L: EUR 1.20 per collection, suitable for 1-2 persons
+- 240L: EUR 2.00 per collection, suitable for 3+ persons
+- Guidance on when to choose each size
+
+### Container Exchange Guide
+Step-by-step process for swapping container sizes:
+- Exchange is free of charge
+- 5-step process via municipal digital portal with DigiD
+- Cost comparison showing EUR 5.00 savings per collection when downsizing
+
+### Bulky Waste (Grof Afval)
+Information about disposal of large items:
+- Annual free quota of 300 kg for bulky household waste and garden waste
+- EUR 0.16 per extra kg after quota for bulky waste
+- EUR 0.10 per kg for rubble (no free quota)
+- Free unlimited disposal for electronics and small chemical waste
+- Three recycling center locations in Enschede with opening hours
+- Milieupas (environmental pass) required for access
+
+### Recycling Center Locations
+Three milieuparken (recycling centers) in Enschede:
+- Milieupark Oost: Lenteweg 35, 7532 RV Enschede
+- Milieupark West: Binnenhaven 120, 7547 BL Enschede
+- Milieupark Zuid (main location): Vlierstraat 105, 7544 GG Enschede
+- Hours: Monday-Friday 08:30-16:30, Saturday 08:30-16:00
+
+### High-Rise vs Low-Rise Comparison
+Differences in waste management between apartment buildings and houses:
+- Laagbouw (houses): Own wheelie bins, pay per collection
+- Hoogbouw (apartments): Underground communal containers, pay per deposit
+- Cost comparison table for both housing types
+
+### Environmental Pass (Milieupas)
+Information about the required access card:
+- Required for recycling center access
+- Linked to residential address
+- Replacement cost: EUR 15.00
+- 4-step guide: check ownership, replace if needed, bring along, scan at barrier
+
+### Payment Exemptions (Kwijtschelding)
+Information about financial assistance:
+- Full or partial exemption for low-income residents
+- Eligibility criteria (income at welfare level, limited assets)
+- 4-step application process via GBTwente
+- Payment plan options for those who don't qualify for full exemption
+
+### GFT Container Request
+Guide for requesting a free organic waste container:
+- Free to request and free to have collected
+- 3-step application via municipal portal with DigiD
+- Complete list of what belongs and does not belong in GFT
+
+### News & Updates
+Regular news articles about:
+- Diftar policy developments
+- Practical waste separation guides
+- Community information sessions
+- Technology explanations (e.g., weighing chips in containers)
+
+### Privacy Policy
+- No personal data collection unless voluntarily provided
+- Only functional and analytical cookies
+- No tracking cookies for marketing
+- Open source codebase for transparency
+
+## Data Sources
+
+All calculations and information on MinderAfval053 are based on official public documents:
+- Raadsvoorstel Diftar (Council proposal for Diftar) - Final council decision (2024)
+- Tarievenoverzicht 2026 (Concept) - Expected base and variable tariff structure
+- VANG Doelstellingen - National "From Waste to Resource" guidelines
+- Twente Milieu Afvalkalender - Collection frequency and equipment data
+
+## Tech Stack
+
+- **HTML5** - Static site, no server-side rendering required
+- **Tailwind CSS 3.4** - Utility-first CSS framework with custom design tokens
+- **Google Material Symbols** - Iconography
+- **Inter Font** - Typography (Google Fonts)
+- **Vanilla JavaScript** - Mobile navigation, accordion interactions, calculator logic
+
+## Design System
+
+The project uses a Material Design 3-inspired custom token system with:
+- Light mode (default) and dark mode support via CSS class
+- Custom color palette (primary green #006e2f, brand orange #fd761a)
+- Consistent spacing scale (xs through 4xl)
+- Responsive breakpoints for mobile, tablet, and desktop
+- Maximum container width: 1152px
+
+## Geographic Focus
+
+- **Primary:** Enschede, Overijssel, Netherlands
+- **Region:** Twente (municipal cooperation area for waste management)
+- **Waste Authority:** Gemeentelijk Belastingkantoor Twente (GBT) for tax collection, Twente Milieu for waste operations
+
+## Target Audience
+
+- Residents of Enschede preparing for or adapting to the Diftar system in 2026
+- Homeowners and renters in both low-rise (houses) and high-rise (apartments)
+- Families of all sizes looking to optimize waste costs
+- Low-income residents seeking information about payment exemptions
+- Anyone interested in understanding Dutch waste management policy
+
+## Key Terms
+
+- **Diftar** - Gedifferentieerde Tarieven (Differentiated Tariffs) - pay-as-you-throw waste system
+- **Restafval** - Residual/general waste (gray bin)
+- **GFT** - Groente, Fruit en Tuinafval (vegetable, fruit and garden waste - green bin)
+- **PMD** - Plastic verpakkingen, Metalen verpakkingen, Drinkverpakkingen (plastic, metal, drink cartons)
+- **Vastrecht** - Fixed annual right/fee for waste collection
+- **Lediging** - Collection/emptying of a waste container
+- **Milieupas** - Environmental access card for recycling centers
+- **Milieupark** - Recycling center / environmental park
+- **Kwijtschelding** - Remission/exemption of fees
+- **Kliko** - Dutch brand name commonly used for wheelie bins
+- **Ondergrondse container** - Underground waste container (for apartments/high-rise)
+- **Inworp** - Deposit/drop-off of waste into an underground container
+- **Stortquotum** - Free disposal quota at recycling centers
+- **GBTwente** - Gemeentelijk Belastingkantoor Twente (municipal tax office)
+- **Twente Milieu** - Regional waste management organization
+
+## Project Structure
+
+```
+/
+├── index.html                          # Homepage with waste cost calculator
+├── tarieven-2026/index.html            # Complete 2026 tariff overview
+├── hoe-werkt-diftar/index.html         # How Diftar works (5-step guide)
+├── veelgestelde-vragen/index.html      # Frequently asked questions
+├── bespaartips/index.html              # Top 10 savings tips
+├── afvalkalender/index.html            # Waste collection calendar
+├── container-omruilen/index.html       # Container exchange guide
+├── gft-aanvragen/index.html            # GFT container request guide
+├── grof-afval/index.html               # Bulky waste information
+├── hoogbouw-vs-laagbouw/index.html     # High-rise vs low-rise comparison
+├── kies-je-container/index.html        # Container size comparison
+├── kwijtschelding/index.html           # Payment exemptions info
+├── milieupas/index.html                # Environmental pass guide
+├── nieuws/index.html                   # News and updates
+├── about/index.html                    # About the project
+├── privacy/index.html                  # Privacy policy
+├── src/input.css                       # Tailwind CSS input
+├── dist/output.css                     # Compiled Tailwind CSS output
+├── tailwind.config.js                  # Tailwind configuration
+└── package.json                        # Project dependencies
+```
+
+## Disclaimer
+
+Aan de berekeningen op deze website kunnen geen rechten worden ontleend. De tool geeft een indicatie op basis van de huidige bekende concept-tarieven. Definitieve tarieven voor 2026 worden vastgesteld door de gemeenteraad. This website is a private initiative and is not affiliated with the Municipality of Enschede or Twente Milieu.

@@ -1,15 +1,276 @@
-<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wanneer wordt welk afval opgehaald in Enschede? Bekijk het overzicht van ophaaldagen voor restafval, GFT, PMD en papier." />
-    <link rel="canonical" href="https://afval053.website/afvalkalender/" />
-    <title>Afvalkalender Enschede 2026 - Ophaaldagen | MinderAfval053</title>
-    <script type="module" crossorigin src="../assets/main-Czvh81wA.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-DEFDvvXy.css">
-  </head>
-  <body>
-    <div id="root" data-page="afvalkalender"></div>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html class="light" lang="nl"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afvalkalender - MinderAfval053</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-background text-on-surface font-body-base text-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header>
+<nav class="bg-surface-container-lowest top-0 sticky border-b border-border-color z-50">
+<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+<div class="flex items-center gap-md">
+<a class="font-headline-sm text-headline-sm font-extrabold text-primary" href="#">MinderAfval053</a>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-text-secondary hover:text-primary font-label-md text-label-md transition-colors" href="#">Rekentool</a>
+<a class="text-text-secondary hover:text-primary font-label-md text-label-md transition-colors" href="#">Tarieven 2026</a>
+<a class="text-text-secondary hover:text-primary font-label-md text-label-md transition-colors" href="#">Hoe Werkt Diftar</a>
+<a class="text-text-secondary hover:text-primary font-label-md text-label-md transition-colors" href="#">FAQ</a>
+<a class="text-text-secondary hover:text-primary font-label-md text-label-md transition-colors" href="#">Bespaartips</a>
+</div>
+
+<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+</header>
+<!-- Mobile Nav Panel -->
+<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+<div class="flex flex-col px-lg py-md space-y-sm">
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../index.html">Rekentool</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/index.html">Tarieven 2026</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/index.html">Hoe Werkt Diftar</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/index.html">FAQ</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/index.html">Bespaartips</a>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="w-full">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="w-full bg-surface-container-lowest border-b border-border-color py-sm px-lg">
+<div class="max-w-container-max mx-auto flex items-center gap-2 text-text-secondary font-label-md text-label-md">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+<span class="text-primary font-bold">Afvalkalender</span>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="bg-surface-container-low py-3xl px-lg md:px-xl">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-2xl items-center">
+<div>
+<h1 class="font-headline-hero-mobile text-headline-hero-mobile md:font-headline-hero md:text-headline-hero text-on-surface mb-md">Mijn Afvalkalender</h1>
+<p class="font-body-base text-body-base text-text-secondary mb-lg max-w-xl">
+                        Bekijk precies wanneer welk afval in uw wijk wordt opgehaald. Vul uw postcode in voor een gepersonaliseerd overzicht of blader door de algemene ophaaldagen voor 2026.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-sm max-w-md">
+<input class="flex-1 bg-bg-tertiary border border-border-color rounded-lg px-md py-sm font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Postcode (bijv. 7511 AA)" type="text"/>
+<input class="w-32 bg-bg-tertiary border border-border-color rounded-lg px-md py-sm font-label-md text-label-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Huisnummer" type="text"/>
+<button class="bg-primary hover:bg-brand-green-dark text-on-primary font-label-md text-label-md font-bold px-lg py-sm rounded-lg transition-colors shadow-sm whitespace-nowrap">
+                            Zoek Dagen
+                        </button>
+</div>
+</div>
+<div class="relative h-64 md:h-auto w-full min-h-[300px] rounded-xl overflow-hidden border border-border-color shadow-sm" data-alt="A clean, modern top-down illustration or photo of a typical Dutch suburban street corner with neatly aligned, color-coded wheelie bins (green, gray, blue) waiting for collection on a sunny morning. The style is hyper-realistic yet stylized to fit a corporate dashboard aesthetic, using bright natural lighting, deep shadows, and subtle primary green accents to convey organization and civic duty." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2Nf2B6rYXv-Y-Q9oMkTQu3PzVtiVI5tiDcBznWEhge63M2Giklq53lX3ytG6baAU7eIzFHY7x7GxDzFWGifRBxXEvK3GzIYptsCFSubQxZe7N6nrFCqWMQPdx-3qpLaqtwHHzhi6p7T2p9ba_zWDO9zg6hIhMCNlj6gjpZgr1NikEVl1rqeo0RSjIKgGXpPpfl2yc1-1rXhL2vXUw4pDRDYsOKFWp5m7D7cubWKrUfl7Q7qJWQtflSjUFw7v6VxH34bPwTb0RjBM')">
+<!-- Illustration Placeholder -->
+</div>
+</div>
+</section>
+<!-- Container for Bento Grid Layout -->
+<section class="py-3xl px-lg md:px-xl max-w-container-max mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-lg -mt-16 lg:-mt-24 relative z-10">
+<!-- Deze Week (Current Week Highlight) - Spans 4 cols -->
+<div class="lg:col-span-4 bg-bg-primary rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] transition-shadow border border-border-color p-lg flex flex-col h-full">
+<div class="flex justify-between items-center mb-lg pb-sm border-b border-border-color">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Deze Week</h2>
+<span class="font-badge text-badge bg-surface-container px-2 py-1 rounded-full text-text-secondary">Week 42</span>
+</div>
+<div class="space-y-md flex-1">
+<!-- Collection Item 1 -->
+<div class="flex items-center p-md bg-surface-container-lowest border border-border-color rounded-lg shadow-sm">
+<div class="w-12 h-12 rounded-full bg-[#f3f4f6] flex items-center justify-center mr-md border-2 border-[#9ca3af]">
+<span class="material-symbols-outlined text-[#4b5563]" style="font-variation-settings: 'FILL' 1;">delete</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md font-bold text-on-surface">Restafval (Grijs)</p>
+<p class="font-body-base text-body-base text-text-secondary text-sm">Dinsdag 15 Okt</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-badge text-badge bg-[#fee2e2] text-[#991b1b] px-2 py-1 rounded-full mb-1">Diftar Tarief</span>
+</div>
+</div>
+<!-- Collection Item 2 -->
+<div class="flex items-center p-md bg-surface-container-lowest border border-border-color rounded-lg shadow-sm">
+<div class="w-12 h-12 rounded-full bg-[#dcfce7] flex items-center justify-center mr-md border-2 border-[#4ade80]">
+<span class="material-symbols-outlined text-[#166534]" style="font-variation-settings: 'FILL' 1;">compost</span>
+</div>
+<div class="flex-1">
+<p class="font-label-md text-label-md font-bold text-on-surface">GFT (Groen)</p>
+<p class="font-body-base text-body-base text-text-secondary text-sm">Donderdag 17 Okt</p>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-badge text-badge bg-[#dcfce7] text-[#166534] px-2 py-1 rounded-full mb-1">Gratis</span>
+</div>
+</div>
+</div>
+<button class="mt-lg w-full bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md font-bold py-sm rounded-lg transition-colors border border-border-color">
+                        Download PDF Kalender
+                    </button>
+</div>
+<!-- Monthly Grid View - Spans 8 cols -->
+<div class="lg:col-span-8 bg-bg-primary rounded-xl shadow-[0_1px_3px_rgba(0,0,0,0.08)] hover:shadow-[0_4px_12px_rgba(0,0,0,0.12)] transition-shadow border border-border-color p-lg flex flex-col h-full">
+<div class="flex justify-between items-center mb-lg">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Kalender Overzicht</h2>
+<div class="flex items-center gap-sm bg-surface-container-low rounded-lg p-1">
+<button class="p-1 hover:bg-bg-primary rounded-md text-text-secondary transition-colors"><span class="material-symbols-outlined">chevron_left</span></button>
+<span class="font-label-md text-label-md font-bold px-2">Oktober 2026</span>
+<button class="p-1 hover:bg-bg-primary rounded-md text-text-secondary transition-colors"><span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+</div>
+<!-- Legend -->
+<div class="flex flex-wrap gap-md mb-md pb-md border-b border-border-color">
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-full bg-[#9ca3af]"></div><span class="font-label-md text-label-md text-text-secondary text-sm">Restafval</span></div>
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-full bg-[#4ade80]"></div><span class="font-label-md text-label-md text-text-secondary text-sm">GFT</span></div>
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-full bg-[#60a5fa]"></div><span class="font-label-md text-label-md text-text-secondary text-sm">Papier</span></div>
+<div class="flex items-center gap-xs"><div class="w-3 h-3 rounded-full bg-[#fde047]"></div><span class="font-label-md text-label-md text-text-secondary text-sm">Verpakkingen</span></div>
+</div>
+<!-- Calendar Grid -->
+<div class="grid grid-cols-7 gap-1 flex-1">
+<!-- Days Header -->
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Ma</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Di</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Wo</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Do</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Vr</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Za</div>
+<div class="text-center font-label-md text-label-md font-bold text-text-secondary py-2">Zo</div>
+<!-- Calendar Days (Static Example for visual structure) -->
+<!-- Empty slots -->
+<div class="aspect-square bg-surface border border-border-color rounded-md p-1 opacity-50"></div>
+<div class="aspect-square bg-surface border border-border-color rounded-md p-1 opacity-50"></div>
+<div class="aspect-square bg-surface border border-border-color rounded-md p-1 opacity-50"></div>
+<!-- Days -->
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">1</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">2</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">3</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between bg-surface-container-low">
+<span class="font-label-md text-label-md text-right text-text-secondary font-bold">4</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">5</span>
+</div>
+<!-- Highlighted Collection Day -->
+<div class="aspect-square bg-[#f8fafc] border-2 border-primary rounded-md p-1 flex flex-col justify-between relative overflow-hidden">
+<span class="font-label-md text-label-md text-right text-on-surface font-bold">6</span>
+<div class="flex gap-1 justify-end absolute bottom-1 right-1">
+<div class="w-2 h-2 rounded-full bg-[#60a5fa]" title="Papier"></div>
+</div>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">7</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">8</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between hover:bg-surface-container-low transition-colors">
+<span class="font-label-md text-label-md text-right text-text-secondary">9</span>
+<div class="flex gap-1 justify-end absolute bottom-1 right-1">
+<div class="w-2 h-2 rounded-full bg-[#fde047]" title="Verpakkingen"></div>
+</div>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between bg-surface-container-low">
+<span class="font-label-md text-label-md text-right text-text-secondary font-bold">10</span>
+</div>
+<div class="aspect-square bg-bg-primary border border-border-color rounded-md p-1 flex flex-col justify-between bg-surface-container-low">
+<span class="font-label-md text-label-md text-right text-text-secondary font-bold">11</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Holiday Schedule Table Section -->
+<section class="py-2xl px-lg md:px-xl bg-surface-container-low border-y border-border-color">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-lg">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Vervangende Inzameldagen Feestdagen</h2>
+<p class="font-body-base text-body-base text-text-secondary mt-1">Tijdens feestdagen wordt het afval op een andere dag ingezameld. Bekijk hier het schema voor 2026.</p>
+</div>
+</div>
+<div class="bg-bg-primary rounded-xl border border-border-color overflow-hidden shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-high border-b border-border-color">
+<th class="py-sm px-md font-label-md text-label-md font-bold text-on-surface w-1/3">Feestdag</th>
+<th class="py-sm px-md font-label-md text-label-md font-bold text-on-surface w-1/3">Vervalt op</th>
+<th class="py-sm px-md font-label-md text-label-md font-bold text-primary w-1/3">Ingehaald op</th>
+</tr>
+</thead>
+<tbody class="font-body-base text-body-base text-text-secondary">
+<tr class="border-b border-border-color hover:bg-surface-container-lowest transition-colors">
+<td class="py-md px-md text-on-surface font-medium">Nieuwjaarsdag</td>
+<td class="py-md px-md">Donderdag 1 januari 2026</td>
+<td class="py-md px-md font-medium text-primary">Zaterdag 3 januari 2026</td>
+</tr>
+<tr class="bg-surface-container-low border-b border-border-color hover:bg-surface-container-lowest transition-colors">
+<td class="py-md px-md text-on-surface font-medium">Tweede Paasdag</td>
+<td class="py-md px-md">Maandag 6 april 2026</td>
+<td class="py-md px-md font-medium text-primary">Zaterdag 4 april 2026</td>
+</tr>
+<tr class="border-b border-border-color hover:bg-surface-container-lowest transition-colors">
+<td class="py-md px-md text-on-surface font-medium">Koningsdag</td>
+<td class="py-md px-md">Maandag 27 april 2026</td>
+<td class="py-md px-md font-medium text-primary">Zaterdag 25 april 2026</td>
+</tr>
+<tr class="bg-surface-container-low hover:bg-surface-container-lowest transition-colors">
+<td class="py-md px-md text-on-surface font-medium">Hemelvaartsdag</td>
+<td class="py-md px-md">Donderdag 14 mei 2026</td>
+<td class="py-md px-md font-medium text-primary">Zaterdag 16 mei 2026</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-md flex items-start gap-sm bg-surface-container p-md rounded-lg border-l-4 border-brand-green-dark">
+<span class="material-symbols-outlined text-brand-green-dark">info</span>
+<p class="font-body-base text-body-base text-on-surface text-sm">
+                        Zet uw container op de inhaaldag uiterlijk om <strong>07:30 uur</strong> aan de straat. De ophaaltijden kunnen afwijken van wat u normaal gewend bent.
+                    </p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container border-t border-border-color py-4xl px-lg mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg max-w-container-max mx-auto">
+<div class="flex flex-col gap-sm">
+<a class="font-headline-sm text-headline-sm font-bold text-primary" href="#">MinderAfval053</a>
+<p class="font-body-base text-body-base text-on-surface opacity-80 mt-2">
+                    © 2024 MinderAfval053 Enschede. Project informatie &amp; Transparantie.
+                </p>
+</div>
+<div class="flex flex-col gap-sm">
+<h3 class="font-label-md text-label-md font-bold text-on-surface mb-xs">Informatie</h3>
+<a class="font-body-base text-body-base text-text-secondary hover:text-primary hover:underline decoration-primary transition-opacity opacity-80 hover:opacity-100" href="#">Project Info</a>
+<a class="font-body-base text-body-base text-text-secondary hover:text-primary hover:underline decoration-primary transition-opacity opacity-80 hover:opacity-100" href="#">Site Links</a>
+</div>
+<div class="flex flex-col gap-sm">
+<h3 class="font-label-md text-label-md font-bold text-on-surface mb-xs">Acties &amp; Beleid</h3>
+<a class="font-body-base text-body-base text-text-secondary hover:text-primary hover:underline decoration-primary transition-opacity opacity-80 hover:opacity-100" href="#">Doneren (BUNQ)</a>
+<a class="font-body-base text-body-base text-text-secondary hover:text-primary hover:underline decoration-primary transition-opacity opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('mobile-menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', function() {
+      nav.classList.toggle('hidden');
+    });
+  }
+});
+</script>
+</body></html>

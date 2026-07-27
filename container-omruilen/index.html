@@ -1,15 +1,241 @@
-<!doctype html>
-<html lang="nl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wil je je grijze container omruilen? Lees hoe het werkt, wat het kost en hoe je het aanvraagt bij Twente Milieu." />
-    <link rel="canonical" href="https://afval053.website/container-omruilen/" />
-    <title>Container omruilen Enschede - Stappenplan & kosten | MinderAfval053</title>
-    <script type="module" crossorigin src="../assets/main-Czvh81wA.js"></script>
-    <link rel="stylesheet" crossorigin href="../assets/main-DEFDvvXy.css">
-  </head>
-  <body>
-    <div id="root" data-page="container-omruilen"></div>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html lang="nl"><head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Container Omruilen - MinderAfval053</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        .zebra-stripes:nth-child(even) {
+            background-color: #eceef0; /* surface-container */
+        }
+        .step-connector::after {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            left: 1rem;
+            width: 2px;
+            height: calc(100% - 2rem + 16px);
+            background-color: #E2E8F0;
+            z-index: 0;
+        }
+        .step-connector:last-child::after {
+            display: none;
+        }
+    </style>
+<link rel="stylesheet" href="../dist/output.css">
+</head>
+<body class="bg-background text-text-primary font-body-base antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header>
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface border-b border-border-color dark:border-outline-variant top-0 sticky z-50">
+<div class="flex justify-between items-center w-full px-lg md:px-xl max-w-container-max mx-auto h-navbar-height">
+<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-primary-fixed-dim tracking-tight" href="/">
+                MinderAfval053
+            </a>
+<div class="hidden md:flex space-x-lg items-center">
+<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors py-2" href="#">Rekentool</a>
+<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors py-2" href="#">Tarieven 2026</a>
+<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors py-2" href="#">Hoe Werkt Diftar</a>
+<a class="font-label-md text-label-md text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 py-2" href="#">FAQ</a>
+<a class="font-label-md text-label-md text-text-secondary dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed-dim transition-colors py-2" href="#">Bespaartips</a>
+</div>
+<div class="flex items-center space-x-md">
+<button id="mobile-menu-btn" class="md:hidden p-2 text-text-secondary hover:text-primary hover:bg-surface-container-low rounded-full transition-colors">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Mobile Nav Panel -->
+<nav id="mobile-nav" class="hidden md:hidden bg-surface-container-lowest border-t border-border-color">
+<div class="flex flex-col px-lg py-md space-y-sm">
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../index.html">Rekentool</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../tarieven-2026/index.html">Tarieven 2026</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../hoe-werkt-diftar/index.html">Hoe Werkt Diftar</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../veelgestelde-vragen/index.html">FAQ</a>
+<a class="font-label-md text-label-md text-text-secondary hover:text-primary hover:bg-surface-container-low transition-colors py-2 px-3 rounded" href="../bespaartips/index.html">Bespaartips</a>
+</div>
+</nav>
+</header>
+<main class="max-w-container-max mx-auto px-lg md:px-xl py-2xl">
+<!-- Breadcrumbs -->
+<nav aria-label="Breadcrumb" class="flex text-text-muted font-label-md text-label-md mb-lg">
+<ol class="inline-flex items-center space-x-1 md:space-x-3">
+<li class="inline-flex items-center">
+<a class="hover:text-primary transition-colors" href="#">FAQ</a>
+</li>
+<li>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Containers</a>
+</div>
+</li>
+<li aria-current="page">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-sm mx-1">chevron_right</span>
+<span class="text-text-primary font-medium">Container Omruilen</span>
+</div>
+</li>
+</ol>
+</nav>
+<!-- Header Section -->
+<div class="mb-3xl">
+<h1 class="font-headline-lg text-headline-lg text-text-primary mb-sm">Container Omruilen</h1>
+<p class="font-body-base text-body-base text-text-secondary max-w-2xl">
+                Wilt u een kleinere of juist een grotere container? Dat kan. Het omruilen van uw restafvalcontainer is gratis en helpt u bij het optimaliseren van uw Diftar kosten.
+            </p>
+</div>
+<!-- Main Content Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Left Column: Quick Answer & Steps (8 cols) -->
+<div class="lg:col-span-8 space-y-xl">
+<!-- Quick Answer Card -->
+<div class="glass-card rounded-lg p-lg border-l-4 border-l-brand-green-dark flex items-start gap-md">
+<div class="bg-surface-container-low p-3 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-brand-green-dark text-3xl" data-icon="check_circle">check_circle</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary mb-xs">Omruilen is Gratis</h2>
+<p class="font-body-base text-body-base text-text-secondary">
+                            Het eenmalig omruilen van uw 240L of 140L restafvalcontainer naar een ander formaat brengt <strong>geen extra kosten</strong> met zich mee vanuit de gemeente Enschede. U betaalt alleen het nieuwe leegtarief zodra u de nieuwe container in gebruik neemt.
+                        </p>
+</div>
+</div>
+<!-- 5-Step Process -->
+<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-xl">
+<h2 class="font-headline-sm text-headline-sm text-text-primary mb-xl">Hoe werkt het omruilen?</h2>
+<div class="relative pl-2">
+<!-- Step 1 -->
+<div class="relative pb-xl step-connector pl-12">
+<div class="absolute left-0 top-0 w-8 h-8 bg-surface-container rounded-full flex items-center justify-center z-10 border-2 border-surface">
+<span class="font-label-md text-label-md font-bold text-text-secondary">1</span>
+</div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Aanvraag Indienen</h3>
+<p class="font-body-base text-body-base text-text-secondary mt-1">Via het gemeenteloket vraagt u digitaal de omruiling aan met uw DigiD.</p>
+</div>
+<!-- Step 2 -->
+<div class="relative pb-xl step-connector pl-12">
+<div class="absolute left-0 top-0 w-8 h-8 bg-surface-container rounded-full flex items-center justify-center z-10 border-2 border-surface">
+<span class="font-label-md text-label-md font-bold text-text-secondary">2</span>
+</div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Bevestiging</h3>
+<p class="font-body-base text-body-base text-text-secondary mt-1">U ontvangt binnen 2 werkdagen een bevestigingsmail met de omruildatum.</p>
+</div>
+<!-- Step 3 -->
+<div class="relative pb-xl step-connector pl-12">
+<div class="absolute left-0 top-0 w-8 h-8 bg-surface-container rounded-full flex items-center justify-center z-10 border-2 border-surface">
+<span class="font-label-md text-label-md font-bold text-text-secondary">3</span>
+</div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Oude Container Aanbieden</h3>
+<p class="font-body-base text-body-base text-text-secondary mt-1">Zet uw oude (lege) container op de afgesproken dag voor 07:30 aan de straat.</p>
+</div>
+<!-- Step 4 -->
+<div class="relative pb-xl step-connector pl-12">
+<div class="absolute left-0 top-0 w-8 h-8 bg-primary-container rounded-full flex items-center justify-center z-10 border-2 border-surface shadow-sm">
+<span class="font-label-md text-label-md font-bold text-on-primary-container">4</span>
+</div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Omruiling</h3>
+<p class="font-body-base text-body-base text-text-secondary mt-1">De afvaldienst neemt uw oude container mee en plaatst direct de nieuwe.</p>
+</div>
+<!-- Step 5 -->
+<div class="relative pl-12 step-connector">
+<div class="absolute left-0 top-0 w-8 h-8 bg-surface-container rounded-full flex items-center justify-center z-10 border-2 border-surface">
+<span class="font-label-md text-label-md font-bold text-text-secondary">5</span>
+</div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Klaar voor gebruik</h3>
+<p class="font-body-base text-body-base text-text-secondary mt-1">U kunt uw nieuwe container direct gebruiken. De nieuwe tarieven gaan in bij de eerstvolgende lediging.</p>
+</div>
+</div>
+<div class="mt-xl pt-lg border-t border-border-color">
+<button class="bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-DEFAULT hover:bg-brand-green-dark transition-colors inline-flex items-center gap-2 shadow-sm">
+                            Naar Aanvraagformulier Gemeente
+                            <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Right Column: Costs & Tips (4 cols) -->
+<div class="lg:col-span-4 space-y-xl">
+<!-- Costs Breakdown Box (Attention Block) -->
+<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color border-l-4 border-l-secondary-container p-lg">
+<div class="flex items-center gap-2 mb-md">
+<span class="material-symbols-outlined text-secondary-container" data-icon="payments">payments</span>
+<h2 class="font-label-md text-label-md font-bold text-text-primary">Tarieven per Lediging (2026)</h2>
+</div>
+<div class="space-y-sm mb-md">
+<div class="flex justify-between items-center py-2 border-b border-surface-variant">
+<span class="font-body-base text-body-base text-text-secondary">140 Liter container</span>
+<span class="font-label-md text-label-md font-bold text-text-primary">€ 7,50</span>
+</div>
+<div class="flex justify-between items-center py-2">
+<span class="font-body-base text-body-base text-text-secondary">240 Liter container</span>
+<span class="font-label-md text-label-md font-bold text-text-primary">€ 12,50</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-sm rounded-DEFAULT text-sm font-body-base text-text-secondary">
+<span class="font-bold text-secondary-container">Besparing:</span> Bij het overstappen naar een kleinere 140L container bespaart u € 5,00 per keer dat u deze aan de straat zet.
+                    </div>
+</div>
+<!-- Tips Box -->
+<div class="bg-bg-primary rounded-lg shadow-sm border border-border-color p-lg">
+<h2 class="font-label-md text-label-md font-bold text-text-primary mb-md border-b border-border-color pb-2">Wanneer omruilen?</h2>
+<ul class="space-y-4">
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="arrow_downward">arrow_downward</span>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Naar een 140L</h3>
+<p class="font-body-base text-body-base text-sm text-text-secondary">Als uw 240L container vaak maar halfvol is wanneer u hem aan de straat zet. Met een 140L bespaart u flink per lediging.</p>
+</div>
+</li>
+<li class="flex gap-3 items-start">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0 mt-0.5" data-icon="arrow_upward">arrow_upward</span>
+<div>
+<h3 class="font-label-md text-label-md font-bold text-text-primary">Naar een 240L</h3>
+<p class="font-body-base text-body-base text-sm text-text-secondary">Als u een groot gezin heeft en vaak met een overvolle 140L container zit die niet meer dicht kan (wat niet is toegestaan).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-on-background border-t border-border-color dark:border-outline mt-4xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg py-4xl px-lg max-w-container-max mx-auto">
+<div>
+<span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim block mb-md">MinderAfval053</span>
+<p class="font-body-base text-body-base text-on-surface dark:text-inverse-on-surface opacity-80 mb-lg">
+                    © 2024 MinderAfval053 Enschede. Project informatie &amp; Transparantie.
+                </p>
+</div>
+<div class="flex flex-col space-y-md">
+<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Project Info</a>
+<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Site Links</a>
+</div>
+<div class="flex flex-col space-y-md">
+<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Doneren (BUNQ)</a>
+<a class="font-body-base text-body-base text-text-secondary dark:text-surface-variant hover:text-primary hover:underline decoration-primary opacity-80 hover:opacity-100 transition-opacity" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var btn = document.getElementById('mobile-menu-btn');
+  var nav = document.getElementById('mobile-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', function() {
+      nav.classList.toggle('hidden');
+    });
+  }
+});
+</script>
+</body></html>

@@ -1,3 +1,372 @@
+# robots.txt - MinderAfval053
+# https://minderafval053.nl/robots.txt
+# Last updated: 2026-07-27
+
+# =============================================================================
+# Default rules: allow all well-behaved bots
+# =============================================================================
 User-agent: *
-Disallow: 
-Sitemap: https://afval053.website/sitemap.xml
+Allow: /
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /dist/
+Disallow: /*.json$
+
+# Sitemap location
+Sitemap: https://minderafval053.nl/sitemap.xml
+
+# =============================================================================
+# Wayback Machine / Internet Archive - BLOCKED
+# Prevents archiving and snapshot crawling
+# =============================================================================
+User-agent:ia_archiver
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: ArchiveBot
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: InternetArchiveBot
+Disallow: /
+
+User-agent: Mozilla/5.0 (compatible; archive.org_bot/*)
+Disallow: /
+
+User-agent: Mozilla/5.0 (compatible; InternetArchiveBot/*)
+Disallow: /
+
+# =============================================================================
+# Known bad / spam / scraper bots - BLOCKED
+# =============================================================================
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent:磨盘SEO (Mopan SEO)
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Censys
+Disallow: /
+
+User-agent: CensysInspect
+Disallow: /
+
+User-agent: masscan
+Disallow: /
+
+User-agent: Nmap
+Disallow: /
+
+User-agent: Nuclei
+Disallow: /
+
+User-agent: sqlmap
+Disallow: /
+
+User-agent: Nikto
+Disallow: /
+
+User-agent: Goby
+Disallow: /
+
+User-agent: Netcraft
+Disallow: /
+
+User-agent: NetcraftSurveyAgent
+Disallow: /
+
+User-agent: Whatweb
+Disallow: /
+
+User-agent: Wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: Python-urllib
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: Java
+Disallow: /
+
+User-agent: libwww-perl
+Disallow: /
+
+User-agent: PHP
+Disallow: /
+
+User-agent: PHP/7
+Disallow: /
+
+User-agent: ZmEu
+Disallow: /
+
+User-agent: hector
+Disallow: /
+
+User-agent: Havij
+Disallow: /
+
+User-agent: DirBuster
+Disallow: /
+
+User-agent: WebInspect
+Disallow: /
+
+User-agent: AppScan
+Disallow: /
+
+User-agent: Acunetix
+Disallow: /
+
+User-agent: w3af
+Disallow: /
+
+User-agent: OWASP
+Disallow: /
+
+User-agent: w3af.plugins
+Disallow: /
+
+User-agent: wpscan
+Disallow: /
+
+User-agent: WPScan
+Disallow: /
+
+User-agent: joomla
+Disallow: /
+
+User-agent: Joomla
+Disallow: /
+
+User-agent: Drupal
+Disallow: /
+
+User-agent: SeekportBot
+Disallow: /
+
+User-agent: Seekport
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: zoominfobot
+Disallow: /
+
+User-agent: ZoomBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: YandexImages
+Disallow: /
+
+User-agent: YandexMedia
+Disallow: /
+
+User-agent: YandexBlogs
+Disallow: /
+
+User-agent: YandexFavicons
+Disallow: /
+
+User-agent: YandexWebmaster
+Disallow: /
+
+User-agent: YandexPageChecker
+Disallow: /
+
+User-agent: YandexImageResizer
+Disallow: /
+
+User-agent: Exabot
+Disallow: /
+
+User-agent: Konqueror
+Disallow: /
+
+User-agent: Contxbot
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
+
+User-agent: ltx71
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: CLyrics
+Disallow: /
+
+User-agent: paperlibot
+Disallow: /
+
+User-agent: paperlibot
+Disallow: /
+
+User-agent: CrawlDaddy
+Disallow: /
+
+User-agent: Fast-Bo
+Disallow: /
+
+User-agent: GRequest
+Disallow: /
+
+User-agent: ltx71
+Disallow: /
+
+User-agent: Niki-Bot
+Disallow: /
+
+User-agent: oesd
+Disallow: /
+
+User-agent: rBot
+Disallow: /
+
+User-agent: SEOkicks
+Disallow: /
+
+User-agent: SEOlytics
+Disallow: /
+
+User-agent: SeznamBot
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: SpiderBot
+Disallow: /
+
+User-agent: TurnitinBot
+Disallow: /
+
+User-agent: Voilabot
+Disallow: /
+
+User-agent: Yandex
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+# =============================================================================
+# Aggressive / AI training crawlers - BLOCKED
+# Prevents content scraping for LLM training datasets
+# =============================================================================
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Cohere-ai
+Disallow: /
+
+User-agent: AI2Bot
+Disallow: /
+
+User-agent: DPT-Web-Crawler
+Disallow: /
+
+User-agent: VelenExternalWebCrawler
+Disallow: /
+
+User-agent: iaskspider
+Disallow: /
+
+User-agent: img2dataset
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
